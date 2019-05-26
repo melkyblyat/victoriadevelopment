@@ -1,6 +1,6 @@
 state={
 	id=796
-	name="VDKH_STATE_9" # Komarno
+	name="VDKH_STATE_9" # Komárno
 	manpower = 59563
 	state_category = town
 	

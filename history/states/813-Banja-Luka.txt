@@ -1,7 +1,7 @@
 
 state={
 	id=813
-	name="VDKH_STATE_26" #Banja-Luka
+	name="VDKH_STATE_26" #Banja Luka
 	manpower = 211455
 	
 	state_category = town

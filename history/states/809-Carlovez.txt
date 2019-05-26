@@ -1,7 +1,7 @@
 
 state={
 	id=809
-	name="VDKH_STATE_22" #Carlovez
+	name="VDKH_STATE_22" #Karlovac
 	manpower = 48667
 	
 	state_category = town

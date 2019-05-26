@@ -1,6 +1,6 @@
 state={
 	id=799
-	name="VDKH_STATE_12" # Czechoslovak Corridor
+	name="VDKH_STATE_12" # Czech Corridor
 	manpower = 19342
 	state_category = town
 	

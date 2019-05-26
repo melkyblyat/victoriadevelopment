@@ -1,7 +1,7 @@
 
 state={
 	id=812
-	name="VDKH_STATE_25" #Herzigovina
+	name="VDKH_STATE_25" #Herzegovina 
 	manpower = 122498
 	
 	state_category = town

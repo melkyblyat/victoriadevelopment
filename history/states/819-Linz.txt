@@ -1,7 +1,7 @@
 
 state={
 	id=819
-	name="VDKH_STATE_32" #Linz
+	name="VDKH_STATE_32" #Linec
 	manpower = 6713665
 	resources={
 		steel=19

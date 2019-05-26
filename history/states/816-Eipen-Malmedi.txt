@@ -1,7 +1,7 @@
 
 state={
 	id=816
-	name="VDKH_STATE_29" #Eipen-Malmedi
+	name="VDKH_STATE_29" #Eupen-Måmdey
 	manpower = 91543
 	
 	state_category = town

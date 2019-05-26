@@ -1,7 +1,7 @@
 
 state={
 	id=823
-	name="VDKH_STATE_36" #Hollabrunn
+	name="VDKH_STATE_36" #Hollabrunn 
 	manpower = 991124
 	
 	state_category = city

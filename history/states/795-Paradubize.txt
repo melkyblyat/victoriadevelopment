@@ -1,6 +1,6 @@
 state={
 	id=795
-	name="VDKH_STATE_8" # Paradubize
+	name="VDKH_STATE_8" # Pardubice
 	manpower = 487456
 	state_category = large_city
 	

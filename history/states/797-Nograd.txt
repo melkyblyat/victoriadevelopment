@@ -1,6 +1,6 @@
 state={
 	id=797
-	name="VDKH_STATE_10" # Nograd
+	name="VDKH_STATE_10" # Novograd
 	manpower = 71234
 	state_category = town
 	

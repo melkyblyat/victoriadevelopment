@@ -1,0 +1,24 @@
+
+state={
+	id=809
+	name="VDKH_STATE_22" #Carlovez
+	manpower = 48667
+	
+	state_category = town
+
+	history={
+		owner = CRO
+		victory_points = {
+			3592 3
+		}
+		buildings = {
+			infrastructure = 3
+			iarms_factory = 2
+		}
+		add_core_of = CRO
+	}
+
+	provinces={
+		3592 3596
+	}
+}

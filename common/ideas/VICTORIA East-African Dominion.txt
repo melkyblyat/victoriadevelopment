@@ -1,0 +1,194 @@
+ideas = {
+
+	country = {
+	
+		EAD_black_wednesday = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			modifier = {
+				political_power_cost = 1
+				production_factory_max_efficiency_factor = -0.2
+                industrial_capacity_factory = -0.2
+                production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		EAD_black_wednesday_step_1 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			modifier = {
+				political_power_cost = 0.5
+				production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.1
+                production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		EAD_black_wednesday_step_2 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = great_depression
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+                production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		EAD_pound = {
+			
+			picture = generic_goods_red_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		
+		EAD_britanisation_idea = {
+			
+			picture = brittish_stoicism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				non_core_manpower = 0.08
+			}
+		}
+		
+		EAD_food_crisis = {
+			
+			picture = idea_raj_risk_of_famine
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		
+		EAD_food_crisis_2 = {
+
+			picture = ENG_the_war_to_end_all_wars
+
+			allowed = {
+				original_tag = KEN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		EAD_segregation_idea = {
+			
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				conscription_factor = -0.1
+			}
+		}
+		
+		EAD_segregation_idea_2 = {
+			
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.1
+				conscription_factor = -0.05
+			}
+		}
+		
+	}
+	
+}

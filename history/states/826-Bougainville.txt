@@ -1,0 +1,28 @@
+
+state={
+	id=826
+	name="VDKH_STATE_39" #Bougainville
+	manpower = 6224
+	
+	state_category = small_island
+
+	history=
+	{
+		owner = GER
+		victory_points = {
+			4226 1 
+		}
+		buildings = {
+			infrastructure = 1
+			4226 = {
+				naval_base = 1
+
+			}
+			10234 = {
+				naval_base = 1
+
+			}
+		}
+	}
+	provinces= { 1358 4226 4378 10234 }
+}

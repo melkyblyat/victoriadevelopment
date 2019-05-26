@@ -1,0 +1,22 @@
+
+state={
+	id=820
+	name="VDKH_STATE_33" #Salzburg
+	manpower = 322589
+	
+	state_category = city
+
+	history=
+	{
+		owner = AUS
+		victory_points = {
+			688 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+	}
+	provinces= { 688 3703 6708 }
+}

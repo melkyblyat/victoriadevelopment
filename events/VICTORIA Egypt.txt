@@ -1,0 +1,48 @@
+###########################
+# Egyptian Events
+###########################
+
+add_namespace = egypt
+
+country_event = {
+	id = egypt.1
+	title = egypt.1.t	# Colonial assambley
+	desc = egypt.1.desc	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egypt.1.a # Speach about independence
+		
+		ai_chance = {
+			base = 100
+		}
+		effect_tooltip = {
+			add_autonomy_score = 10
+		}
+		ENG = {
+			country_event = { days = 1 id = egypt.2 }
+		}
+	}
+}
+
+country_event = {
+	id = egypt.2
+	title = egypt.2.t	# ENG notification about colonial assambley. 
+	desc = egypt.2.desc		#
+	picture = GFX_report_event_saf_soldiers					#CHANGE!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egypt.2.a	# ENG NOTIFICATION
+		
+		ai_chance = {
+			base = 80
+
+		}
+		EGY = { add_autonomy_score = 10 }
+		add_political_power = -25
+	}
+}

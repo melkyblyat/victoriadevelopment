@@ -1,0 +1,199 @@
+﻿capital = 46
+
+oob = "ROM_1936"
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.6
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+}
+
+add_opinion_modifier = { target = GRE modifier = large_increase }
+add_opinion_modifier = { target = YUG modifier = large_increase }
+add_opinion_modifier = { target = TUR modifier = large_decrease }
+
+
+set_convoys = 10
+
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 0
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 38
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 60
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 0
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 2
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 0
+			banned = no
+		}
+	}
+	
+	ruling_party = monarchist
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+create_country_leader = {
+	name = "Ileana of Romania"
+	desc = ""
+	picture = "gfx/leaders/ROM/Portrait_Romania_Ileana.tga"
+	expire = "1965.1.1"
+	ideology = monarchy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ileana of Romania"
+	desc = ""
+	picture = "gfx/leaders/ROM/Portrait_Romania_Ileana.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Corneliu Zelea Codreanu"
+	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = nationalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ion Antonescu"
+	desc = "POLITICS_ION_ANTONESCU_DESC"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Petre Dumitrescu"
+	gfx = GFX_Portrait_romania_petre_dumitrescu
+	traits = { offensive_doctrine logistics_wizard }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ion Antonescu"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	traits = { offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ioan Mihail Racovita"
+	gfx = GFX_Portrait_romania_ioan_mihail_racovita
+	traits = { hill_fighter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gheorghe Avramescu"
+	gfx = GFX_Portrait_romania_gheorghe_avramescu
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Horia Macellariu"
+	gfx = "GFX_Portrait_romania_horia_macellariu"
+	traits = { spotter }
+	skill = 2
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Regele Ferdinand Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}

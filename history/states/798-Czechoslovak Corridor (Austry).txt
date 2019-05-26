@@ -1,0 +1,19 @@
+state={
+	id=798
+	name="VDKH_STATE_11" # Czechoslovak Corridor
+	manpower = 11534
+	state_category = town
+	
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AUS
+		set_demilitarized_zone = yes
+	}
+	
+	provinces={
+		3700 9661 11630
+	}
+}

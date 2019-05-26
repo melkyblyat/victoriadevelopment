@@ -1,0 +1,1889 @@
+focus_tree = {
+	id = ead_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = KEN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	focus = {
+		id = EAD_martial_law
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				threat > 0.1
+				has_war = yes
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = EAD_mobilization_law
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EAD_martial_law }
+		x = -1
+		y = 1
+		relative_position_id = EAD_martial_law
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			increase_level_of_mobilization_law = yes
+		}
+	}
+	
+	################################
+	###### MILITARY SECTION ########
+	################################
+	
+	focus = {
+		id = EAD_rearmament
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = EAD_martial_law }
+		prerequisite = { focus = EAD_loyal_to_london }
+		x = 4
+		y = 1
+		relative_position_id = EAD_martial_law
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = KEN_rearmament_focus }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = KEN_rearmament_focus
+			}
+		}
+	}
+	
+	############################
+	###### ARMY SECTION ########
+	############################
+	
+	focus = {
+		id = EAD_army_reforms
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = EAD_rearmament }
+		x = 0
+		y = 2
+		relative_position_id = EAD_martial_law
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_engineers_tech
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = EAD_army_reforms }
+		x = -1
+		y = 1
+		relative_position_id = EAD_army_reforms
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = engineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_infantry_weapons
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = EAD_army_reforms }
+		x = 2
+		y = 0
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_royal_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = EAD_engineers_tech focus = EAD_infantry_weapons }
+		x = 0
+		y = 1
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_army_motorization
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = EAD_engineers_tech focus = EAD_infantry_weapons }
+		x = 2
+		y = 1
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_specialize_equipment
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = EAD_royal_artillery }
+		x = 0
+		y = 2
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 2
+				has_completed_focus = EAD_tanks
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = EAD_army_motorization }
+		x = 2
+		y = 2
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				factor = 2
+				has_completed_focus = EAD_specialize_equipment
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_modernizing_army
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = EAD_specialize_equipment }
+		prerequisite = { focus = EAD_tanks }
+		x = 1
+		y = 3
+		relative_position_id = EAD_engineers_tech
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	###########################
+	###### AIR SECTION ########
+	###########################
+	
+	focus = {
+		id = EAD_british_pilot_training
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = EAD_rearmament }
+		x = 0
+		y = 1
+		relative_position_id = EAD_rearmament
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		NOT = { is_in_faction_with = ENG }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_expand_air_bases
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = EAD_british_pilot_training }
+		x = 0
+		y = 1
+		relative_position_id = EAD_british_pilot_training
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = KEN_expand_air_bases
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = KEN_expand_air_bases
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_air_support_effort
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = EAD_expand_air_bases }
+		x = -1
+		y = 2
+		relative_position_id = EAD_british_pilot_training
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = EAD_expand_air_bases }
+		x = 1
+		y = 2
+		relative_position_id = EAD_british_pilot_training
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_royal_african_air_force
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = EAD_air_support_effort focus = EAD_fighter_effort }
+		x = 0
+		y = 3
+		relative_position_id = EAD_british_pilot_training
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	############################
+	###### NAVY SECTION ########
+	############################
+	
+	focus = {
+		id = EAD_seaward_defence_force
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = EAD_rearmament }
+		x = 4
+		y = 1
+		relative_position_id = EAD_rearmament		
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = EAD_seaward_defence_force
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = EAD_seaward_defence_force
+			}			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_protect_the_trade
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = EAD_seaward_defence_force }
+		mutually_exclusive = { focus = EAD_disrupt_the_trade }
+		x = -1
+		y = 1
+		relative_position_id = EAD_seaward_defence_force
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 0.8
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = convoy_defense_tree
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_disrupt_the_trade
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = { focus = EAD_seaward_defence_force }
+		mutually_exclusive = { focus = EAD_protect_the_trade }
+		x = 1
+		y = 1
+		relative_position_id = EAD_seaward_defence_force
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				has_war_with = ENG
+				factor = 10
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_trade_interdiction
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_anti_submarine_tactics
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = EAD_protect_the_trade }
+		x = 0
+		y = 1
+		relative_position_id = EAD_protect_the_trade
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_submarine_warfare
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = EAD_disrupt_the_trade }
+		x = 0
+		y = 1
+		relative_position_id = EAD_disrupt_the_trade
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = ENG
+				factor = 3
+			}
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_prepare_overseas_offensive
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = EAD_anti_submarine_tactics focus = EAD_submarine_warfare }
+		mutually_exclusive = { focus = EAD_strengthen_garrison_artillery }
+		x = 0
+		y = 1
+		relative_position_id = EAD_anti_submarine_tactics
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = convoy_defense_tree
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+				category = tp_tech
+			}
+		}
+	}
+
+	focus = {
+		id = EAD_strengthen_garrison_artillery
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = EAD_anti_submarine_tactics focus = EAD_submarine_warfare }
+		mutually_exclusive = { focus = EAD_prepare_overseas_offensive }
+		x = 0
+		y = 1
+		relative_position_id = EAD_submarine_warfare
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes							
+						limit_to_naval_base = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_expand_the_mombasa_base
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = EAD_prepare_overseas_offensive focus = EAD_strengthen_garrison_artillery }
+		x = -1
+		y = 1
+		relative_position_id = EAD_strengthen_garrison_artillery
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = EAD_expand_the_mombasa_base
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = EAD_expand_the_mombasa_base
+			}
+		}
+	}
+	
+	################################
+	###### BUILDING SECTION ########
+	################################
+	
+	focus = {
+		id = EAD_ministry_of_development
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = EAD_loyal_to_london }
+		x = 11
+		y = 1
+		relative_position_id = EAD_martial_law
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_comission_of_building
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = EAD_ministry_of_development }
+		x = 0
+		y = 1
+		relative_position_id = EAD_ministry_of_development
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = EAD_development_of_regions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = EAD_comission_of_building }
+		x = 0
+		y = 1
+		relative_position_id = EAD_comission_of_building
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	###############################
+	###### ECONOMY SECTION ########
+	###############################
+	
+	focus = {
+		id = EAD_african_pound
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 13
+		y = 0
+		relative_position_id = EAD_martial_law
+
+		cost = 16
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = EAD_pound
+		}
+	}
+	
+	focus = {
+		id = EAD_government_intervention
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = EAD_african_pound }
+		prerequisite = { focus = EAD_martial_law }
+		x = 0
+		y = 1
+		relative_position_id = EAD_african_pound
+
+		cost = 14
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EAD_black_wednesday
+				add_idea = EAD_black_wednesday_step_1
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_business
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = EAD_government_intervention }
+		x = 0
+		y = 1
+		relative_position_id = EAD_government_intervention
+
+		cost = 12
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EAD_black_wednesday_step_1
+				add_idea = EAD_black_wednesday_step_2
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_no_crisis
+		icon = GFX_focus_eng_the_sun_never_sets
+		prerequisite = { focus = EAD_business }
+		x = 0
+		y = 1
+		relative_position_id = EAD_business
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			remove_ideas = EAD_black_wednesday_step_2
+			add_political_power = 100
+		}
+	}
+	
+	##############################
+	###### POLICY SECTION ########
+	##############################
+	
+	focus = {
+		id = EAD_loyal_to_london
+		icon = GFX_focus_chi_british_cooperation
+		x = 15
+		y = 0
+		relative_position_id = EAD_martial_law
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.03
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_support_the_policy_of_appeasement
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_conservative_win
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = EAD_loyal_to_london }
+		x = 1
+		y = 1
+		relative_position_id = EAD_loyal_to_london
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			conservative > 0.5
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = EAD_colonial_elite
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = EAD_conservative_win }
+		x = -1
+		y = 3
+		relative_position_id = EAD_conservative_win
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.05
+			}
+			add_war_support = 0.05
+		}
+	}
+	
+	focus = {
+		id = EAD_britanisation
+		icon = GFX_focus_eng_unite_the_anglosphere
+		prerequisite = { focus = EAD_colonial_elite }
+		x = -1
+		y = 1
+		relative_position_id = EAD_colonial_elite
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_stability > 0.75
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = -0.25
+			add_ideas = EAD_britanisation_idea
+			UGA = { remove_state_core = 548 }
+			SUD = { remove_state_core = 549 }
+		}
+	}
+	
+	focus = {
+		id = EAD_food_problem_solving
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = EAD_colonial_elite }
+		x = 1
+		y = 1
+		relative_position_id = EAD_colonial_elite
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_idea = EAD_food_crisis
+		}
+		
+		bypass = {
+			NOT = { has_idea = EAD_food_crisis } 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = EAD_food_crisis }
+				remove_ideas = EAD_food_crisis
+			}
+			if = {
+				limit = { has_idea = EAD_food_crisis_2 }
+				remove_ideas = EAD_food_crisis_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_african_mandate
+		icon = GFX_goal_tfv_saf_secure_interests_in_africa
+		prerequisite = { focus = EAD_britanisation }
+		prerequisite = { focus = EAD_food_problem_solving }
+		x = 0
+		y = 2
+		relative_position_id = EAD_colonial_elite
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = eadominion.1
+		}
+	}
+	
+	focus = {
+		id = EAD_segregation
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = EAD_conservative_win }
+		x = 0
+		y = 1
+		relative_position_id = EAD_conservative_win
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = EAD_segregation_idea
+		}
+	}
+	
+	focus = {
+		id = EAD_segregation_2
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = EAD_segregation }
+		x = 0
+		y = 1
+		relative_position_id = EAD_segregation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EAD_segregation_idea
+				add_idea = EAD_segregation_idea_2
+			}
+		}
+	}
+	
+	##################################
+	###### BUILDING SECTION 2 ########
+	##################################
+	
+	focus = {
+		id = EAD_infrastructure_effort
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = EAD_comission_of_building }
+		prerequisite = { focus = EAD_business }
+		x = 1
+		y = 2
+		relative_position_id = EAD_comission_of_building
+		cost = 10
+
+		available_if_capitulated = yes
+
+		bypass = {
+		
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_industrial_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = EAD_infrastructure_effort }
+		x = 0
+		y = 1
+		relative_position_id = EAD_infrastructure_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+			
+		}
+
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = EAD_industrial_expansion_flag
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {  }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = EAD_industrial_expansion_flag
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_kenya_steel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = EAD_industrial_expansion }
+		x = 0
+		y = 1
+		relative_position_id = EAD_industrial_expansion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			controls_state = 547
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			547 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = EAD_university_of_nairobi
+		icon = GFX_focus_research
+		prerequisite = { focus = EAD_kenya_steel }
+		prerequisite = { focus = EAD_african_mandate }
+		x = 1
+		y = 1
+		relative_position_id = EAD_kenya_steel
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+ 				id = commonwealth_research
+ 				bonus = 0.03
+			}
+			add_research_slot = 1
+		}
+	}
+}

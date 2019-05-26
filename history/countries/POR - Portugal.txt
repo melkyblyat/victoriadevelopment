@@ -1,0 +1,125 @@
+﻿capital = 112
+
+oob = "POR_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	transport = 1
+}
+add_ideas = {
+	blackwednesday1
+}
+
+set_convoys = 50
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 0
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 0
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 5
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 5
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 90
+			banned = no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_convoys = 100
+set_stability = 0.75
+
+
+create_country_leader = {
+	name = "António de Oliveira Salazar"
+	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
+	picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
+	expire = "1965.1.1"
+	ideology = dictatorship
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Francisco de Barcelos Rolão Preto"
+	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "José Vicente de Freitas"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+

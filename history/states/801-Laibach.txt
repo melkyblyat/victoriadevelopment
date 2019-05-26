@@ -1,0 +1,28 @@
+
+state={
+	id=801
+	name="VDKH_STATE_14" #Laibach
+	manpower = 21556
+	resources={
+		steel=15
+	}
+	
+	state_category = town
+
+	history={
+		owner = ITA
+		victory_points = {
+			9627 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = ITA
+		add_core_of = SLV
+	}
+
+	provinces={
+		3631 6650 9627
+	}
+}

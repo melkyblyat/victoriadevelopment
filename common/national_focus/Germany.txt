@@ -1,0 +1,705 @@
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = GER_colonial_policy
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 100			
+		}
+	}
+	
+	focus = {
+		id = GER_save_colonies
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = GER_colonial_policy }
+		mutually_exclusive = { focus = GER_rework_colonial_maps }
+		x = -1
+		y = 1
+		relative_position_id = GER_colonial_policy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = GER_rework_colonial_maps
+		icon = GFX_goal_rework_colonial_map
+		prerequisite = { focus = GER_colonial_policy }
+		mutually_exclusive = { focus = GER_save_colonies }
+		x = 1
+		y = 1
+		relative_position_id = GER_colonial_policy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = GER_colonial_assambley
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = GER_rework_colonial_maps }
+		x = 0
+		y = 1
+		relative_position_id = GER_rework_colonial_maps
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = { id = german.1 }
+		}
+	}
+	
+	focus = {
+		id = GER_development_of_colonial_possessions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_colonial_assambley focus = GER_save_colonies }
+		x = -1
+		y = 1
+		relative_position_id = GER_colonial_assambley
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip = {
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { is_on_continent = europe }
+					}
+				}
+			}
+		}		
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = GER_development_of_colonial_possessions_2Inf }
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+				random_owned_controlled_state = {
+					limit =  {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { is_on_continent = europe }
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_development_of_colonial_possessions_2Inf
+				}
+				random_owned_controlled_state = {
+					limit =  {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { is_on_continent = europe }
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_development_of_colonial_possessions_2Inf
+				}
+				random_owned_controlled_state = {
+					limit =  {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { is_on_continent = europe }
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_development_of_colonial_possessions_2Inf
+				}
+				random_owned_controlled_state = {
+					limit =  {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						NOT = { is_on_continent = europe }
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GER_development_of_colonial_possessions_2Inf
+				}
+		}
+	}
+	
+	focus = {
+		id = GER_carribean_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_development_of_colonial_possessions }
+		x = -2
+		y = 1
+		relative_position_id = GER_development_of_colonial_possessions
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				limit = { is_on_continent = south_america }
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			if = {
+			limit = { has_country_flag = german.2.a }
+			random_state = {
+				limit = {
+					is_controlled_by = CAY
+					is_on_continent = south_america
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			}
+			if = {
+			limit = { NOT = { has_country_flag = german.2.a } }
+			random_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_on_continent = south_america
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_african_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_development_of_colonial_possessions }
+		x = 0
+		y = 1
+		relative_position_id = GER_development_of_colonial_possessions
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				limit = { is_on_continent = africa }
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			if = {
+			limit = { has_country_flag = german.3.b }
+			random_state = {
+				limit = {
+					is_controlled_by = MOR
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = SEN
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = GAB
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = NMB
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = TZN
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			}
+			if = {
+			limit = { has_country_flag = german.3.a }
+			random_state = {
+				limit = {
+					is_controlled_by = GAF
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			}
+			if = {
+			limit = { 
+				NOT = { 
+					has_country_flag = german.3.a 
+					has_country_flag = german.3.b 
+				} 
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_on_continent = africa
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}		
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_indochinese_resourses
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GER_development_of_colonial_possessions }
+		x = 2
+		y = 1
+		relative_position_id = GER_development_of_colonial_possessions
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			OR = {
+			286 = {
+				is_controlled_by = ROOT
+			}
+			286 = {
+				is_controlled_by = VIN
+			}
+			286 = {
+				is_controlled_by = GOC
+			}
+			}
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			if = {
+			limit = { OR = { has_country_flag = german.3.b has_country_flag = german.3.a } }
+				add_resource = {
+				type = oil
+				amount = 50
+				state = 286
+				}
+			}
+			if = {
+			limit = { NOT = { has_country_flag = german.3.b has_country_flag = german.3.a } }
+				add_resource = {
+				type = oil
+				amount = 40
+				state = 286
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_regions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_african_industry focus = GER_carribean_dockyards }
+		x = -1
+		y = 1
+		relative_position_id = GER_african_industry
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = GAF
+						is_controlled_by = MOR
+						is_controlled_by = SEN
+						is_controlled_by = GAB
+						is_controlled_by = TZN
+						is_controlled_by = NMB
+					}
+					is_on_continent = africa	
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = GAF
+						is_controlled_by = MOR
+						is_controlled_by = SEN
+						is_controlled_by = GAB
+						is_controlled_by = TZN
+						is_controlled_by = NMB
+					}
+					is_on_continent = africa	
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_state = {
+				limit = {
+					OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = GAF
+						is_controlled_by = MOR
+						is_controlled_by = SEN
+						is_controlled_by = GAB
+						is_controlled_by = TZN
+						is_controlled_by = NMB
+					}
+					is_on_continent = africa	
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_construction
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GER_african_industry focus = GER_indochinese_resourses }
+		x = 1
+		y = 1
+		relative_position_id = GER_african_industry
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+					limit =  {
+						OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = GOC
+						is_controlled_by = VIN
+						is_controlled_by = PNG
+						}
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						is_on_continent = asia
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+			}
+			random_owned_controlled_state = {
+					limit =  {
+						OR = {
+						is_controlled_by = ROOT
+						is_controlled_by = GOC
+						is_controlled_by = VIN
+						is_controlled_by = PNG
+						}
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						is_on_continent = asia
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_administration
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = GER_develop_regions focus = GER_construction }
+		x = 1
+		y = 1
+		relative_position_id = GER_develop_regions
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		available = {
+			NOT = { has_completed_focus = GER_save_colonies }
+		}
+
+		complete_tooltip = {
+			
+		}
+		
+		completion_reward = {
+			remove_ideas = GER_non_effective_colonial_administration
+		}
+	}
+	
+}

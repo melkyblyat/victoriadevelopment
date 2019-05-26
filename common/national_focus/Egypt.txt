@@ -1,0 +1,122 @@
+focus_tree = {
+	id = egy_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = EGY
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = EGY_power_of_Nile
+		icon = GFX_goal_generic_demand_territory	#CHANGE!
+		x = 1
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = EGY_national_identity
+		icon = GFX_goal_generic_small_arms	#CHANGE!
+		prerequisite = { focus = EGY_power_of_Nile }
+		x = 0
+		y = 1
+		relative_position_id = EGY_power_of_Nile
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = EGY_its_time_to_leave
+		icon = GFX_goal_generic_small_arms	#CHANGE!
+		prerequisite = { focus = EGY_national_identity }
+		x = -1
+		y = 1
+		relative_position_id = EGY_national_identity
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = { id = egypt.1 }
+		}
+	}
+	
+}

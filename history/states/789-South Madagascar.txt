@@ -1,0 +1,27 @@
+
+state={
+	id=789
+	name="VDKH_STATE_2"
+	manpower = 2345129
+	
+	state_category = rural
+	
+	history={
+		add_core_of = MAD
+		owner = GER
+		victory_points = {
+			12956 1
+		}
+		buildings = {
+			infrastructure = 2
+			12956 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		2200 8180 8246 10993 12956 
+	}
+}

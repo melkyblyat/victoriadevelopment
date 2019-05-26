@@ -1,0 +1,21 @@
+
+state={
+	id=823
+	name="VDKH_STATE_36" #Hollabrunn
+	manpower = 991124
+	
+	state_category = city
+
+	history=
+	{
+		owner = CZE
+		victory_points = {
+			9527 1 
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = AUS
+	}
+	provinces= { 6739 9527 }
+}

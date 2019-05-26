@@ -1,0 +1,84 @@
+﻿capital = 302
+
+oob = "BOL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 2
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 45
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 1
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 2
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 0
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 1
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 49
+			banned = no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "José Luis Tejada Sorzano"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
+	expire = "1965.1.1"
+	ideology = dictatorship # liberalism, personally, but puppet for military
+	traits = {
+		#
+	}
+}

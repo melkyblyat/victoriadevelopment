@@ -1,0 +1,183 @@
+﻿capital = 350
+
+oob = "KRD"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1  # PLACEHOLDER
+	#basic_heavy_tank = 1  # PLACEHOLDER
+	#basic_medium_tank = 1 # PLACEHOLDER
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 5
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 3
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 5
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 6
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 19
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 22
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 41
+			banned = no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Mehmûd Berzincî"
+	desc = ""
+	picture = "gfx/leaders/KRD/Portrait_Mahmud_Barzanji.tga"
+	expire = "1953.3.1"
+	ideology = dictatorship
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Mehmûd Berzincî"
+	desc = ""
+	picture = "gfx/leaders/KRD/Portrait_Mahmud_Barzanji.tga"
+	expire = "1953.3.1"
+	ideology = monarchy
+	traits = {
+		
+	}
+}
+
+create_field_marshal = { #Auto-Generated
+	name = "Mustafa Barzani"
+	portrait_path = "gfx/leaders/KRD/Generals/Portrait_KRD/Generals_Mustafa.tga"
+	traits = {
+		old_guard
+		politically_connected
+		logistics_wizard
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Bakr Sidqi"
+	portrait_path = "gfx/leaders/KRD/Generals/Portrait_KRD/Generals_Bakr.tga"
+	traits = {
+		career_officer
+		war_hero
+		winter_specialist
+	}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Biroyê Heskî Têlî"
+	portrait_path = "gfx/leaders/KRD/Generals/Portrait_KRD/Generals_Biroye.tga"
+	traits = {
+		cavalry_officer
+		trait_reckless
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Îhsan Nûrî Paşa"
+	portrait_path = "gfx/leaders/KRD/Generals/Portrait_KRD/Generals_Ihsan.tga"
+	traits = {
+		harsh_leader
+		old_guard
+		trait_engineer
+		fortress_buster
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+

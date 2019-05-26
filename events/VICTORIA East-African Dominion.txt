@@ -1,0 +1,193 @@
+###########################
+# East African Events
+###########################
+
+add_namespace = eadominion
+
+country_event = {
+	id = eadominion.1
+	title = eadominion.1.t	# African Mandate Rule
+	desc = eadominion.1.desc	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eadominion.1.a # Send diplomats to London
+		
+		ai_chance = {
+			base = 100
+		}
+		
+		ENG = {
+			country_event = { days = 1 id = eadominion.2 }
+		}
+	}
+}
+
+country_event = {
+	id = eadominion.2
+	title = eadominion.2.t	# Ask ENG for control over british South-East Africa strip. 
+	desc = eadominion.2.desc		#
+	picture = GFX_report_event_saf_soldiers					#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eadominion.2.a	# ENG accepts the proposal
+		
+		ai_chance = {
+			base = 80
+
+		}
+		
+		effect_tooltip = {
+			KEN = {
+				transfer_state = 269
+				transfer_state = 709
+				transfer_state = 789
+				transfer_state = 707
+				transfer_state = 710
+			}
+		}
+		hidden_effect = {
+			KEN = {
+				country_event = { id = eadominion.3 }
+			}
+		}
+	}
+	
+	option = {
+		name = eadominion.2.b # ENG refuses the proposal
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		hidden_effect = {
+			EAD = {
+				country_event = { id = eadominion.4 }
+			}
+		}
+	}
+}
+
+#ENG transfers colonies
+country_event = {
+	id = eadominion.3
+	title = eadominion.3.t	#
+	desc = eadominion.3.desc		#
+	picture = GFX_report_event_saf_soldiers_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eadominion.3.a
+		
+		add_named_threat = { threat = 3 name = eadominion.3.t }
+		
+		if = {
+			limit = { 
+				269 = { is_owned_and_controlled_by = ENG }
+			}
+			transfer_state = 269
+		}
+		if = {
+			limit = { 
+				709 = { is_owned_and_controlled_by = ENG }
+			}
+			transfer_state = 709
+		}
+		if = {
+			limit = { 
+				789 = { is_owned_and_controlled_by = ENG }
+			}
+			transfer_state = 789
+		}
+		if = {
+			limit = { 
+				707 = { is_owned_and_controlled_by = ENG }
+			}
+			transfer_state = 707
+		}
+		if = {
+			limit = { 
+				710 = { is_owned_and_controlled_by = ENG }
+			}
+			transfer_state = 710
+		}
+		hidden_effect = {
+			#news_event = { id = news.260 hours = 6 }
+		}
+	}	
+}
+#ENG refuses
+country_event = {
+	id = eadominion.4
+	title = eadominion.4.t	#
+	desc = eadominion.4.desc		#
+	picture = GFX_report_event_saf_soldiers_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = eadominion.4.a
+	}
+}
+
+#EAD gets famine - Trigger/randomness event
+country_event = {
+	id = eadominion.5
+	
+	hidden = yes
+	
+	immediate = {
+		country_event = { id = eadominion.6 days = 300 }
+	}
+
+	trigger = {
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		original_tag = KEN
+		has_idea = EAD_food_crisis	
+		has_global_flag = no_suez_canal
+	}
+
+	mean_time_to_happen = { days = 150 }
+
+}
+
+#EAD gets famine - Actual event
+country_event = {
+	id = eadominion.6
+	title = eadominion.6.t
+	desc = eadominion.6.desc	#
+	picture = GFX_report_event_indian_famine
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = EAD_food_crisis
+			add_timed_idea = { idea = EAD_food_crisis_2 days = 365 }
+		}
+	}
+			
+	trigger = {
+		has_capitulated = no
+		NOT = { surrender_progress > 0.5 }
+		original_tag = KEN
+		has_idea = EAD_food_crisis	
+		has_global_flag = no_suez_canal
+	}
+
+	option = {
+		name = eadominion.6.a
+		effect_tooltip = {
+			remove_ideas = EAD_food_crisis
+			add_timed_idea = { idea = EAD_food_crisis_2 days = 365 }
+		}
+	}
+}

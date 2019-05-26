@@ -1,0 +1,81 @@
+﻿capital = 757
+
+oob = "TIB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 0
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 0
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 0
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 100
+			banned = no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Jamphel Yeshe Gyaltsen"
+	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
+	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
+	expire = "1965.1.1"
+	ideology = dictatorship
+	traits = {
+		#
+	}
+}

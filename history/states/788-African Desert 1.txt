@@ -1,0 +1,19 @@
+
+state={
+	id=788
+	name="VDKH_STATE_1" # Desert
+	manpower = 0
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		1057 1994 4191 10104
+	}
+}

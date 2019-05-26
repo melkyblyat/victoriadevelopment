@@ -1,0 +1,28 @@
+
+state={
+	id=790
+	name="VDKH_STATE_3"
+	manpower = 462000
+	
+	state_category = rural
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			2207 1
+		}
+		buildings = {
+			2207 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = NMB
+	}
+
+	provinces={
+		2207
+	}
+}

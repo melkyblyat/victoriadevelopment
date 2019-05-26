@@ -1,0 +1,20 @@
+
+state={
+	id=828
+	name="VDKH_STATE_41" #Vatican
+	manpower = 1000
+	
+	state_category = city
+
+	history=
+	{
+		owner = ITA
+		victory_points = {
+			9794 3
+		}
+		buildings = {
+			infrastructure = 8
+		}
+	}
+	provinces= { 9794 }
+}

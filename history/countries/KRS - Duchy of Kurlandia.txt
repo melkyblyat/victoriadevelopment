@@ -1,0 +1,90 @@
+﻿capital = 190
+
+oob = "KRS_1936"
+
+
+set_research_slots = 4
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	early_submarine = 1
+}
+
+set_convoys = 150
+
+set_politics = {
+
+		parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 1
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 2
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 4
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 3
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 78
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 0
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 2
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 0
+			banned = no
+		}
+	}
+	
+	ruling_party = monarchist
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Regency"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "Portrait_Regency.tga"
+	expire = "1965.1.1"
+	ideology = monarchy
+	traits = {
+		#
+	}
+}

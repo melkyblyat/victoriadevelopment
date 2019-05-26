@@ -1,0 +1,21 @@
+
+state={
+	id=816
+	name="VDKH_STATE_29" #Eipen-Malmedi
+	manpower = 91543
+	
+	state_category = town
+
+	history=
+	{
+		owner = GER
+		victory_points = {
+			3488 3 
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = GER
+	}
+	provinces= { 3488 }
+}

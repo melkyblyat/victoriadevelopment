@@ -1,0 +1,65 @@
+ideas = {
+
+	country = {
+		
+		GER_small_depression = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = emptied_accounts
+
+			modifier = {
+                industrial_capacity_factory = -0.1
+                production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		GER_fight_for_power = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_ast_volunteer_defence_corps
+
+			modifier = {
+                stability_factor = -0.1
+			}
+		}
+		
+		GER_non_effective_colonial_administration = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+                political_power_gain = -1
+			}
+		}
+
+	}
+}

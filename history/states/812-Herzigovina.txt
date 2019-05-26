@@ -1,0 +1,21 @@
+
+state={
+	id=812
+	name="VDKH_STATE_25" #Herzigovina
+	manpower = 122498
+	
+	state_category = town
+
+	history={
+		owner = BOS
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+		}
+		add_core_of = BOS
+	}
+
+	provinces={
+		953 9894 11845 11872
+	}
+}

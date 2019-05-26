@@ -1,0 +1,25 @@
+
+state={
+	id=819
+	name="VDKH_STATE_32" #Linz
+	manpower = 6713665
+	resources={
+		steel=19
+	}
+	
+	state_category = city
+
+	history=
+	{
+		owner = CZE
+		victory_points = {
+			732 10
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+	}
+	provinces= { 543 732 6552 6723 }
+}

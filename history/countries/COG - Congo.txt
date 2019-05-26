@@ -1,0 +1,81 @@
+﻿capital = 295
+
+oob = "COG_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+
+	parties = {
+		totalist = { 
+			popularity = 98
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 2
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 0
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 0
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		fascism = {
+			popularity = 0
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 0
+			banned = no
+		}
+	}
+	
+	ruling_party = totalist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}

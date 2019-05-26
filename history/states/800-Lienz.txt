@@ -1,0 +1,25 @@
+
+state={
+	id=800
+	name="VDKH_STATE_13" #Lienz
+	manpower = 21556
+	
+	state_category = town
+
+	history={
+		owner = ITA
+		victory_points = {
+			671 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+		add_core_of = ITA
+	}
+
+	provinces={
+		671 6673
+	}
+}

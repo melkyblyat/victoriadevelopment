@@ -1,0 +1,60 @@
+###########################
+# germanpoliticalian Events
+###########################
+
+add_namespace = germanpolitical
+
+country_event = {
+	id = germanpolitical.1
+	title = germanpolitical.1.t	# Eitel goodbye
+	desc = germanpolitical.1.desc	#
+	picture = GFX_report_event_eitel
+	
+	trigger = {
+		tag = GER
+		has_government = monarchist
+		date = 1936.02.20
+		has_country_leader = { ruling_only = yes name = "Eitel Friedrich I" }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = germanpolitical.1.a # News event
+		
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = eitel_goodbye
+		hidden_effect = {
+			news_event = { hours = 6 id = germanpolitical.2 }
+		}
+	}
+}
+
+news_event = {
+	id = germanpolitical.2
+	title = germanpolitical.2.t
+	desc = germanpolitical.2.desc
+	picture = GFX_news_event_084
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germanpolitical.2.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = germanpolitical.2.b
+		trigger = { TAG = GER }
+	}
+}
+

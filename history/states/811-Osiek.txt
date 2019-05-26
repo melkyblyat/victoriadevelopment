@@ -1,0 +1,24 @@
+
+state={
+	id=811
+	name="VDKH_STATE_24" #Osiek
+	manpower = 78231
+	
+	state_category = town
+
+	history={
+		owner = YUG
+		victory_points = {
+			6647 3
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+		add_core_of = YUG
+	}
+
+	provinces={
+		6647 11577 11580
+	}
+}

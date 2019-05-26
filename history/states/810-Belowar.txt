@@ -1,0 +1,24 @@
+
+state={
+	id=810
+	name="VDKH_STATE_23" #Belowar
+	manpower = 54887
+	
+	state_category = town
+
+	history={
+		owner = CRO
+		victory_points = {
+			11594 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = CRO
+	}
+
+	provinces={
+		3627 9595 11594 
+	}
+}

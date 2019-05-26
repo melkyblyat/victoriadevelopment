@@ -1,0 +1,25 @@
+
+state={
+	id=813
+	name="VDKH_STATE_26" #Banja-Luka
+	manpower = 211455
+	
+	state_category = town
+
+	history={
+		owner = BOS
+		victory_points = {
+			6983 3
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = BOS
+	}
+
+	provinces={
+		6619 6983 9588 9591 9922 11572
+	}
+}

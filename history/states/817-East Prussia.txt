@@ -1,0 +1,23 @@
+
+state={
+	id=817
+	name="VDKH_STATE_30" #East Prussia
+	manpower = 2617319
+	
+	state_category = city
+
+	history=
+	{
+		owner = GER
+		victory_points = {
+			11386 1
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = GER
+	}
+	provinces= { 266 6347 6402 9290 9316 9327 9346 9372 9398 11329 11386 }
+}

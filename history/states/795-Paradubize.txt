@@ -1,0 +1,21 @@
+state={
+	id=795
+	name="VDKH_STATE_8" # Paradubize
+	manpower = 487456
+	state_category = large_city
+	
+	history={
+		owner = CZE
+		victory_points = { 583 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		add_core_of = CZE
+	}
+
+	provinces={
+		445 494 583 3462 9429 11556
+	}
+}

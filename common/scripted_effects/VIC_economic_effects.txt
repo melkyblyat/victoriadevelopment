@@ -1,0 +1,29 @@
+
+
+
+increase_economy = {
+	if = {
+		limit = {
+			has_idea = very_bad_economy
+		}
+		add_ideas = bad_economy
+	}
+	if = {
+		limit = {
+			has_idea = bad_economy
+		}
+		add_ideas = normal_economy
+	}
+	if = {
+		limit = {
+			has_idea = normal_economy
+		}
+		add_ideas = good_economy
+	}
+	if = {
+		limit = {
+			has_idea = good_economy
+		}
+		add_ideas = very_good_economy
+	}
+}

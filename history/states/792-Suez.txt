@@ -1,0 +1,30 @@
+state={
+	id=792
+	name="VDKH_STATE_5" # Suez
+	
+	state_category = town
+
+	history={
+		owner = ENG
+		add_core_of = EGY
+		victory_points = {
+			12049 5
+		}
+		victory_points = {
+			4073 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			12049 = {
+				naval_base = 2
+			}
+		}
+	}
+
+	provinces={
+		1155 4073 9947 12049
+	}
+	manpower=129167
+	buildings_max_level_factor=1.000
+}

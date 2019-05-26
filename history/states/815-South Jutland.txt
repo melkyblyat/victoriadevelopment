@@ -1,0 +1,22 @@
+
+state={
+	id=815
+	name="VDKH_STATE_28" #South Jutland
+	manpower = 91543
+	
+	state_category = town
+
+	history=
+	{
+		owner = GER
+		victory_points = {
+			11251 3 
+		}
+		buildings = {
+			infrastructure = 8
+		}
+		add_core_of = DEN
+		add_core_of = GER
+	}
+	provinces= { 332 11251 }
+}

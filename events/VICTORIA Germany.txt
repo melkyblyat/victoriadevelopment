@@ -18,9 +18,10 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		country_event = { days = 1 id = german.2 }
-		country_event = { days = 2 id = german.3 }
-		country_event = { days = 3 id = german.4 }
+		hidden_effect = {
+		country_event = { id = german.2 }
+		}
+		
 	}
 }
 
@@ -44,7 +45,7 @@ country_event = {
 		set_country_flag = german.2.a
 		
 		hidden_effect = {
-		
+		country_event = { id = german.3 }
 		310 = {
 			if = {
 				limit = { is_owned_by = GER }
@@ -81,9 +82,12 @@ country_event = {
 
 		}
 		
-		add_political_power = -100
+		add_political_power = -30
 		
 		custom_effect_tooltip = german.2.b.t
+		hidden_effect = {
+		country_event = { id = german.3 }
+		}
 	}
 }
 
@@ -107,7 +111,7 @@ country_event = {
 		set_country_flag = german.3.a
 		
 		hidden_effect = {
-		
+		country_event = { id = german.4 }
 		### NORDEN ###
 		
 		458 = { #Tunisia
@@ -347,7 +351,7 @@ country_event = {
 		set_country_flag = german.3.b
 		
 		hidden_effect = {
-		
+		country_event = { id = german.4 }
 		### NORDEN ###
 		
 		458 = { #Tunisia

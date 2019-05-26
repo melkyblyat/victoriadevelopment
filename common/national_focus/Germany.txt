@@ -565,16 +565,16 @@ focus_tree = {
 			if = {
 			limit = { OR = { has_country_flag = german.3.b has_country_flag = german.3.a } }
 				add_resource = {
-				type = oil
-				amount = 50
+				type = tungsten
+				amount = 20
 				state = 286
 				}
 			}
 			if = {
 			limit = { NOT = { has_country_flag = german.3.b has_country_flag = german.3.a } }
 				add_resource = {
-				type = oil
-				amount = 40
+				type = tungsten
+				amount = 10
 				state = 286
 				}
 			}

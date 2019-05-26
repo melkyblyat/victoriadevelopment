@@ -1,0 +1,61 @@
+﻿l_russian:
+ ### Ideas ###
+ GER_small_depression:0 "Малая депрессия"
+ GER_small_depression_desc:0 ""
+ GER_fight_for_power:0 "Борьба за власть"
+ GER_fight_for_power_desc:0 ""
+ GER_non_effective_colonial_administration:0 "Неэффективная колониальная администрация"
+ GER_non_effective_colonial_administration_desc:0 ""
+ 
+ ### Parties ###
+
+ ### World Tension ###
+ 
+ ### Flags ###
+ 
+ ### Focus ###
+ GER_colonial_policy:0 "Колониальная политика"
+ GER_colonial_policy_desc:0 ""
+ GER_save_colonies:0 "Сохранение колониальных владений"
+ GER_save_colonies_desc:0 ""
+ GER_rework_colonial_maps:0 "Пересмотр колониальной политики"
+ GER_rework_colonial_maps_desc:0 ""
+ GER_colonial_assambley:0 "Колониальная ассамблея"
+ GER_colonial_assambley_desc:0 ""
+ 
+ ### Events ###
+ 
+ german.1.t:0 "Колониальная ассамблея"
+ german.1.desc:0 ""
+ german.1.a:0 "Начнем процесс"
+ 
+ german.2.t:0 "Карибский вопрос"
+ german.2.desc:0 ""
+ german.2.a:0 "Создать колониальную администрацию"
+ german.2.a.t:0 "Будет создана единая карибская колониальная администрация"
+ german.2.b:0 "Сохранить прямое управление"
+ german.2.b.t:0 "Регионы останутся под прямым управлением Берлина"
+ 
+ german.3.t:0 "Африканский вопрос"
+ german.3.desc:0 ""
+ german.3.a:0 "Объеденить африканские колонии"
+ german.3.a.t:0 "Будет создана единая африканская колониальная администрация"
+ german.3.b:0 "Разделить африканские колонии"
+ german.3.b.t:0 "Африканские колонии будут разделены на самостоятельные сектора с собственной администрацией"
+ 
+ german.4.t:0 "Ост-индийский вопрос"
+ german.4.desc:0 ""
+ german.4.a:0 "Объединить регионы"
+ german.4.a.t:0 "Все административные округа будут сведены в один"
+ german.4.b:0 "Принять континентальное деление"
+ german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
+ 
+ 
+ ### Effects ###
+ 
+ ### Traits ###
+ 
+ ### Opinion modifiers ###
+ 
+ ## Factions ##
+

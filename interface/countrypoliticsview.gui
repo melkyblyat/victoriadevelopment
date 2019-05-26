@@ -448,7 +448,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "manage_occupied_button"
-			position = { x = 23 y = 375 }
+			position = { x = 21 y = 375 }
 			quadTextureSprite = "GFX_button_221x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -457,7 +457,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "show_exiles_button"
-			position = { x = 23 y = 408 }
+			position = { x = 21 y = 408 }
 			quadTextureSprite = "GFX_button_221x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -467,7 +467,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "show_subjects_button"
-			position = { x = 23 y = 441 }
+			position = { x = 21 y = 441 }
 			quadTextureSprite = "GFX_button_221x34"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"

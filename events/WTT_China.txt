@@ -1,0 +1,74 @@
+﻿add_namespace = wtt_china
+
+country_event = {
+	id = wtt_china.10
+	title = wtt_china.10.t
+	desc = wtt_china.10.desc
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+	
+	#Accept puppet
+	option = {
+		name = wtt_china.10.a
+		ai_chance = { base = 10 }
+		FROM = {
+			puppet = ROOT
+			country_event = { id = wtt_china.11 }
+		}
+	}
+	option = {
+
+		name = wtt_china.10.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				tag = JAP
+				add = 80 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
+			}
+			modifier = {
+				tag = TIB
+				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
+			}
+			modifier = {
+				tag = MON
+				add = 30 #TODO_WTT_AI script modifiers for how likely people are to accept puppeting
+			}
+		}
+		FROM = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+			country_event = { id = wtt_china.12 }
+		}
+	}
+}
+
+country_event = {
+	id = wtt_china.11
+	title = wtt_china.11.t
+	desc = wtt_china.11.desc
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_china.11.a
+	}
+}
+
+
+# Answer from ROOT china.10 - No
+country_event = {
+	id = wtt_china.12
+	title = wtt_china.12.t
+	desc = wtt_china.12.desc
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_china.12.a
+	}
+}

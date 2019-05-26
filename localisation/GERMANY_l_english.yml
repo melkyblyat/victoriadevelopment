@@ -61,8 +61,19 @@
  germanpolitical.2.a:0 "What a poor horse!"
  germanpolitical.2.b:0 "What a disaster!"
  
+ germanpolitical.3.t:0 "Federal elections"
+ germanpolitical.3.desc:0 ""
+ germanpolitical.3.a:0 "Start voting"
+ 
+ germanpolitical.4.t:0 "Election results"
+ germanpolitical.4.desc:0 ""
+ germanpolitical.4.a:0 ""
+ 
  
  ### Effects ###
+ 
+ eitel_goodbye:0 ""
+ open_politics:0 ""
  
  ### Traits ###
  

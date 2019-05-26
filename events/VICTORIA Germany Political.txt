@@ -58,3 +58,41 @@ news_event = {
 	}
 }
 
+country_event = {
+	id = germanpolitical.3
+	title = germanpolitical.3.t	# Elections
+	desc = germanpolitical.3.desc	#
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germanpolitical.3.a # No result
+		
+		ai_chance = {
+			base = 100
+		}
+		add_political+power = -25
+		country_event = { days = 2 id = germanpolitical.4 }
+	}
+}
+
+country_event = {
+	id = germanpolitical.4
+	title = germanpolitical.4.t	# Elections
+	desc = germanpolitical.4.desc	#
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germanpolitical.4.a # No result
+		
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = open_politics
+		add_stability = -0.03
+	}
+}
+

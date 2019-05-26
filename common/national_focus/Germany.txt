@@ -13,6 +13,43 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
+	
+	################
+	### POLITICS ###
+	################
+	
+	focus = {
+		id = GER_parliament_elections
+		icon = GFX_focus_germany_elections
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			has_country_flag = eitel_goodbye
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			country_event = { id = germanpolitical.3 }
+		}
+	}
 
 	focus = {
 		id = GER_colonial_policy

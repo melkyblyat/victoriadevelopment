@@ -22,6 +22,8 @@
  GER_rework_colonial_maps_desc:0 ""
  GER_colonial_assambley:0 "Колониальная ассамблея"
  GER_colonial_assambley_desc:0 ""
+ GER_parliament_elections:0 "Federal elections"
+ GER_parliament_elections_desc:0 ""
  
  ### Events ###
  
@@ -49,6 +51,15 @@
  german.4.a.t:0 "Все административные округа будут сведены в один"
  german.4.b:0 "Принять континентальное деление"
  german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
+ 
+ germanpolitical.1.t:0 "Embarassment at the parade"
+ germanpolitical.1.desc:0 "20 years ago we defeated the Entente. It was a great victory. However, 20 years of peace had a negative impact on Germany. Today a parade of imperial troops was held in Berlin. Kaiser Eitel Friedrich I fell from a horse when he was bypassing the troops during the inspection. The generals tried to help him to stand up in a hurry but they succeeded only from a second attempt."
+ germanpolitical.1.a:0 "Let's hope he does not plunge the country into chaos"
+ 
+ germanpolitical.2.t:0 "19's Anniversary of Westlicherkrieg"
+ germanpolitical.2.desc:0 "19 years ago Westlicherkrieg ended with signing the Treaty of Brussels. It was the major conflict of the XX century. Today a parade of imperial troops was held in Berlin. However, it did not pass without any incident. The emperor was not in the best shape and was not ready for the parade. During the inspection while Kaiser Eitel Friedrich I was bypassing the troops he fell down from his horse. "Fat king's" falling could not go unnoticed. People started to make fun of the German leader. \n\n"When the Fat King falls the horse wouldn't be able to run away since he is blocking all directions"."
+ germanpolitical.2.a:0 "What a poor horse!"
+ germanpolitical.2.b:0 "What a disaster!"
  
  
  ### Effects ###

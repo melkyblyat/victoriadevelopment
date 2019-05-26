@@ -4,5 +4,10 @@ spriteTypes = {
 	name = "GFX_focus_germany_elections"
 	texturefile = "gfx/interface/goals/goal_german_elections.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_rework_colonial_map"
+	texturefile = "gfx/interface/goals/goal_rework_colonial_map.dds"			
+	}
 
 }

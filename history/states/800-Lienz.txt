@@ -1,7 +1,7 @@
 
 state={
 	id=800
-	name="VDKH_STATE_13" #Lienz
+	name="VDKH_STATE_13" #Lianz
 	manpower = 21556
 	
 	state_category = town

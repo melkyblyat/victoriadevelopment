@@ -1,7 +1,7 @@
 
 state={
 	id=801
-	name="VDKH_STATE_14" #Laibach
+	name="VDKH_STATE_14" #Labacum
 	manpower = 21556
 	resources={
 		steel=15

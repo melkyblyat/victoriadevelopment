@@ -1,7 +1,7 @@
 
 state={
 	id=804
-	name="VDKH_STATE_17" #Ragusa
+	name="VDKH_STATE_17" #Split
 	manpower = 169145
 	
 	state_category = town

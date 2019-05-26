@@ -1,7 +1,7 @@
 
 state={
 	id=814
-	name="VDKH_STATE_27" #Bichach
+	name="VDKH_STATE_27" #Bihać
 	manpower = 91543
 	
 	state_category = town

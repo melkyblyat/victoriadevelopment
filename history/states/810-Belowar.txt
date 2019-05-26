@@ -1,7 +1,7 @@
 
 state={
 	id=810
-	name="VDKH_STATE_23" #Belowar
+	name="VDKH_STATE_23" #Bjelovar
 	manpower = 54887
 	
 	state_category = town

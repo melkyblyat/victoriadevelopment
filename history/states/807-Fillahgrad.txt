@@ -1,7 +1,7 @@
 
 state={
 	id=807
-	name="VDKH_STATE_20" #Fillahgrad
+	name="VDKH_STATE_20" #Villach
 	manpower = 67112
 	
 	state_category = town

@@ -1,7 +1,7 @@
 
 state={
 	id=815
-	name="VDKH_STATE_28" #South Jutland
+	name="VDKH_STATE_28" #Nordholstein
 	manpower = 91543
 	
 	state_category = town

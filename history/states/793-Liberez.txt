@@ -1,6 +1,6 @@
 state={
 	id=793
-	name="VDKH_STATE_6" # Liberez
+	name="VDKH_STATE_6" # Liberec
 	manpower = 49223
 	state_category = town
 

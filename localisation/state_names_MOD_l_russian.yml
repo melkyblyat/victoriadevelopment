@@ -1,4 +1,8 @@
 ﻿l_russian:
+ STATE_VDKH_OR_1:0 "Марианские острова"
+ STATE_VDKH_OR_2:0 "Германские Карибы"
+ STATE_VDKH_OR_3:0 "Гвиана"
+ STATE_VDKH_OR_4:0 "Силезия"
  VDKH_STATE_1:0 "Ребийская пустыня"
  VDKH_STATE_2:0 "Южный Мадагаскар"
  VDKH_STATE_3:0 "Уолфиш-Бэй"
@@ -40,3 +44,7 @@
  VDKH_STATE_39:0 "Бугенвиль"
  VDKH_STATE_40:0 "Земля Кайзера Вильгельма"
  VDKH_STATE_41:0 "Ватикан"
+ VDKH_STATE_42:0 "Северная Силезия"
+ VDKH_STATE_43:0 "Гамбург"
+ VDKH_STATE_44:0 "Бремен"
+ VDKH_STATE_45:0 "Северный Рейн"

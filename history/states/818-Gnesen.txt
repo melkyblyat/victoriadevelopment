@@ -12,10 +12,13 @@ state={
 		victory_points = {
 			6321 1
 		}
+		victory_points = {
+			3295 5
+		}
 		buildings = {
 			infrastructure = 4
 		}
 		add_core_of = GER
 	}
-	provinces= { 6321 }
+	provinces= { 243 3295 6321 }
 }

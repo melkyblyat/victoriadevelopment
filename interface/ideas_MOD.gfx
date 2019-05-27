@@ -15,4 +15,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GER_red_protests"
+		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+	}	
+	
 }

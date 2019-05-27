@@ -5,6 +5,7 @@ oob = "GER"
 add_ideas = {
 	GER_small_depression
 	GER_fight_for_power
+	GER_red_protests
 	GER_non_effective_colonial_administration
 }
 

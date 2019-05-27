@@ -91,7 +91,7 @@ focus_tree = {
 		id = GER_guarantee_for_germany
 		icon = nothing
 		prerequisite = { focus = GER_Drexler }
-		mutually_exclusive = { focus = GER_union_with_rotfront }
+		mutually_exclusive = { focus = GER_union_with_rotfront focus = GER_revolution_against_the_revolution }
 		
 		x = 0
 		y = 1
@@ -170,11 +170,56 @@ focus_tree = {
 	focus = {
 		id = GER_death_for_monarchy
 		icon = GFX_goal_flames_of_revolution
-		prerequisite = { focus = GER_union_with_rotfront }
+		prerequisite = { focus = GER_union_with_rotfront focus = GER_revolution_against_the_revolution }
 		
 		x = 0
 		y = 1
 		relative_position_id = GER_union_with_rotfront
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_revolution_against_the_revolution
+		icon = GFX_goal_revolution_against_revolution
+		prerequisite = { focus = GER_Drexler }
+		mutually_exclusive = { focus = GER_guarantee_for_germany focus = GER_union_with_rotfront }
+		
+		x = 4
+		y = 1
+		relative_position_id = GER_Drexler
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_death_for_communism
+		icon = GFX_goal_death_of_communism
+		prerequisite = { focus = GER_revolution_against_the_revolution }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_revolution_against_the_revolution
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no

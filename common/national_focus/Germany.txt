@@ -146,7 +146,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_union_with_rotfront
-		icon = nothing
+		icon = GFX_goal_revolution_coalition
 		prerequisite = { focus = GER_Drexler }
 		mutually_exclusive = { focus = GER_guarantee_for_germany }
 		
@@ -169,7 +169,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_death_for_monarchy
-		icon = nothing
+		icon = GFX_goal_flames_of_revolution
 		prerequisite = { focus = GER_union_with_rotfront }
 		
 		x = 0

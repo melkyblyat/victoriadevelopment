@@ -50,6 +50,42 @@ focus_tree = {
 			country_event = { id = germanpolitical.3 }
 		}
 	}
+	
+	focus = {
+		id = GER_Drexler
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = GER_parliament_elections }
+		#mutually_exclusive = { focus = GER_rework_colonial_maps }
+		x = -1
+		y = 1
+		relative_position_id = GER_parliament_elections
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = open_politics
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
 
 	focus = {
 		id = GER_colonial_policy

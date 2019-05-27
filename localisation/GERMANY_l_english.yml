@@ -24,6 +24,20 @@
  GER_colonial_assambley_desc:0 ""
  GER_parliament_elections:0 "Federal elections"
  GER_parliament_elections_desc:0 ""
+ GER_development_of_colonial_possessions:0 ""
+ GER_development_of_colonial_possessions_desc:0 ""
+ GER_carribean_dockyards:0 ""
+ GER_carribean_dockyards_desc:0 ""
+ GER_african_industry:0 ""
+ GER_african_industry_desc:0 ""
+ GER_indochinese_resourses:0 ""
+ GER_indochinese_resourses_desc:0 ""
+ GER_develop_regions:0 ""
+ GER_develop_regions_desc:0 ""
+ GER_construction:0 ""
+ GER_construction_desc:0 ""
+ GER_administration:0 ""
+ GER_administration_desc:0 ""
  
  ### Events ###
  

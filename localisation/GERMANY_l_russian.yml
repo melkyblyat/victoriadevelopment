@@ -22,8 +22,22 @@
  GER_rework_colonial_maps_desc:0 ""
  GER_colonial_assambley:0 "Колониальная ассамблея"
  GER_colonial_assambley_desc:0 ""
- GER_parliament_elections:0 "Досрочный парламентские выборы"
+ GER_parliament_elections:0 "Досрочные парламентские выборы"
  GER_parliament_elections_desc:0 ""
+ GER_development_of_colonial_possessions:0 "Развитие колониальных владений"
+ GER_development_of_colonial_possessions_desc:0 ""
+ GER_carribean_dockyards:0 "Карибские морские базы"
+ GER_carribean_dockyards_desc:0 ""
+ GER_african_industry:0 "Африканская промышленность"
+ GER_african_industry_desc:0 ""
+ GER_indochinese_resourses:0 "Индокитайские ресурсы"
+ GER_indochinese_resourses_desc:0 ""
+ GER_develop_regions:0 "Развитие регионов"
+ GER_develop_regions_desc:0 ""
+ GER_construction:0 "Развитие инфраструктуры"
+ GER_construction_desc:0 ""
+ GER_administration:0 "Колониальная администрация"
+ GER_administration_desc:0 ""
  
  ### Events ###
  
@@ -71,6 +85,9 @@
  
  
  ### Effects ###
+ 
+ eitel_goodbye:0 "Парад в Берлине прошел"
+ open_politics:0 ""
  
  ### Traits ###
  

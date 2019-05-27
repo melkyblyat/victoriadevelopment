@@ -9,5 +9,25 @@ spriteTypes = {
 	name = "GFX_goal_rework_colonial_map"
 	texturefile = "gfx/interface/goals/goal_rework_colonial_map.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_death_of_communism"
+	texturefile = "gfx/interface/goals/goal_death_of_communism.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_flames_of_revolution"
+	texturefile = "gfx/interface/goals/goal_flames_of_revolution.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_revolution_against_revolution"
+	texturefile = "gfx/interface/goals/goal_revolution_against_revolution.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_revolution_coalition"
+	texturefile = "gfx/interface/goals/goal_revolution_coalition.dds"			
+	}
 
 }

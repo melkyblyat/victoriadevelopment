@@ -57,7 +57,7 @@ ideas = {
 			picture = FRA_matignon_agreements
 
 			modifier = {
-                political_power_gain = -1
+                political_power_gain = -0.5
 			}
 		}
 		

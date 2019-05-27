@@ -56,7 +56,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = GER_parliament_elections }
 		#mutually_exclusive = { focus = GER_rework_colonial_maps }
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = GER_parliament_elections
 
@@ -86,6 +86,113 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+	
+	focus = {
+		id = GER_guarantee_for_germany
+		icon = nothing
+		prerequisite = { focus = GER_Drexler }
+		mutually_exclusive = { focus = GER_union_with_rotfront }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_Drexler
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_crackdown_protests
+		icon = nothing
+		prerequisite = { focus = GER_guarantee_for_germany }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_guarantee_for_germany
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_union_with_rotfront
+		icon = nothing
+		prerequisite = { focus = GER_Drexler }
+		mutually_exclusive = { focus = GER_guarantee_for_germany }
+		
+		x = 2
+		y = 1
+		relative_position_id = GER_Drexler
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_death_for_monarchy
+		icon = nothing
+		prerequisite = { focus = GER_union_with_rotfront }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_union_with_rotfront
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	
+		################
+		### COLONIES ###
+		################
 
 	focus = {
 		id = GER_colonial_policy

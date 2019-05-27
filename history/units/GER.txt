@@ -52,6 +52,8 @@ division_template = {
 	support = {			
         recon = { x = 0 y = 0 }
 	}
+	
+	priority = 0 
 }
 
 division_template = {
@@ -372,104 +374,104 @@ division = {
 	name = "1. Koloniale Division" 
 	location = 9962
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 
 division = {	
 	name = "2. Koloniale Division" 
 	location = 12956
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "3. Koloniale Division" 
 	location = 7251
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "4. Koloniale Division" 
 	location = 2220
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "5. Koloniale Division" 
 	location = 4992
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "6. Koloniale Division" 
 	location = 13046
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "7. Koloniale Division" 
 	location = 12975
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "8. Koloniale Division" 
 	location = 7069
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "9. Koloniale Division" 
 	location = 12885
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "10. Koloniale Division" 
 	location = 5139
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "11. Koloniale Division" 
 	location = 4401
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "12. Koloniale Division" 
 	location = 6039
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "13. Koloniale Division" 
 	location = 4075
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "14. Koloniale Division" 
 	location = 4948
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 	
 division = {	
 	name = "15. Koloniale Division" 
 	location = 12154
 	division_template = "Koloniale Division"	
-	start_experience_factor = 0.2
+	start_experience_factor = 0.1
 	}
 }

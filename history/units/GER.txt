@@ -73,7 +73,7 @@ division_template = {
 					### ДИВИЗИИ ###
 		
 	### ПЕХОТНЫЕ ДИВИЗИИ ###
-
+units = {
 division = {	
 	name = "1. Infanterie Division" 
 	location = 9559
@@ -472,4 +472,4 @@ division = {
 	division_template = "Koloniale Division"	
 	start_experience_factor = 0.2
 	}
-
+}

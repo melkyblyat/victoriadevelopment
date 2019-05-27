@@ -1,4 +1,8 @@
 ﻿l_english:
+ STATE_VDKH_OR_1:0 "Mariana Islands"
+ STATE_VDKH_OR_2:0 "German Caribbean"
+ STATE_VDKH_OR_3:0 "Guyane"
+ STATE_VDKH_OR_4:0 "Schlesien"
  VDKH_STATE_1:0 "Rebian Desert"
  VDKH_STATE_2:0 "South Madagascar"
  VDKH_STATE_3:0 "Walvis Bay"
@@ -40,3 +44,7 @@
  VDKH_STATE_39:0 "Bougainville"
  VDKH_STATE_40:0 "Kaiser-Wilhelmsland"
  VDKH_STATE_41:0 "Vaticanae"
+ VDKH_STATE_42:0 "Niederschlesien"
+ VDKH_STATE_43:0 "Hamburg"
+ VDKH_STATE_44:0 "Bremen"
+ VDKH_STATE_45:0 "Nordrhein"

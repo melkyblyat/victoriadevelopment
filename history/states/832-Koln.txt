@@ -1,10 +1,10 @@
 
 state={
-	id=51
-	name="STATE_51"
-	manpower = 3144743
+	id=832
+	name="VDKH_STATE_45"
+	manpower = 3546123
 	resources={
-		steel=30 # was: 54
+		steel=12 # was: 54
 	}
 
 
@@ -16,20 +16,24 @@ state={
 			6469 30 
 		}
 		victory_points = {
-			6570 10 
+			587 25 
+		}
+		victory_points = {
+			3444 15
+		}
+		victory_points = {
+			3547 10
 		}
 		buildings = {
 			infrastructure = 8
-			arms_factory = 3
-			industrial_complex = 2
-			air_base = 3
+			industrial_complex = 5
 
 		}
 		add_core_of = GER
 	}
 
 	provinces={
-		529 3512 6469 6570 9482 
+		587 3444 3547 9522
 	}
 	
 }

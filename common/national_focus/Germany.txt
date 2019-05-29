@@ -89,7 +89,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_guarantee_for_germany
-		icon = nothing
+		icon = GFX_goal_guarantee_for_germany
 		prerequisite = { focus = GER_Drexler }
 		mutually_exclusive = { focus = GER_union_with_rotfront focus = GER_revolution_against_the_revolution }
 		
@@ -118,7 +118,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_crackdown_protests
-		icon = nothing
+		icon = GFX_goal_crackdown_protests
 		prerequisite = { focus = GER_guarantee_for_germany }
 		
 		x = 0

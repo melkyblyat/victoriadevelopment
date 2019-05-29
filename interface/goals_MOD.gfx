@@ -29,5 +29,15 @@ spriteTypes = {
 	name = "GFX_goal_revolution_coalition"
 	texturefile = "gfx/interface/goals/goal_revolution_coalition.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_guarantee_for_germany"
+	texturefile = "gfx/interface/goals/goal_guarantee_for_germany.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_crackdown_protests"
+	texturefile = "gfx/interface/goals/goal_crackdown_protests.dds"			
+	}
 
 }

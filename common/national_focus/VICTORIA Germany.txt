@@ -56,7 +56,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = GER_parliament_elections }
 		#mutually_exclusive = { focus = GER_rework_colonial_maps }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = GER_parliament_elections
 
@@ -93,7 +93,7 @@ focus_tree = {
 		prerequisite = { focus = GER_Drexler }
 		mutually_exclusive = { focus = GER_union_with_rotfront focus = GER_revolution_against_the_revolution }
 		
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = GER_Drexler
 		
@@ -101,6 +101,10 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+		
+		available = {
+			NOT = { has_country_flag = germany_strikes_negotiate }
 		}
 		
 		cancel_if_invalid = yes
@@ -145,14 +149,277 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_militarise_sturmabteilung
+		icon = GFX_goal_sturmabteilung
+		prerequisite = { focus = GER_crackdown_protests }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_crackdown_protests
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_organise_marches
+		icon = nothing
+		prerequisite = { focus = GER_militarise_sturmabteilung focus = GER_two_governments }
+		
+		x = 1
+		y = 1
+		relative_position_id = GER_militarise_sturmabteilung
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_reichstag_guards
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_organise_marches }
+		
+		x = -2
+		y = 1
+		relative_position_id = GER_organise_marches
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_police_integration
+		icon = nothing
+		prerequisite = { focus = GER_organise_marches }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_organise_marches
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_invite_goebbels
+		icon = nothing
+		prerequisite = { focus = GER_police_integration }
+		prerequisite = { focus = GER_reichstag_guards }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_police_integration
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_new_choise
+		icon = nothing
+		prerequisite = { focus = GER_invite_goebbels }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_invite_goebbels
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		available = {
+			has_completed_focus = GER_guarantee_for_germany
+		}
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_kaiser_question
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_new_choise }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_new_choise
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_kaisers_fault
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = GER_kaiser_question }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_kaiser_question
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_new_germany
+		icon = nothing
+		prerequisite = { focus = GER_kaiser_question }
+		
+		x = 1
+		y = 2
+		relative_position_id = GER_kaiser_question
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = GER_union_with_rotfront
 		icon = GFX_goal_revolution_coalition
 		prerequisite = { focus = GER_Drexler }
 		mutually_exclusive = { focus = GER_guarantee_for_germany focus = GER_revolution_against_the_revolution }
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_Drexler
+		
+		available = {
+			has_country_flag = germany_strikes_negotiate
+		}
+		
+		cost = 10
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -176,6 +443,125 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_union_with_rotfront
 		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_two_governments
+		icon = nothing
+		prerequisite = { focus = GER_death_for_monarchy }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_death_for_monarchy
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_crackdown_on_the_socialist_reichstag
+		icon = nothing
+		prerequisite = { focus = GER_invite_goebbels }
+		prerequisite = { focus = GER_industrial_repairment }
+		
+		x = 2
+		y = 1
+		relative_position_id = GER_invite_goebbels
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		available = {
+			has_completed_focus = GER_union_with_rotfront
+		}
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_install_nazi_government
+		icon = nothing
+		prerequisite = { focus = GER_crackdown_on_the_socialist_reichstag }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_crackdown_on_the_socialist_reichstag
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_destroy_the_opposition
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = GER_install_nazi_government }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_install_nazi_government
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -195,9 +581,11 @@ focus_tree = {
 		prerequisite = { focus = GER_Drexler }
 		mutually_exclusive = { focus = GER_guarantee_for_germany focus = GER_union_with_rotfront }
 		
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = GER_Drexler
+		
+		cost = 10
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -220,6 +608,222 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_revolution_against_the_revolution
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_victorious_war
+		icon = GFX_goal_victorious_war
+		prerequisite = { focus = GER_death_for_communism }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_death_for_communism
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_restore_germany
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_victorious_war focus = GER_two_governments }
+		
+		x = -1
+		y = 1
+		relative_position_id = GER_victorious_war
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_restore_germany }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_restore_germany
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_industrial_repairment
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GER_infrastructure }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_infrastructure
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_install_dictatorship
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_industrial_repairment }
+		
+		x = 2
+		y = 1
+		relative_position_id = GER_industrial_repairment
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		available = {
+			has_completed_focus = GER_revolution_against_the_revolution
+		}
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_war_on_socialism
+		icon = nothing
+		prerequisite = { focus = GER_install_dictatorship }
+		
+		x = 0
+		y = 1
+		relative_position_id = GER_install_dictatorship
+		
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_war_on_democracy
+		icon = GFX_focus_hol_war_on_pacifism
+		prerequisite = { focus = GER_install_dictatorship }
+		
+		x = 2
+		y = 1
+		relative_position_id = GER_install_dictatorship
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_militarisation
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = GER_war_on_socialism }
+		prerequisite = {  focus = GER_war_on_democracy }
+		
+		x = 1
+		y = 1
+		relative_position_id = GER_war_on_socialism
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no

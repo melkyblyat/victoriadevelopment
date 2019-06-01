@@ -8,6 +8,10 @@
  GER_non_effective_colonial_administration_desc:0 "Текущая политика в отношение колоний делает управление на местах крайне неэффективным. Ситуацию на заморских территориях можно описать только как бюрократическая неразбериха и хаос."
  GER_red_protests:0 "Red protests"
  GER_red_protests_desc:0 ""
+ GER_red_protests_strike:0 "Red protests"
+ GER_red_protests_strike_desc:0 ""
+ GER_red_protests_strike_1:0 "Red protests"
+ GER_red_protests_strike_1_desc:0 ""
  
  ### Parties ###
 
@@ -54,6 +58,48 @@
  GER_revolution_against_the_revolution_desc:0 ""
  GER_death_for_communism:0 "Death for communism"
  GER_death_for_communism_desc:0 ""
+ GER_militarise_sturmabteilung:0 ""
+ GER_militarise_sturmabteilung_desc:0 ""
+ GER_organise_marches:0 ""
+ GER_organise_marches_desc:0 ""
+ GER_reichstag_guards:0 ""
+ GER_reichstag_guards_desc:0 ""
+ GER_police_integration:0 ""
+ GER_police_integration_desc:0 ""
+ GER_invite_goebbels:0 ""
+ GER_invite_goebbels_desc:0 ""
+ GER_new_choise:0 ""
+ GER_new_choise_desc:0 ""
+ GER_kaiser_question:0 ""
+ GER_kaiser_question_desc:0 ""
+ GER_kaisers_fault:0 ""
+ GER_kaisers_fault_desc:0 ""
+ GER_new_germany:0 ""
+ GER_new_germany_desc:0 ""
+ GER_two_governments:0 ""
+ GER_two_governments_desc:0 ""
+ GER_crackdown_on_the_socialist_reichstag:0 ""
+ GER_crackdown_on_the_socialist_reichstag_desc:0 ""
+ GER_install_nazi_government:0 ""
+ GER_install_nazi_government_desc:0 ""
+ GER_destroy_the_opposition:0 ""
+ GER_destroy_the_opposition_desc:0 ""
+ GER_victorious_war:0 ""
+ GER_victorious_war_desc:0 ""
+ GER_restore_germany:0 ""
+ GER_restore_germany_desc:0 ""
+ GER_infrastructure:0 ""
+ GER_infrastructure_desc:0 ""
+ GER_industrial_repairment:0 ""
+ GER_industrial_repairment_desc:0 ""
+ GER_install_dictatorship:0 ""
+ GER_install_dictatorship_desc:0 ""
+ GER_war_on_socialism:0 ""
+ GER_war_on_socialism_desc:0 ""
+ GER_war_on_democracy:0 ""
+ GER_war_on_democracy_desc:0 ""
+ GER_militarisation:0 ""
+ GER_militarisation_desc:0 ""
  ### Events ###
  
  german.1.t:0 "Колониальная ассамблея"
@@ -98,11 +144,17 @@
  germanpolitical.4.desc:0 ""
  germanpolitical.4.a:0 "Voting ended"
  
+ germanpolitical.5.t:0 "Workers strikes"
+ germanpolitical.5.desc:0 ""
+ germanpolitical.5.a:0 "Let them strike"
+ germanpolitical.5.b:0 "Negotiate a deal"
+ 
  
  ### Effects ###
  
  eitel_goodbye:0 ""
  open_politics:0 ""
+ germany_strikes_negotiate:0 ""
  
  ### Traits ###
  

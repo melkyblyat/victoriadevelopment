@@ -39,5 +39,15 @@ spriteTypes = {
 	name = "GFX_goal_crackdown_protests"
 	texturefile = "gfx/interface/goals/goal_crackdown_protests.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_victorious_war"
+	texturefile = "gfx/interface/goals/goal_victorious_war.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_sturmabteilung"
+	texturefile = "gfx/interface/goals/goal_sturmabteilung.dds"			
+	}
 
 }

@@ -78,7 +78,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		add_political+power = -25
+		add_political_power = -25
 		country_event = { days = 2 id = germanpolitical.4 }
 	}
 }
@@ -185,46 +185,46 @@ country_event = {
 		
 		hidden_effect = {
 		set_stability = 0.3
-		if = {
-			limit = {
-				GER = {
-					controls_state = 28
-				}
-			}
-			28 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				GER = {
-					controls_state = 8
-				}
-			}
-			8 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				GER = {
-					controls_state = 832
-				}
-			}
-			832 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				GER = {
-					controls_state = 816
-				}
-			}
-			816 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				GER = {
-					controls_state = 42
-				}
-			}
-			42 = { set_border_war = yes }
-		}
+		#if = {
+		#	limit = {
+		#		GER = {
+		#			controls_state = 28
+		#		}
+		#	}
+		#	28 = { set_border_war = yes }
+		#}
+		#if = {
+		#	limit = {
+		#		GER = {
+		#			controls_state = 8
+		#		}
+		#	}
+		#	8 = { set_border_war = yes }
+		#}
+		#if = {
+		#	limit = {
+		#		GER = {
+		#			controls_state = 832
+		#		}
+		#	}
+		#	832 = { set_border_war = yes }
+		#}
+		#if = {
+		#	limit = {
+		#		GER = {
+		#			controls_state = 816
+		#		}
+		#	}
+		#	816 = { set_border_war = yes }
+		#}
+		#if = {
+		#	limit = {
+		#		GER = {
+		#			controls_state = 42
+		#		}
+		#	}
+		#	42 = { set_border_war = yes }
+		#}
 		
 		}
 	}
@@ -241,7 +241,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = germanpolitical.7.a # Strike
+		name = germanpolitical.7.a # Start
 		
 		ai_chance = {
 			base = 100
@@ -529,32 +529,17 @@ country_event = {
 			delete_unit_template_and_units = { division_template = "Koloniale Division" }
 			delete_unit_template_and_units = { division_template = "Kavallerie Division" }
 			
-			load_oob = ""
+			#load_oob = ""
 			
 			set_capital = 52
 			
 			set_politics = {
-				parties = {
-					nationalist = { 
-					popularity = 78
-					banned = no
-					}
-		
-					neutrality = { 
-					popularity = 14
-					banned = no
-					}
-					
-					conservative = { 
-					popularity = 8
-					banned = no
-					}
-				}
-	
 			ruling_party = nationalist
-			last_election = "1918.3.31"
-			election_frequency = 48
 			elections_allowed = no
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.7
 			}
 			
 			set_cosmetic_tag = GER_NAZI
@@ -562,13 +547,13 @@ country_event = {
 			
 			### GENERAL ###
 			
-			every_state = {
-				limit = {
-					is_controlled_by = GER
-					has_border_war = yes
-				}
-				set_border_war = no
-			}
+			#every_state = {
+			#	limit = {
+			#		is_controlled_by = GER
+			#		has_border_war = yes
+			#	}
+			#	set_border_war = no
+			#}
 			
 			every_state = {
 				limit = is_core_of = GER
@@ -576,7 +561,7 @@ country_event = {
 				add_core_of = DDR
 			}
 			
-			news_event = { id = news.3 }
+			#news_event = { id = news.3 }
 			
 			DDR = {
 				declare_war_on = {

@@ -47,19 +47,70 @@ set_convoys = 50
 set_stability = 0.7
 
 set_politics = {
-
 	parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 1
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 14
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 2
+			banned = no
+		}
+		
 		liberal = { 
-			popularity = 100
+			popularity = 3
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 7
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 58
+			banned = no
+		}
+		
+		nationalist = { 
+			popularity = 15
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 0
+			banned = no
 		}
 	}
 	
-	ruling_party = liberal
-	last_election = "1936.1.1"
+	ruling_party = monarchist
+	last_election = "1918.3.31"
 	election_frequency = 48
-	elections_allowed = yes
-
+	elections_allowed = no
 }
+
+create_country_leader = {
+	name = "Eitel Friedrich I"
+	desc = "POLITICS_WILHELM_II_DESC"
+	picture = "Portrait_Germany_Eitel_Friedrich.tga"
+	expire = "1965.1.1"
+	ideology = monarchy
+	traits = {
+		spineless
+	}
+}
+
 
 
 add_ideas = {

@@ -99,11 +99,6 @@ set_politics = {
 			banned = no
 		}
 		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
 		nationalist = { 
 			popularity = 15
 			banned = no

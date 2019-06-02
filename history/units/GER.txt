@@ -24,7 +24,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Allgemeine Division"			
+	name = "Allgemeinedivision"			
 
 	division_names_group = GER_Inf_01			
 
@@ -57,7 +57,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Kavallerie Division"			
+	name = "Kavalleriedivision"			
 
 	division_names_group = GER_Inf_01			
 
@@ -77,293 +77,293 @@ division_template = {
 	### ПЕХОТНЫЕ ДИВИЗИИ ###
 units = {
 division = {	
-	name = "1. Infanterie Division" 
+	name = "1. Infanteriedivision" 
 	location = 9559
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 
 division = {	
-	name = "2. Infanterie Division" 
+	name = "2. Infanteriedivision" 
 	location = 11502
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 
 division = {	
-	name = "3. Infanterie Division" 
+	name = "3. Infanteriedivision" 
 	location = 3629
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "4. Infanterie Division" 
+	name = "4. Infanteriedivision" 
 	location = 1346
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "5. Infanterie Division" 
+	name = "5. Infanteriedivision" 
 	location = 6529
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "6. Infanterie Division" 
+	name = "6. Infanteriedivision" 
 	location = 678
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "7. Infanterie Division" 
+	name = "7. Infanteriedivision" 
 	location = 9655
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "8. Infanterie Division" 
+	name = "8. Infanteriedivision" 
 	location = 11620
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "9. Infanterie Division" 
+	name = "9. Infanteriedivision" 
 	location = 707
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "10. Infanterie Division" 
+	name = "10. Infanteriedivision" 
 	location = 532
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "11. Infanterie Division" 
+	name = "11. Infanteriedivision" 
 	location = 586
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "12. Infanterie Division" 
+	name = "12. Infanteriedivision" 
 	location = 9441
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "13. Infanterie Division" 
+	name = "13. Infanteriedivision" 
 	location = 6559
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "14. Infanterie Division" 
+	name = "14. Infanteriedivision" 
 	location = 11517
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "15. Infanterie Division" 
+	name = "15. Infanteriedivision" 
 	location = 3485
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "16. Infanterie Division" 
+	name = "16. Infanteriedivision" 
 	location = 3288
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "17. Infanterie Division" 
+	name = "17. Infanteriedivision" 
 	location = 11386
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "18. Infanterie Division" 
+	name = "18. Infanteriedivision" 
 	location = 3295
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 division = {	
-	name = "19. Infanterie Division" 
+	name = "19. Infanteriedivision" 
 	location = 479
-	division_template = "Infanterie Division"	
+	division_template = "Infanteriedivision"	
 	start_experience_factor = 0.3
 	}
 	
 	### КАВАЛЕРИЯ ###
 	
 division = {	
-	name = "1. Kavallerie Division" 
+	name = "1. Kavalleriedivision" 
 	location = 375
-	division_template = "Kavallerie Division"	
+	division_template = "Kavalleriedivision"	
 	start_experience_factor = 0.3
 	}	
 	
 division = {	
-	name = "2. Kavallerie Division" 
+	name = "2. Kavalleriedivision" 
 	location = 3444
-	division_template = "Kavallerie Division"	
+	division_template = "Kavalleriedivision"	
 	start_experience_factor = 0.3
 	}	
 	
 division = {	
-	name = "3. Kavallerie Division" 
+	name = "3. Kavalleriedivision" 
 	location = 6375
-	division_template = "Kavallerie Division"	
+	division_template = "Kavalleriedivision"	
 	start_experience_factor = 0.3
 	}	
 	
 division = {	
-	name = "4. Kavallerie Division" 
+	name = "4. Kavalleriedivision" 
 	location = 11957
-	division_template = "Kavallerie Division"	
+	division_template = "Kavalleriedivision"	
 	start_experience_factor = 0.3
 	}	
 	
 division = {	
-	name = "5. Kavallerie Division" 
+	name = "5. Kavalleriedivision" 
 	location = 2196
-	division_template = "Kavallerie Division"	
+	division_template = "Kavalleriedivision"	
 	start_experience_factor = 0.3
 	}	
 	
 	### ДИВИЗИИ РЕЗЕРВА ###
 	
 division = {	
-	name = "1. Allgemeine Division" 
+	name = "1. Allgemeinedivision" 
 	location = 332
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}	
 	
 division = {	
-	name = "2. Allgemeine Division" 
+	name = "2. Allgemeinedivision" 
 	location = 9316
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "3. Allgemeine Division" 
+	name = "3. Allgemeinedivision" 
 	location = 11251
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "4. Allgemeine Division" 
+	name = "4. Allgemeinedivision" 
 	location = 11558
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "5. Allgemeine Division" 
+	name = "5. Allgemeinedivision" 
 	location = 3545
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "6. Allgemeine Division" 
+	name = "6. Allgemeinedivision" 
 	location = 3571
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "7. Allgemeine Division" 
+	name = "7. Allgemeinedivision" 
 	location = 6488
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "8. Allgemeine Division" 
+	name = "8. Allgemeinedivision" 
 	location = 6521
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "9. Allgemeine Division" 
+	name = "9. Allgemeinedivision" 
 	location = 9347
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "10. Allgemeine Division" 
+	name = "10. Allgemeinedivision" 
 	location = 6377
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "11. Allgemeine Division" 
+	name = "11. Allgemeinedivision" 
 	location = 587
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "12. Allgemeine Division" 
+	name = "12. Allgemeinedivision" 
 	location = 362
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "13. Allgemeine Division" 
+	name = "13. Allgemeinedivision" 
 	location = 692
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "14. Allgemeine Division" 
+	name = "14. Allgemeinedivision" 
 	location = 11544
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "15. Allgemeine Division" 
+	name = "15. Allgemeinedivision" 
 	location = 9517
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "16. Allgemeine Division" 
+	name = "16. Allgemeinedivision" 
 	location = 9503
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 	
 division = {	
-	name = "17. Allgemeine Division" 
+	name = "17. Allgemeinedivision" 
 	location = 6332
-	division_template = "Allgemeine Division"	
+	division_template = "Allgemeinedivision"	
 	start_experience_factor = 0.2
 	}
 
@@ -371,107 +371,107 @@ division = {
 	### КОЛОНИАЛЬНЫЕ ДИВИЗИИ ###
 	
 division = {	
-	name = "1. Koloniale Division" 
+	name = "1. Kolonialedivision" 
 	location = 9962
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 
 division = {	
-	name = "2. Koloniale Division" 
+	name = "2. Kolonialedivision" 
 	location = 12956
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "3. Koloniale Division" 
+	name = "3. Kolonialedivision" 
 	location = 7251
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "4. Koloniale Division" 
+	name = "4. Kolonialedivision" 
 	location = 2220
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "5. Koloniale Division" 
+	name = "5. Kolonialedivision" 
 	location = 4992
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "6. Koloniale Division" 
+	name = "6. Kolonialedivision" 
 	location = 13046
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "7. Koloniale Division" 
+	name = "7. Kolonialedivision" 
 	location = 12975
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "8. Koloniale Division" 
+	name = "8. Kolonialedivision" 
 	location = 7069
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "9. Koloniale Division" 
+	name = "9. Kolonialedivision" 
 	location = 12885
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "10. Koloniale Division" 
+	name = "10. Kolonialedivision" 
 	location = 5139
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "11. Koloniale Division" 
+	name = "11. Kolonialedivision" 
 	location = 4401
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "12. Koloniale Division" 
+	name = "12. Kolonialedivision" 
 	location = 6039
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "13. Koloniale Division" 
+	name = "13. Kolonialedivision" 
 	location = 4075
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "14. Koloniale Division" 
+	name = "14. Kolonialedivision" 
 	location = 4948
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "15. Koloniale Division" 
+	name = "15. Kolonialedivision" 
 	location = 12154
-	division_template = "Koloniale Division"	
+	division_template = "Kolonialedivision"	
 	start_experience_factor = 0.1
 	}
 }

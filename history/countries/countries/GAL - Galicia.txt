@@ -1,0 +1,111 @@
+﻿### Galicia ###
+
+## General ##
+
+capital = 91
+
+oob = "GAL"
+
+set_research_slots = 3
+
+## Tech ##
+add_ideas = {
+	blackwednesday1
+}
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+
+## Politics ##
+
+set_politics = {
+	parties = {
+		totalist = { 
+			popularity = 0
+			banned = no
+		}
+
+		syndicalist = {
+			popularity = 0
+			banned = no
+		}
+		
+		socialist = {
+			popularity = 0
+			banned = no
+		}
+		
+		social_democrat = {
+			popularity = 0
+			banned = no
+		}
+		
+		liberal = { 
+			popularity = 0
+			banned = no
+		}
+		
+		conservative = { 
+			popularity = 10
+			banned = no
+		}
+		
+		monarchist = { 
+			popularity = 90
+			banned = no
+		}
+
+		nationalist = { 
+			popularity = 0
+			banned = no
+		}
+		
+		neutrality = { 
+			popularity = 0
+			banned = no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+## Ideas ##
+
+
+
+## Leaders ##
+
+create_country_leader = {
+	name = "Otto von Habsburg"
+	desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+	picture = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+					
+	}
+}
+create_country_leader = {
+	name = "Otto von Habsburg"
+	desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+	picture = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
+	expire = "1965.1.1"
+	ideology = monarchy
+	traits = {
+					
+	}
+}
+
+
+## Corps ##
+

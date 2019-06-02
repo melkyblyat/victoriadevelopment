@@ -1,4 +1,4 @@
-					### ШАБЛОНЫ ДИВИЗИЙ ###
+﻿					### ШАБЛОНЫ ДИВИЗИЙ ###
 
 division_template = {
 	name = "Infanterie Division"			
@@ -15,7 +15,6 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-	}
 	
 	support = {			
         recon = { x = 0 y = 0 }

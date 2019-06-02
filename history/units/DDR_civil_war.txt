@@ -1,4 +1,4 @@
-					### ШАБЛОНЫ ДИВИЗИЙ ###
+﻿					### ШАБЛОНЫ ДИВИЗИЙ ###
 
 division_template = {
 	name = "Rotfront Division"			
@@ -17,7 +17,6 @@ division_template = {
         recon = { x = 0 y = 0 }
 	}
 	
-	}
 }
 
 division_template = {
@@ -39,14 +38,14 @@ division_template = {
 units = {
 
 division = {	
-	name = "Division "Ernst Thälmann"" 
+	name = "Division Ernst Thälmann" 
 	location = 587
 	division_template = "Rotfront Division"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "Division "Rosa Luxemburg"" 
+	name = "Division Rosa Luxemburg" 
 	location = 11531
 	division_template = "Rotfront Division"	
 	start_experience_factor = 0.1

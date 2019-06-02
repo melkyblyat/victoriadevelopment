@@ -525,6 +525,8 @@ country_event = {
 			
 			### NAZI ###
 			
+			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
+			
 			load_oob = "GER_civil_war"
 			
 			set_capital = 52

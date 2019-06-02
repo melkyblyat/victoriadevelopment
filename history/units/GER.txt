@@ -1,7 +1,7 @@
 ﻿					### ШАБЛОНЫ ДИВИЗИЙ ###
 
 division_template = {
-	name = "Infanterie Division"			
+	name = "Infanteriedivision"			
 
 	division_names_group = GER_Inf_01			
 
@@ -39,7 +39,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Koloniale Division"			
+	name = "Kolonialedivision"			
 
 	division_names_group = GER_Inf_01			
 

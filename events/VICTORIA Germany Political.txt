@@ -525,10 +525,10 @@ country_event = {
 			
 			### NAZI ###
 			
-			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
-			delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
-			delete_unit_template_and_units = { division_template = "Kolonialedivision" }
-			delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
+			#delete_unit_template_and_units = { division_template = "Infanteriedivision" }
+			#delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
+			#delete_unit_template_and_units = { division_template = "Kolonialedivision" }
+			#delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
 			
 			load_oob = "GER_civil_war"
 			

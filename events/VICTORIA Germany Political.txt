@@ -256,9 +256,9 @@ country_event = {
 			### UNITS ###
 			
 			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
-			#delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
-			#delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
-			delete_unit_template_and_units = { division_template = "Kolonialedivision" }
+			delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
+			delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
+			#delete_unit_template_and_units = { division_template = "Kolonialedivision" }
 			
 			### COMMUNIST REBELLION ###
 			

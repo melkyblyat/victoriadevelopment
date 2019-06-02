@@ -1,0 +1,132 @@
+					### ШАБЛОНЫ ДИВИЗИЙ ###
+
+division_template = {
+	name = "Rotfront Division"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		
+	support = {			
+        recon = { x = 0 y = 0 }
+	}
+	
+	}
+}
+
+division_template = {
+	name = "Rotfront Brigade"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	priority = 0 
+}
+
+					### ДИВИЗИИ ###
+
+units = {
+
+division = {	
+	name = "Division "Ernst Thälmann"" 
+	location = 587
+	division_template = "Rotfront Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "Division "Rosa Luxemburg"" 
+	location = 11531
+	division_template = "Rotfront Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "1. Rotfront Brigade" 
+	location = 3444
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "2. Rotfront Brigade" 
+	location = 587
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "3. Rotfront Brigade" 
+	location = 3547
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "4. Rotfront Brigade" 
+	location = 11494
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "5. Rotfront Brigade" 
+	location = 678
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "6. Rotfront Brigade" 
+	location = 3423
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "7. Rotfront Brigade" 
+	location = 11560
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "8. Rotfront Brigade" 
+	location = 3558
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "9. Rotfront Brigade" 
+	location = 549
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "10. Rotfront Brigade" 
+	location = 9503
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "11. Rotfront Brigade" 
+	location = 6529
+	division_template = "Rotfront Brigade"	
+	start_experience_factor = 0.1
+	}
+
+}

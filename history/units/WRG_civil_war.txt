@@ -1,0 +1,408 @@
+					### ШАБЛОНЫ ДИВИЗИЙ ###
+
+division_template = {
+	name = "Infanterie Division"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {			
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Allgemeine Division"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Koloniale Division"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	
+	support = {			
+        recon = { x = 0 y = 0 }
+	}
+	
+	priority = 0 
+}
+
+division_template = {
+	name = "Kavallerie Division"			
+
+	division_names_group = GER_Inf_01			
+
+	regiments = {			
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+
+	}
+}
+
+					### ДИВИЗИИ ###
+		
+	### ПЕХОТНЫЕ ДИВИЗИИ ###
+units = {
+
+division = {	
+	name = "2. Infanterie Division" 
+	location = 6570
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+
+division = {	
+	name = "3. Infanterie Division" 
+	location = 589
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "5. Infanterie Division" 
+	location = 3574
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "6. Infanterie Division" 
+	location = 6444
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "7. Infanterie Division" 
+	location = 11445
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "8. Infanterie Division" 
+	location = 3512
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "9. Infanterie Division" 
+	location = 564
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "10. Infanterie Division" 
+	location = 3397
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "11. Infanterie Division" 
+	location = 482
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "12. Infanterie Division" 
+	location = 9441
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "13. Infanterie Division" 
+	location = 6559
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "14. Infanterie Division" 
+	location = 11517
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "15. Infanterie Division" 
+	location = 3485
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "16. Infanterie Division" 
+	location = 3288
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "17. Infanterie Division" 
+	location = 11386
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "18. Infanterie Division" 
+	location = 3295
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+division = {	
+	name = "19. Infanterie Division" 
+	location = 479
+	division_template = "Infanterie Division"	
+	start_experience_factor = 0.3
+	}
+	
+	### КАВАЛЕРИЯ ###
+	
+division = {	
+	name = "1. Kavallerie Division" 
+	location = 375
+	division_template = "Kavallerie Division"	
+	start_experience_factor = 0.3
+	}	
+	
+division = {	
+	name = "2. Kavallerie Division" 
+	location = 6469
+	division_template = "Kavallerie Division"	
+	start_experience_factor = 0.3
+	}	
+	
+division = {	
+	name = "3. Kavallerie Division" 
+	location = 6375
+	division_template = "Kavallerie Division"	
+	start_experience_factor = 0.3
+	}	
+	
+division = {	
+	name = "4. Kavallerie Division" 
+	location = 11957
+	division_template = "Kavallerie Division"	
+	start_experience_factor = 0.3
+	}	
+	
+division = {	
+	name = "5. Kavallerie Division" 
+	location = 2196
+	division_template = "Kavallerie Division"	
+	start_experience_factor = 0.3
+	}	
+	
+	### ДИВИЗИИ РЕЗЕРВА ###
+	
+division = {	
+	name = "2. Allgemeine Division" 
+	location = 9316
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "3. Allgemeine Division" 
+	location = 11251
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "5. Allgemeine Division" 
+	location = 3545
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "7. Allgemeine Division" 
+	location = 6488
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "8. Allgemeine Division" 
+	location = 6521
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "9. Allgemeine Division" 
+	location = 9347
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "10. Allgemeine Division" 
+	location = 6377
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+
+division = {	
+	name = "12. Allgemeine Division" 
+	location = 362
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+
+division = {	
+	name = "17. Allgemeine Division" 
+	location = 6332
+	division_template = "Allgemeine Division"	
+	start_experience_factor = 0.2
+	}
+
+	
+	### КОЛОНИАЛЬНЫЕ ДИВИЗИИ ###
+	
+division = {	
+	name = "1. Koloniale Division" 
+	location = 9962
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+
+division = {	
+	name = "2. Koloniale Division" 
+	location = 12956
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "3. Koloniale Division" 
+	location = 7251
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "4. Koloniale Division" 
+	location = 2220
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "5. Koloniale Division" 
+	location = 4992
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "6. Koloniale Division" 
+	location = 13046
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "7. Koloniale Division" 
+	location = 12975
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "8. Koloniale Division" 
+	location = 7069
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "9. Koloniale Division" 
+	location = 12885
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "10. Koloniale Division" 
+	location = 5139
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "11. Koloniale Division" 
+	location = 4401
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "12. Koloniale Division" 
+	location = 6039
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "13. Koloniale Division" 
+	location = 4075
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "14. Koloniale Division" 
+	location = 4948
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
+	name = "15. Koloniale Division" 
+	location = 12154
+	division_template = "Koloniale Division"	
+	start_experience_factor = 0.1
+	}
+}

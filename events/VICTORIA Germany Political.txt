@@ -185,46 +185,46 @@ country_event = {
 		
 		hidden_effect = {
 		set_stability = 0.3
-		#if = {
-		#	limit = {
-		#		GER = {
-		#			controls_state = 28
-		#		}
-		#	}
-		#	28 = { set_border_war = yes }
-		#}
-		#if = {
-		#	limit = {
-		#		GER = {
-		#			controls_state = 8
-		#		}
-		#	}
-		#	8 = { set_border_war = yes }
-		#}
-		#if = {
-		#	limit = {
-		#		GER = {
-		#			controls_state = 832
-		#		}
-		#	}
-		#	832 = { set_border_war = yes }
-		#}
-		#if = {
-		#	limit = {
-		#		GER = {
-		#			controls_state = 816
-		#		}
-		#	}
-		#	816 = { set_border_war = yes }
-		#}
-		#if = {
-		#	limit = {
-		#		GER = {
-		#			controls_state = 42
-		#		}
-		#	}
-		#	42 = { set_border_war = yes }
-		#}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 28
+				}
+			}
+			28 = { set_border_war = yes }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 8
+				}
+			}
+			8 = { set_border_war = yes }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 832
+				}
+			}
+			832 = { set_border_war = yes }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 816
+				}
+			}
+			816 = { set_border_war = yes }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 42
+				}
+			}
+			42 = { set_border_war = yes }
+		}
 		
 		}
 	}
@@ -252,6 +252,13 @@ country_event = {
 		set_global_flag = german_civilwar_3
 		
 		hidden_effect = {
+		
+			### UNITS ###
+			
+			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
+			#delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
+			#delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
+			delete_unit_template_and_units = { division_template = "Kolonialedivision" }
 			
 			### COMMUNIST REBELLION ###
 			
@@ -525,10 +532,7 @@ country_event = {
 			
 			### NAZI ###
 			
-			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
-			delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
-			delete_unit_template_and_units = { division_template = "Kolonialedivision" }
-			delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
+			
 			
 			load_oob = GER_civil_war
 			
@@ -574,13 +578,13 @@ country_event = {
 			
 			### GENERAL ###
 			
-			#every_state = {
-			#	limit = {
-			#		is_controlled_by = GER
-			#		has_border_war = yes
-			#	}
-			#	set_border_war = no
-			#}
+			every_state = {
+				limit = {
+					is_controlled_by = GER
+					has_border_war = yes
+				}
+				set_border_war = no
+			}
 			
 			
 			

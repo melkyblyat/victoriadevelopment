@@ -39,14 +39,14 @@ division_template = {
 units = {
 
 division = {	
-	name = "Division "Ernst Thälmann"" 
+	name = "Division Ernst Thälmann" 
 	location = 587
 	division_template = "Rotfront Division"	
 	start_experience_factor = 0.1
 	}
 	
 division = {	
-	name = "Division "Rosa Luxemburg"" 
+	name = "Division Rosa Luxemburg" 
 	location = 11531
 	division_template = "Rotfront Division"	
 	start_experience_factor = 0.1

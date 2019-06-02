@@ -585,6 +585,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_Drexler
 		
+		available = {
+			NOT = { has_country_flag = germany_strikes_negotiate }
+		}
+		
 		cost = 10
 		
 		cancel_if_invalid = yes

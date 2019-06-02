@@ -12,6 +12,8 @@
  GER_red_protests_strike_desc:0 ""
  GER_red_protests_strike_1:0 "Red protests"
  GER_red_protests_strike_1_desc:0 ""
+ GER_red_protests_strike_2:0 "Red protests"
+ GER_red_protests_strike_2_desc:0 ""
  
  ### Parties ###
 
@@ -127,7 +129,7 @@
  german.4.b:0 "Принять континентальное деление"
  german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
  
- germanpolitical.1.t:0 "Embarassment at the parade"
+ germanpolitical.1.t:0 "Embarassment at the Parade"
  germanpolitical.1.desc:0 "19 years ago we defeated the Entente. It was a great victory. However, 19 years of peace had a negative impact on Germany. Today a parade of imperial troops was held in Berlin. Kaiser Eitel Friedrich I fell from a horse when he was bypassing the troops during the inspection. The generals tried to help him to stand up in a hurry but they succeeded only from a second attempt."
  germanpolitical.1.a:0 "Let's hope he does not plunge the country into chaos"
  
@@ -136,18 +138,22 @@
  germanpolitical.2.a:0 "What a poor horse!"
  germanpolitical.2.b:0 "What a disaster!"
  
- germanpolitical.3.t:0 "Federal elections"
+ germanpolitical.3.t:0 "Federal Elections"
  germanpolitical.3.desc:0 ""
  germanpolitical.3.a:0 "Start voting"
  
- germanpolitical.4.t:0 "Election results"
+ germanpolitical.4.t:0 "Election Results"
  germanpolitical.4.desc:0 ""
  germanpolitical.4.a:0 "Voting ended"
  
- germanpolitical.5.t:0 "Workers strikes"
+ germanpolitical.5.t:0 "Workers Demonstrations"
  germanpolitical.5.desc:0 ""
- germanpolitical.5.a:0 "Let them strike"
+ germanpolitical.5.a:0 "Crush them"
  germanpolitical.5.b:0 "Negotiate a deal"
+ 
+ germanpolitical.6.t:0 "Mass Protests"
+ germanpolitical.6.desc:0 ""
+ germanpolitical.6.a:0 "What a bunch of clowns"
  
  
  ### Effects ###

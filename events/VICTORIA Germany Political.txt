@@ -297,7 +297,7 @@ country_event = {
 				transfer_state = 42
 				}
 				
-				load_oob = "DDR_civil_war"
+				load_oob = DDR_civil_war
 			}
 			
 			### GERMAN EMPIRE ###
@@ -520,17 +520,17 @@ country_event = {
 				transfer_state = 68
 				}
 
-				load_oob = "WGR_civil_war"
+				load_oob = WGR_civil_war
 			}
 			
 			### NAZI ###
 			
-			#delete_unit_template_and_units = { division_template = "Infanteriedivision" }
-			#delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
-			#delete_unit_template_and_units = { division_template = "Kolonialedivision" }
-			#delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
+			delete_unit_template_and_units = { division_template = "Infanteriedivision" }
+			delete_unit_template_and_units = { division_template = "Allgemeinedivision" }
+			delete_unit_template_and_units = { division_template = "Kolonialedivision" }
+			delete_unit_template_and_units = { division_template = "Kavalleriedivision" }
 			
-			load_oob = "GER_civil_war"
+			load_oob = GER_civil_war
 			
 			set_capital = 52
 			

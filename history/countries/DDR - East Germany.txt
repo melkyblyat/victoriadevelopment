@@ -51,29 +51,34 @@ set_politics = {
 
 	parties = {
 		totalist = { 
-			popularity = 0
+			popularity = 3
 			banned = no
 		}
 
 		syndicalist = {
-			popularity = 1
+			popularity = 32
 			banned = no
 		}
 		
 		socialist = {
-			popularity = 14
+			popularity = 65
 			banned = no
 		}
 	}
 	
-	ruling_party = totalist
+	ruling_party = socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 
+create_country_leader = {
+	name = "Ernst Thälmann"
+	picture = "Portrait_Germany_Paul_von_Lettow_Vorbeck.tga"
+	expire = "1965.1.1"
+	ideology = socialist_subtype
+	traits = {
 
-add_ideas = {
+	}
 }
-

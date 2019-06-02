@@ -48,33 +48,13 @@ set_stability = 0.7
 
 set_politics = {
 	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 14
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 2
-			banned = no
-		}
-		
 		liberal = { 
-			popularity = 3
+			popularity = 17
 			banned = no
 		}
 		
 		conservative = { 
-			popularity = 7
+			popularity = 25
 			banned = no
 		}
 		
@@ -83,15 +63,6 @@ set_politics = {
 			banned = no
 		}
 		
-		nationalist = { 
-			popularity = 15
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
 	}
 	
 	ruling_party = monarchist
@@ -108,20 +79,5 @@ create_country_leader = {
 	ideology = monarchy
 	traits = {
 		spineless
-	}
-}
-
-
-
-add_ideas = {
-}
-
-create_country_leader = {
-	name = "Klaus Klauser"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
 	}
 }

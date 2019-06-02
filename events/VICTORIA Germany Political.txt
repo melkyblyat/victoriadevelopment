@@ -252,6 +252,7 @@ country_event = {
 		set_global_flag = german_civilwar_3
 		
 		hidden_effect = {
+			
 			### COMMUNIST REBELLION ###
 			
 			DDR = {
@@ -296,7 +297,7 @@ country_event = {
 				transfer_state = 42
 				}
 				
-				load_oob = "DDR"
+				load_oob = "DDR_civil_war"
 			}
 			
 			### GERMAN EMPIRE ###
@@ -519,17 +520,12 @@ country_event = {
 				transfer_state = 68
 				}
 
-				load_oob = "WGR"
+				load_oob = "WGR_civil_war"
 			}
 			
 			### NAZI ###
 			
-			delete_unit_template_and_units = { division_template = "Infanterie Division" }
-			delete_unit_template_and_units = { division_template = "Allgemeine Division" }
-			delete_unit_template_and_units = { division_template = "Koloniale Division" }
-			delete_unit_template_and_units = { division_template = "Kavallerie Division" }
-			
-			#load_oob = ""
+			load_oob = "GER_civil_war"
 			
 			set_capital = 52
 			
@@ -545,23 +541,7 @@ country_event = {
 			set_cosmetic_tag = GER_NAZI
 			remove_ideas = GER_red_protests_strike_2
 			
-			### GENERAL ###
-			
-			#every_state = {
-			#	limit = {
-			#		is_controlled_by = GER
-			#		has_border_war = yes
-			#	}
-			#	set_border_war = no
-			#}
-			
-			every_state = {
-				limit = is_core_of = GER
-				add_core_of = WGR
-				add_core_of = DDR
-			}
-			
-			#news_event = { id = news.3 }
+			### WAR DECLARATION ###
 			
 			DDR = {
 				declare_war_on = {
@@ -580,6 +560,17 @@ country_event = {
 					target = GER 
 				}
 			}
+			
+			every_state = {
+				limit = is_core_of = GER
+				add_core_of = WGR
+				add_core_of = DDR
+			}
+			
+			
+			
+			
+			
 			
 		}
 	}

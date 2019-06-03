@@ -37,7 +37,7 @@ set_politics = {
 		}
 		
 		social_democrat = {
-			popularity = 51
+			popularity = 40
 			banned = no
 		}
 		
@@ -62,7 +62,7 @@ set_politics = {
 		}
 		
 		nationalist = { 
-			popularity = 40
+			popularity = 51
 			banned = no
 		}
 		
@@ -72,7 +72,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_democrat
+	ruling_party = nationalist
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes

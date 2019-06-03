@@ -52,6 +52,13 @@ division = {
 	}
 	
 division = {	
+	name = "3. SA Division" 
+	location = 708
+	division_template = "SA Division"	
+	start_experience_factor = 0.1
+	}
+	
+division = {	
 	name = "1. Sturmabteilung" 
 	location = 11640
 	division_template = "Sturmabteilung"	

@@ -1156,6 +1156,9 @@ country_event = {
 		ai_chance = {
 			base = 90
 		}
+		
+		set_country_flag = end_for_civilwar
+		
 		annex_country = {
 			target = WGR
 			transfer_troops = yes

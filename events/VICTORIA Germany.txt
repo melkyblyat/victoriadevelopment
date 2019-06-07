@@ -1121,12 +1121,10 @@ country_event = {
 	
 	trigger = {
 		tag = WGR
-		NOT = {
-			64 = { is_controlled_by = GER }
-			60 = { is_controlled_by = GER }
-			65 = { is_controlled_by = GER }
-			55 = { is_controlled_by = GER }
-		}
+		64 = { is_controlled_by = GER }
+		60 = { is_controlled_by = GER }
+		65 = { is_controlled_by = GER }
+		55 = { is_controlled_by = GER }
 	}
 	
 	mean_time_to_happen = {

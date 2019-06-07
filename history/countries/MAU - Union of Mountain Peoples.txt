@@ -54,64 +54,24 @@ set_convoys = 80
 
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 3
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 2
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 8
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 1
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 2
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 12
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 4
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 11
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 57
-			banned = no
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 3
+    revolutionism = 2
+    democratic_socialist = 8
+    social_democrat = 1
+    liberal = 2
+    conservative = 12
+    monarchist = 0
+    fascism = 4
+    aximalist = 11
+    pragmatist = 57
 }
 
 create_country_leader = {
@@ -119,7 +79,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1989.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 	}
 }

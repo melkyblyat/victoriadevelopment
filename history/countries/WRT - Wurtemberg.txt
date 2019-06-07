@@ -49,64 +49,24 @@ set_technology = {
 set_convoys = 300
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 3
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 5
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 67
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 6
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 7
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 2
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 7
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 3
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 3
+    revolutionism = 5
+    democratic_socialist = 67
+    social_democrat = 0
+    liberal = 6
+    conservative = 7
+    monarchist = 0
+    fascism = 2
+    aximalist = 7
+    pragmatist = 3
 }
 
 add_ideas = {
@@ -121,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "gfx/leaders/FRA/Portrait_Bataille.dds"
 	expire = "1965.1.1"
-	ideology = 	socialist_subtype
+	ideology = 	democratic_socialist_subtype
 	traits = {
 		
 	}

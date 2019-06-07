@@ -1,16 +1,16 @@
 ideologies = {
 	
-	totalist = {
+	national_communism = {
 		types = {
-			totalist_subtype = {} 
+			national_communism_subtype = {} 
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_TOTALIST_1"
-			"FACTION_NAME_TOTALIST_2"
-			"FACTION_NAME_TOTALIST_3"
-			"FACTION_NAME_TOTALIST_4"
-			"FACTION_NAME_TOTALIST_5"
-			"FACTION_NAME_TOTALIST_6"
+			"FACTION_NAME_national_communism_1"
+			"FACTION_NAME_national_communism_2"
+			"FACTION_NAME_national_communism_3"
+			"FACTION_NAME_national_communism_4"
+			"FACTION_NAME_national_communism_5"
+			"FACTION_NAME_national_communism_6"
 		}
 		color = { 150 0 0 }
 		rules = {
@@ -27,17 +27,17 @@ ideologies = {
 		can_be_boosted = no
 	}
 	
-	syndicalist = {
+	revolutionism = {
 		types = {
-			syndicalist_subtype = {} #generic
+			revolutionism_subtype = {} #generic
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_SYNDICALIST_1"
-			"FACTION_NAME_SYNDICALIST_2"
-			"FACTION_NAME_SYNDICALIST_3"
-			"FACTION_NAME_SYNDICALIST_4"
-			"FACTION_NAME_SYNDICALIST_5"
-			"FACTION_NAME_SYNDICALIST_6"
+			"FACTION_NAME_revolutionism_1"
+			"FACTION_NAME_revolutionism_2"
+			"FACTION_NAME_revolutionism_3"
+			"FACTION_NAME_revolutionism_4"
+			"FACTION_NAME_revolutionism_5"
+			"FACTION_NAME_revolutionism_6"
 		}
 		color = { 255 0 0 }
 		rules = {
@@ -56,17 +56,17 @@ ideologies = {
 
 	}
 	
-	socialist = {
+	democratic_socialist = {
 		types = {
-			socialist_subtype = {} 
+			democratic_socialist_subtype = {} 
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_RADICAL_SOCIALIST_1"
-			"FACTION_NAME_RADICAL_SOCIALIST_2"
-			"FACTION_NAME_RADICAL_SOCIALIST_3"
-			"FACTION_NAME_RADICAL_SOCIALIST_4"
-			"FACTION_NAME_RADICAL_SOCIALIST_5"
-			"FACTION_NAME_RADICAL_SOCIALIST_6"
+			"FACTION_NAME_RADICAL_democratic_socialist_1"
+			"FACTION_NAME_RADICAL_democratic_socialist_2"
+			"FACTION_NAME_RADICAL_democratic_socialist_3"
+			"FACTION_NAME_RADICAL_democratic_socialist_4"
+			"FACTION_NAME_RADICAL_democratic_socialist_5"
+			"FACTION_NAME_RADICAL_democratic_socialist_6"
 		}
 		color = { 233 58 58 }
 		rules = {
@@ -87,7 +87,7 @@ ideologies = {
 	
 	social_democrat = {
 		types = {
-			socialism = {}
+			social_democrat_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
@@ -115,7 +115,7 @@ ideologies = {
 	
 	liberal = {
 		types = {
-			liberalism = {}
+			liberal_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_LIBERAL_1"
@@ -142,7 +142,7 @@ ideologies = {
 	
 	conservative = {
 		types = {
-			conservatism = {}
+			conservative_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"
@@ -169,7 +169,7 @@ ideologies = {
 	
 	monarchist = {
 		types = {
-			monarchy = {}
+			monarchist_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_1"
@@ -194,9 +194,9 @@ ideologies = {
 		can_be_boosted = no
 	}
 
-	nationalist = {
+	aximalist = {
 		types = {
-			nationalism = {}
+			aximalist_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"
@@ -221,17 +221,17 @@ ideologies = {
 		can_be_boosted = no
 	}
 	
-	neutrality = {
+	pragmatist = {
 		types = {
-			dictatorship = {}
+			pragmatist_subtype = {}
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_NEUTRALITY_1"
-			"FACTION_NAME_NEUTRALITY_2"
-			"FACTION_NAME_NEUTRALITY_3"
-			"FACTION_NAME_NEUTRALITY_4"
-			"FACTION_NAME_NEUTRALITY_5"
-			"FACTION_NAME_NEUTRALITY_6"
+			"FACTION_NAME_pragmatist_1"
+			"FACTION_NAME_pragmatist_2"
+			"FACTION_NAME_pragmatist_3"
+			"FACTION_NAME_pragmatist_4"
+			"FACTION_NAME_pragmatist_5"
+			"FACTION_NAME_pragmatist_6"
 		}
 		color = { 100 100 100 }
 		rules = {

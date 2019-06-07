@@ -18,72 +18,32 @@ set_technology = {
 
 set_convoys = 5
 
-set_politics = {
-
-		parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 3
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 10
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 7
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 2
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 78
-			banned = no
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
+
+    set_popularities = {
+        national_communism = 0
+        revolutionism = 0
+        democratic_socialist = 3
+        social_democrat = 0
+        liberal = 10
+        conservative = 7
+        monarchist = 0
+        
+        aximalist = 2
+        pragmatist = 78
+    }
 
 create_country_leader = {
 	name = "Johan Laidoner"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "Portrait_Laidoner.tga"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

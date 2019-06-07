@@ -104,63 +104,24 @@ set_war_support = 0.3
 
 	}
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 3
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 2
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 16
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 79
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = nationalist
+set_politics = {	
+	ruling_party = aximalist
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 0
+    social_democrat = 0
+    liberal = 3
+    conservative = 2
+    monarchist = 0
+    fascism = 16
+    aximalist = 79
+    pragmatist = 0
 }
 
 add_ideas = {
@@ -174,7 +135,7 @@ create_country_leader = {
 		name = "Alfred Ernst Rosenberg"
 		picture = "Portrait_Germany_Alfred_Rosenberg.tga"
 		expire = "1965.1.1"
-		ideology = nationalism
+		ideology = aximalist_subtype
 		traits = {
 	
 		}

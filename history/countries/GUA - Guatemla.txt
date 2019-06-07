@@ -12,18 +12,15 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		neutrality = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    pragmatist = 100
 }
 
 create_country_leader = {
@@ -31,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_JORGE_UBICO_DESC"
 	picture = "GFX_portrait_guatemala_jorge_ubico"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

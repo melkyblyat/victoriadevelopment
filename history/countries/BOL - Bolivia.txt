@@ -12,64 +12,24 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 2
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 45
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 1
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 2
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 1
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 49
-			banned = no
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 2
+    revolutionism = 45
+    democratic_socialist = 1
+    social_democrat = 0
+    liberal = 0
+    conservative = 2
+    monarchist = 0
+    
+    aximalist = 1
+    pragmatist = 49
 }
 
 create_country_leader = {
@@ -77,7 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
 	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship # liberalism, personally, but puppet for military
+	ideology = pragmatist_subtype # liberal_subtype, personally, but puppet for military
 	traits = {
 		#
 	}

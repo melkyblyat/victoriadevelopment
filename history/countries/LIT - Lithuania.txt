@@ -70,30 +70,18 @@ set_convoys = 10
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 4
-		}
-
-		fascism = {
-			popularity = 55
-		}
-		
-		socialist = {
-			popularity = 15
-		}
-		
-		neutrality = { 
-			popularity = 26
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 4
+    fascism = 55
+    democratic_socialist = 15
+    pragmatist = 26
 }
 
 create_country_leader = {
@@ -101,7 +89,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
 	picture = "Portrait_king_of_lit.dds"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		#
 	}

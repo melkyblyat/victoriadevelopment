@@ -84,64 +84,24 @@ add_ideas = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 60
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 10
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 30
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 0
+    social_democrat = 60
+    liberal = 10
+    conservative = 30
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -149,7 +109,7 @@ create_country_leader = {
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_Getulio_Vargas.tga"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}
@@ -170,7 +130,7 @@ create_country_leader = {
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		#
 	}
@@ -181,7 +141,7 @@ create_country_leader = {
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_Getulio_Vargas.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}

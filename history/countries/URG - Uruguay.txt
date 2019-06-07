@@ -16,64 +16,24 @@ set_convoys = 5
 
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 7
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 6
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 5
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 2
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 56
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 24
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 7
+    revolutionism = 6
+    democratic_socialist = 5
+    social_democrat = 2
+    liberal = 56
+    conservative = 24
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -81,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_GABRIEL_TERRA_DESC"
 	picture = "GFX_portrait_uruguay_portrait_gabriel_terra"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

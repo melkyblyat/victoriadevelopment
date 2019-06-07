@@ -33,64 +33,24 @@ set_technology = {
 
 set_cosmetic_tag = OTT_generals
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 3
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 4
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 1
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 9
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 16
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 14
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 49
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 1
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 3
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 3
+    revolutionism = 4
+    democratic_socialist = 1
+    social_democrat = 9
+    liberal = 16
+    conservative = 14
+    monarchist = 0
+    fascism = 49
+    aximalist = 1
+    pragmatist = 3
 }
 
 set_convoys = 20

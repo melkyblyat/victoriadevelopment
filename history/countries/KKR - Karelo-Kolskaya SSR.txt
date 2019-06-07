@@ -22,64 +22,24 @@ add_ideas = {
 }
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 78
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 2
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 20
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = totalist
+set_politics = {	
+	ruling_party = national_communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 78
+    revolutionism = 2
+    democratic_socialist = 20
+    social_democrat = 0
+    liberal = 0
+    conservative = 0
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -87,7 +47,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/RRU/Portrait_Kuusinen.dds"
 	expire = "1965.1.1"
-	ideology = totalist_subtype
+	ideology = national_communism_subtype
 	traits = {
 		#
 	}

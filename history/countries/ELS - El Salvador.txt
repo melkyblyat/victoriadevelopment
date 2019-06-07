@@ -11,18 +11,15 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		fascism = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = fascism
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1935.1.15"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    pragmatist = 100
 }
 
 create_country_leader = {
@@ -30,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
 	picture = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

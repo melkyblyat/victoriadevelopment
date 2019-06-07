@@ -40,63 +40,24 @@ set_technology = {
 
 set_convoys = 150
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 4
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 2
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 2
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 4
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 6
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 14
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 31
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 37
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 4
+    revolutionism = 2
+    democratic_socialist = 2
+    social_democrat = 4
+    liberal = 6
+    conservative = 14
+    monarchist = 31
+    
+    aximalist = 37
+    pragmatist = 0
 }
 
 set_autonomy = {
@@ -115,7 +76,7 @@ create_country_leader = {
 	desc = "POLITICS_MICHAEL_II_DESC"
 	picture = "Portrait_Russia_Michael_ii.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 	}
 }
@@ -125,7 +86,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Nikolai_Bukharin.tga"
 	expire = "1965.1.1"
-	ideology = totalist_subtype
+	ideology = national_communism_subtype
 	traits = {
 	}
 }
@@ -135,7 +96,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Alexey_Peshekhonov.tga"
 	expire = "1965.1.1"
-	ideology = syndicalist_subtype
+	ideology = revolutionism_subtype
 	traits = {
 	}
 }
@@ -144,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Grigory_Zinoviev.tga"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 	}
 }
@@ -153,7 +114,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Fyodor_Dan.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 	}
 }
@@ -162,7 +123,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Pavel_Milyukov.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 	}
 }
@@ -171,7 +132,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Nikolai_Yevgenyevich_Markov.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 	}
 }
@@ -189,7 +150,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Anatoly_Savenko.tga"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 	}
 }
@@ -199,7 +160,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Russia_Olga_Wrangel.tga"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 	}
 }

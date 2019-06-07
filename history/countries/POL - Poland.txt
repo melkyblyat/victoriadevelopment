@@ -25,26 +25,17 @@ set_technology = {
 
 set_convoys = 10
 
-set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 6
-		}
-
-		fascism = {
-			popularity = 4
-		}
-		
-		neutrality = { 
-			popularity = 90
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_popularities = {
+    conservative = 6
+    fascism = 4
+    pragmatist = 90
 }
 
 create_country_leader = {
@@ -52,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}
@@ -63,7 +54,7 @@ create_country_leader = {
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
 	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}

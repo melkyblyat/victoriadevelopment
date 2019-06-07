@@ -22,18 +22,15 @@ set_convoys = 5
 
 
 
-set_politics = {
-
-	parties = {
-		fascism = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = fascism
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
+}
+
+set_popularities = {
+    pragmatist = 100
 }
 
 create_country_leader = {
@@ -41,7 +38,7 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

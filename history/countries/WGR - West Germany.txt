@@ -46,29 +46,17 @@ set_research_slots = 4
 set_convoys = 50
 set_stability = 0.7
 
-set_politics = {
-	parties = {
-		liberal = { 
-			popularity = 17
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 25
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 58
-			banned = no
-		}
-		
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 17
+    conservative = 25
+    monarchist = 58
 }
 
 create_country_leader = {
@@ -76,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_II_DESC"
 	picture = "Portrait_Germany_Eitel_Friedrich.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		spineless
 	}

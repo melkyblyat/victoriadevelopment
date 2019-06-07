@@ -51,62 +51,23 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 4
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 9
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 9
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 78
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
 	ruling_party = conservative
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 4
+    social_democrat = 9
+    liberal = 9
+    conservative = 78
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -114,7 +75,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		
 	}
@@ -125,7 +86,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		
 	}

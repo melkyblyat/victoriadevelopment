@@ -21,63 +21,24 @@ set_technology = {
 
 ## Politics ##
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 8
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 1
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 1
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 90
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 8
+    democratic_socialist = 1
+    social_democrat = 1
+    liberal = 0
+    conservative = 0
+    monarchist = 90
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 give_military_access = ALG
@@ -92,7 +53,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TUN/Portrait_Husain.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		#
 	}
@@ -103,7 +64,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TUN/Portrait_Husain.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -114,7 +75,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TUN/Portrait_Husain.tga"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 		#
 	}

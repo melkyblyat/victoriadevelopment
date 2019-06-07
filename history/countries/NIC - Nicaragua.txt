@@ -13,18 +13,15 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 10
 
-set_politics = {
-
-	parties = {
-		liberal = {
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1934.11.8"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 100
 }
 
 create_country_leader = {
@@ -32,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_JUAN_BAUTISTA_SACASA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

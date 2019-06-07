@@ -49,64 +49,24 @@ set_technology = {
 set_convoys = 300
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 26
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 3
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 67
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 2
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 1
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 1
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 26
+    revolutionism = 3
+    democratic_socialist = 67
+    social_democrat = 2
+    liberal = 0
+    conservative = 1
+    monarchist = 0
+    
+    aximalist = 1
+    pragmatist = 0
 }
 
 
@@ -115,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "gfx/leaders/AUS/Portrait_Otto_Bauer.dds"
 	expire = "1965.1.1"
-	ideology = 	socialist_subtype
+	ideology = 	democratic_socialist_subtype
 	traits = {
 		
 	}

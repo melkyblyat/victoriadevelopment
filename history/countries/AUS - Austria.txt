@@ -31,57 +31,23 @@ set_technology = {
 add_opinion_modifier = { target = YUG modifier = large_decrease }
 
 set_politics = {
-		parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 10
-			banned = no
-		}
-		
-		social_democrat = { 
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 87
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 3
-			banned = no
-		}
-	}
-	ruling_party = nationalist
+	ruling_party = aximalist
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
+
+    set_popularities = {
+        national_communism = 0
+        revolutionism = 0
+        democratic_socialist = 10
+        social_democrat = 0
+        liberal = 0
+        conservative = 0
+        monarchist = 0
+        aximalist = 87
+        pragmatist = 3
+    }
 
 set_stability = 0.50
 
@@ -91,7 +57,7 @@ set_stability = 0.50
 				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
 				picture = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
 				expire = "1965.1.1"
-				ideology = monarchy
+				ideology = monarchist_subtype
 				traits = {
 					
 				}
@@ -102,7 +68,7 @@ set_stability = 0.50
 				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
 				picture = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
 				expire = "1965.1.1"
-				ideology = socialism
+				ideology = social_democrat_subtype
 				traits = {
 					
 				}
@@ -113,7 +79,7 @@ set_stability = 0.50
 				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
 				picture = "gfx/leaders/AUS/Portrait_otto_von_hapsburg.dds"
 				expire = "1965.1.1"
-				ideology = conservatism
+				ideology = conservative_subtype
 				traits = {
 					
 				}
@@ -124,7 +90,7 @@ set_stability = 0.50
 				desc = ""
 				picture = "Alois.dds"
 				expire = "1965.1.1"
-				ideology = liberalism
+				ideology = liberal_subtype
 				traits = {
 					
 				}
@@ -135,7 +101,7 @@ set_stability = 0.50
 				desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
 				picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
 				expire = "1965.1.1"
-				ideology = nationalism
+				ideology = aximalist_subtype
 				traits = {
 					#
 				}

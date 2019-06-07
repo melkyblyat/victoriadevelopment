@@ -37,64 +37,24 @@ set_technology = {
 
 set_convoys = 200
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 4
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 21
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 6
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 40
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 21
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 7
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 4
+    revolutionism = 1
+    democratic_socialist = 21
+    social_democrat = 0
+    liberal = 6
+    conservative = 40
+    monarchist = 21
+    
+    aximalist = 7
+    pragmatist = 0
 }
 
 ## Ideas ##
@@ -111,7 +71,7 @@ create_country_leader= {
 	desc=ITA_vittorio_emanuele_iii_DESC 
 	picture="Portrait_Victor_Emmanuel_III.tga" 
 	expire="1946.1.1" 
-	ideology = conservatism 
+	ideology = conservative_subtype 
 	traits={  } 
 }
 
@@ -120,7 +80,7 @@ create_country_leader= {
 	desc=ITA_vittorio_emanuele_iii_DESC 
 	picture="Portrait_Victor_Emmanuel_III.tga" 
 	expire="1946.1.1" 
-	ideology = monarchy 
+	ideology = monarchist_subtype 
 	traits={  } 
 }
 
@@ -129,7 +89,7 @@ create_country_leader= {
 	desc=ITA_vittorio_emanuele_iii_DESC 
 	picture="Portrait_Victor_Emmanuel_III.tga" 
 	expire="1946.1.1" 
-	ideology = nationalism 
+	ideology = aximalist_subtype 
 	traits={  } 
 }
 

@@ -11,64 +11,24 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 20
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 15
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 70
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 5
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 5
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 5
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 15
+    democratic_socialist = 0
+    social_democrat = 0
+    liberal = 70
+    conservative = 5
+    monarchist = 0
+    fascism = 5
+    aximalist = 5
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -76,7 +36,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
 	picture = "GFX_portrait_cuba_jose_barnet"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

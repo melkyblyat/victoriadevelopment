@@ -8,64 +8,23 @@ set_technology = {
 	tech_recon = 1
 }
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 3
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 4
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 14
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 79
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 3
+    social_democrat = 0
+    liberal = 4
+    conservative = 14
+    monarchist = 79
+    aximalist = 0
+    pragmatist = 0
 }
 
 set_convoys = 5
@@ -75,7 +34,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_ZOG_DESC"
 	picture = "gfx/leaders/ITR/ITR_portrait_Pietro_Nenni.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		#
 	}
@@ -87,7 +46,7 @@ create_country_leader = {
 #	desc = "POLITICS_KING_ZOG_DESC"
 #	picture = "gfx/leaders/ALB/Portrait_Albania_King_Zog.tga"
 #	expire = "1965.1.1"
-#	ideology = monarchy
+#	ideology = monarchist_subtype
 #	traits = {
 #		#
 #	}

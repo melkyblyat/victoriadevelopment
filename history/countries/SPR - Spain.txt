@@ -30,64 +30,23 @@ set_technology = {
 	transport = 1
 }
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 2
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 4
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 78
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 3
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 4
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 9
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 2
+    revolutionism = 4
+    democratic_socialist = 78
+    social_democrat = 0
+    liberal = 3
+    conservative = 4
+    monarchist = 0
+    aximalist = 9
+    pragmatist = 0
 }
 
 set_convoys = 150
@@ -100,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_AZANA_DESC"
 	picture = "Portrait_Spain_Manuel_Azana.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -111,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_DIAZ_DESC"
 	picture = "Portrait_Spain_Jose_Diaz.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		#
 	}

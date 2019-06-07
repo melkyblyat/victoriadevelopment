@@ -49,64 +49,24 @@ set_convoys = 800
 
 set_cosmetic_tag = UOB_red_color
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 11
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 12
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 76
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 11
+    revolutionism = 12
+    democratic_socialist = 76
+    social_democrat = 0
+    liberal = 0
+    conservative = 0
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 set_rule = { can_send_volunteers = yes }
@@ -119,7 +79,7 @@ create_country_leader = {
 	desc = "POLITICS_PALME_DUTT_DESC"
 	picture = "gfx/leaders/ENG/Portrait_Britain_Palme_Dutt.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		
 	}

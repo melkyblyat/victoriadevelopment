@@ -22,64 +22,23 @@ add_ideas = {
 }
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 1
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 5
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 4
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 90
-			banned = no
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 1
+    social_democrat = 0
+    liberal = 5
+    conservative = 4
+    monarchist = 0
+    aximalist = 0
+    pragmatist = 90
 }
 
 create_country_leader = {
@@ -87,7 +46,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ALS/Portrait_Alash_Mirjaqip_Dulatuli.tga"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}
@@ -98,7 +57,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/RRU/Portrait_Alashcomleader.dds"
 	expire = "1965.1.1"
-	ideology = totalist_subtype
+	ideology = national_communism_subtype
 	traits = {
 		#
 	}

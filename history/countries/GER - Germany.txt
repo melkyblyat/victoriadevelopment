@@ -62,58 +62,23 @@ set_convoys = 400
 set_stability = 0.6
 
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 14
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 2
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 3
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 7
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 58
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 15
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 1
+    democratic_socialist = 14
+    social_democrat = 2
+    liberal = 3
+    conservative = 7
+    monarchist = 58
+    aximalist = 15
+    pragmatist = 0
 }
 
 
@@ -121,7 +86,7 @@ create_country_leader = {
 	name = "Rudolf Hess"
 	picture = "Portrait_Germany_Rudolf_Hess.tga"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 
 	}
@@ -132,7 +97,7 @@ create_country_leader = {
 	name = "Paul von Lettow-Vorbeck"
 	picture = "Portrait_Germany_Paul_von_Lettow_Vorbeck.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 
 	}
@@ -144,7 +109,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_II_DESC"
 	picture = "Portrait_Germany_Eitel_Friedrich.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		spineless
 	}

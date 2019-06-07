@@ -40,63 +40,24 @@ set_technology = {
 
 set_convoys = 150
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 8
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 2
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 12
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 61
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 11
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 6
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = fascism
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 8
+    revolutionism = 0
+    democratic_socialist = 0
+    social_democrat = 0
+    liberal = 2
+    conservative = 12
+    monarchist = 0
+    fascism = 61
+    aximalist = 11
+    pragmatist = 6
 }
 
 add_ideas = {
@@ -118,7 +79,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_NPA_Anton_Denikin.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 	}
 }
@@ -128,7 +89,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_NPA_Anton_Denikin.tga"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 	}
 }

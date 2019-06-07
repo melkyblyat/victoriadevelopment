@@ -70,30 +70,18 @@ set_convoys = 10
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 78
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		socialist = {
-			popularity = 6
-		}
-		
-		neutrality = { 
-			popularity = 14
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 78
+    fascism = 2
+    democratic_socialist = 6
+    pragmatist = 14
 }
 
 create_country_leader = {
@@ -101,7 +89,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Jānis_Čakste.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

@@ -31,64 +31,24 @@ if = {
 
 set_convoys = 20
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 6
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 5
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 2
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 12
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 13
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 51
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 11
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 6
+    revolutionism = 5
+    democratic_socialist = 2
+    social_democrat = 12
+    liberal = 13
+    conservative = 51
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 11
 }
 
 create_country_leader = {
@@ -96,7 +56,7 @@ create_country_leader = {
 	desc = "POLITICS_LORD_LINLITHGOW_DESC"
 	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		
 	}
@@ -108,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_VD_SAVARKAR_DESC"
 	picture = "GFX_RAJ_veer_savarkar"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 		
 	}
@@ -119,7 +79,7 @@ create_country_leader = {
 	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
 	picture = "GFX_RAJ_krishna_pillai"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		
 	}
@@ -130,7 +90,7 @@ create_country_leader = {
 	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 	picture = "GFX_RAJ_pattabhi_sitaramayya"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		
 	}

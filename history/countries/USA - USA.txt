@@ -48,64 +48,23 @@ set_rule = { can_send_volunteers = yes }
 set_convoys = 400
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 2
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 12
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 29
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 14
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 13
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 25
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 4
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 13
+    revolutionism = 1
+    democratic_socialist = 2
+    social_democrat = 12
+    liberal = 29
+    conservative = 14
+    monarchist = 0
+    aximalist = 25
+    pragmatist = 4
 }
 
 
@@ -122,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Joseph_Kennedy.tga"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 	}
 }

@@ -11,19 +11,15 @@ add_ideas = {
 	limited_conscription
 }
 
-set_politics = {
-
-	parties = {
-		liberal = {
-			popularity = 100
-			#banned = no #default is no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    liberal = 100
 }
 
 create_country_leader = {
@@ -31,7 +27,7 @@ create_country_leader = {
 	desc = "POLITICS_SALCHAK_TOKA_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

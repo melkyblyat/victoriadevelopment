@@ -27,30 +27,18 @@ add_ideas = {
 
 set_cosmetic_tag = FIN_RUS
 
-set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 79
-		}
-
-		nationalist = {
-			popularity = 10
-		}
-		
-		socialist = {
-			popularity = 1
-		}
-
-		neutrality = {
-			popularity = 10
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 79
+    aximalist = 10
+    democratic_socialist = 1
+    pragmatist = 10
 }
 
 create_country_leader = {
@@ -58,7 +46,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Finland_senate.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -70,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}
@@ -81,7 +69,7 @@ create_country_leader = {
 			desc = ""
 			picture = "Portrait_Finland_Mannerheim.dds"
 			expire = "1965.1.1"
-			ideology = nationalism
+			ideology = aximalist_subtype
 			traits = {
 				#
 			}
@@ -92,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		#
 	}
@@ -114,7 +102,7 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

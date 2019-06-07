@@ -21,64 +21,24 @@ set_country_flag = monroe_doctrine
 set_convoys = 20
 
 set_convoys = 5
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 2
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 34
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 13
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 51
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1932.10.30"
 	election_frequency = 72  #but 4 years after this one in 1938.
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 2
+    revolutionism = 34
+    democratic_socialist = 13
+    social_democrat = 0
+    liberal = 51
+    conservative = 0
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }
 
 create_country_leader = {
@@ -86,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
 	picture = "GFX_Portrait_chile_arturo_alessandri"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

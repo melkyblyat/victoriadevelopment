@@ -59,22 +59,16 @@ set_convoys = 5
 	}
 }
 
-set_politics = {
-
-	parties = {
-		social_democrat = { 
-			popularity = 100
-		}
-
-		fascism = {
-			popularity = 0
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes
+}
+
+set_popularities = {
+    social_democrat = 100
+    
 }
 
 create_country_leader = {
@@ -82,7 +76,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "GFX_Portrait_ecuador_federico_paez"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}

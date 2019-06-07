@@ -55,22 +55,15 @@ set_convoys = 10
 	}
 }
 
-set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 98
-		}
-
-		fascism = {
-			popularity = 2
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1932.2.14"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    liberal = 100
 }
 
 create_country_leader = {
@@ -78,7 +71,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = "GFX_portrait_costa_rica_ricardo_jiminez_oreamuno"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

@@ -14,64 +14,24 @@ set_cosmetic_tag = TRIBE
 
 set_convoys = 20
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 5
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 13
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 12
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 3
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 67
-			banned = no
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 5
+    democratic_socialist = 13
+    social_democrat = 12
+    liberal = 0
+    conservative = 0
+    monarchist = 0
+    
+    aximalist = 3
+    pragmatist = 67
 }
 
 create_country_leader = {
@@ -79,7 +39,7 @@ create_country_leader = {
 	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

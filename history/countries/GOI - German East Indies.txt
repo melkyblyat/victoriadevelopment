@@ -58,20 +58,15 @@ set_stability = 0.6
 
 set_cosmetic_tag = GOI_GER
 
-set_politics = {
-
-	parties = {
-
-
-		neutrality = {
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    pragmatist = 100
 }
 
 create_country_leader = {
@@ -79,7 +74,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GOI/Portrait_Germany_Paul_Hausser.dds"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 	}
 }
@@ -89,7 +84,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GOI/Portrait_Germany_Paul_Hausser.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 	}
 }

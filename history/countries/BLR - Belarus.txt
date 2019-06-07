@@ -38,58 +38,6 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 12
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 54
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 24
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 1
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 6
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 3
-			banned = no
-		}
-	}
 	ruling_party = liberal
 	last_election = "1935.3.31"
 	election_frequency = 48
@@ -97,12 +45,25 @@ set_politics = {
 	
 }
 
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 0
+    social_democrat = 12
+    liberal = 54
+    conservative = 24
+    monarchist = 0
+    fascism = 1
+    aximalist = 6
+    pragmatist = 3
+}
+
 create_country_leader = {
     name = "Vaclau Lastouski"
     desc = ""
     picture = "Portrait_belarus_liberal.dds"
     expire = "1965.1.1"
-    ideology = liberalism
+    ideology = liberal_subtype
     traits = {
         #
     }
@@ -113,7 +74,7 @@ create_country_leader = {
     desc = ""
     picture = "Portrait_belarus_sd.dds"
     expire = "1965.1.1"
-    ideology = socialism
+    ideology = social_democrat_subtype
     traits = {
         #
     }

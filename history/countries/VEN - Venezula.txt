@@ -61,64 +61,23 @@ set_country_flag = monroe_doctrine
 }
 
 set_convoys = 10
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 9
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 1
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 2
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 10
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 74
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 4
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = fascism
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 9
+    democratic_socialist = 1
+    social_democrat = 0
+    liberal = 2
+    conservative = 10
+    monarchist = 0
+    aximalist = 4
+    pragmatist = 74
 }
 
 create_country_leader = {
@@ -126,7 +85,7 @@ create_country_leader = {
 	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
 	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

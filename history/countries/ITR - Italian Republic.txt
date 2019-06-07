@@ -42,72 +42,32 @@ set_technology = {
 
 set_convoys = 200
 
-set_politics = {
-
-parties = {
-		totalist = { 
-			popularity = 10
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 89
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 
+set_popularities = {
+national_communism = 10
+revolutionism = 1
+democratic_socialist = 89
+social_democrat = 0
+liberal = 0
+conservative = 0
+monarchist = 0
+
+aximalist = 0
+pragmatist = 0
+}
+
 create_country_leader= {
 	name = "Italian Communist Union" 
 	desc = ITA_vittorio_emanuele_iii_DESC 
 	picture = "gfx/leaders/ITA/ITR_comunna.dds" 
 	expire = "1946.1.1" 
-	ideology = totalist_subtype 
+	ideology = national_communism_subtype 
 	traits = { stout_defender } 
 }
 create_country_leader= {
@@ -115,7 +75,7 @@ create_country_leader= {
 	desc = ITA_vittorio_emanuele_iii_DESC 
 	picture = "gfx/leaders/ITA/ITR_comunna.dds" 
 	expire = "1946.1.1" 
-	ideology = syndicalist_subtype 
+	ideology = revolutionism_subtype 
 	traits = { stout_defender } 
 }
 create_country_leader= {
@@ -123,7 +83,7 @@ create_country_leader= {
 	desc = ITA_vittorio_emanuele_iii_DESC 
 	picture = "gfx/leaders/ITA/ITR_comunna.dds" 
 	expire = "1946.1.1" 
-	ideology = socialist_subtype 
+	ideology = democratic_socialist_subtype 
 	traits = { stout_defender } 
 }
 

@@ -22,62 +22,24 @@ set_technology = {
 }
 
 set_politics = {
-		parties = {
-		totalist = { 
-			popularity = 2
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 3
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 4
-			banned = no
-		}
-		
-		social_democrat = { 
-			popularity = 8
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 12
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 11
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = { 
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 6
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 54
-			banned = no
-		}
-	}
-	ruling_party = neutrality
+	ruling_party = pragmatist
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
+
+    set_popularities = {
+        national_communism = 2
+        revolutionism = 3
+        democratic_socialist = 4
+        social_democrat = 8
+        liberal = 12
+        conservative = 11
+        monarchist = 0
+        
+        aximalist = 6
+        pragmatist = 54
+    }
 
 set_stability = 0.50
 
@@ -86,7 +48,7 @@ set_stability = 0.50
 				desc = ""
 				picture = "gfx/leaders/TRN/Portrait_Transdanubia_Geza_Reverz.tga"
 				expire = "1965.1.1"
-				ideology = dictatorship
+				ideology = pragmatist_subtype
 				traits = {
 					
 				}

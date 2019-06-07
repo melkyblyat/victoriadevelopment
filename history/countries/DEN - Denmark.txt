@@ -78,64 +78,23 @@ set_technology = {
 }
 
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 1
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 1
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 6
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 57
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 10
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 23
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 1
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 1
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = social_democrat
 	last_election = "1935.10.22"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 1
+    revolutionism = 1
+    democratic_socialist = 6
+    social_democrat = 57
+    liberal = 0
+    conservative = 10
+    monarchist = 23
+    aximalist = 2
+    pragmatist = 0
 }
 
 set_convoys = 40
@@ -145,7 +104,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Christian.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}
@@ -156,7 +115,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Christian.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -167,7 +126,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Christian.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}
@@ -178,7 +137,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Christian.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		#
 	}
@@ -189,7 +148,7 @@ create_country_leader = {
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Aksel_Larsen.tga"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 		#
 	}

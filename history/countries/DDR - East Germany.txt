@@ -47,37 +47,25 @@ set_research_slots = 4
 set_convoys = 50
 set_stability = 0.75
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 3
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 32
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 65
-			banned = no
-		}
-	}
-	
-	ruling_party = socialist
+set_politics = {	
+	ruling_party = democratic_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 
+set_popularities = {
+    national_communism = 3
+    revolutionism = 32
+    democratic_socialist = 65
+}
+
 create_country_leader = {
 	name = "Ernst Thälmann"
 	picture = "Portrait_Germany_Paul_von_Lettow_Vorbeck.tga"
 	expire = "1965.1.1"
-	ideology = socialist_subtype
+	ideology = democratic_socialist_subtype
 	traits = {
 
 	}

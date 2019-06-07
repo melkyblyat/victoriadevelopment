@@ -1,0 +1,38 @@
+GER_hungarian_support = {
+
+	GER_receive_hungarian_equipment = {
+
+		name = GER_receive_hungarian_equipment_decision
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+		}
+
+		cost = 20
+
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = germany_civilwar_3_hungarian_support
+			has_government = aximalist
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+				producer = GER
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

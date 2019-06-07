@@ -18,62 +18,22 @@ set_technology = {
 	early_submarine = 1
 }
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 67
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 13
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 10
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 9
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 1
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = totalist
+set_politics = {	
+	ruling_party = national_communism
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 67
+    revolutionism = 13
+    democratic_socialist = 10
+    social_democrat = 0
+    liberal = 9
+    conservative = 1
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }

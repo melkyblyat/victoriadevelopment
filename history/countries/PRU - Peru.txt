@@ -18,64 +18,23 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 15
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 10
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 5
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 30
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 5
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 35
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = fascism
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1931.10.11"
 	election_frequency = 96
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 15
+    revolutionism = 10
+    democratic_socialist = 5
+    social_democrat = 0
+    liberal = 30
+    conservative = 5
+    monarchist = 0
+    aximalist = 0
+    pragmatist = 35
 }
 
 create_country_leader = {
@@ -83,7 +42,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
 	picture = "GFX_Portrait_peru_oscar_benavides"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}

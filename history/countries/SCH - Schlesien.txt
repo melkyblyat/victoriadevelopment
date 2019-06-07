@@ -42,70 +42,31 @@ set_convoys = 400
 set_stability = 0.6
 
 
-set_politics = {
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 8
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 7
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 19
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 38
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 6
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 22
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = conservative
 	last_election = "1918.3.31"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 8
+    social_democrat = 7
+    liberal = 19
+    conservative = 38
+    monarchist = 0
+    fascism = 6
+    aximalist = 22
+    pragmatist = 0
+}
+
 create_country_leader = {
 	name = "Hans Lukaschek"
 	picture = "Portrait_Schlesien_Hans_lukaschek.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 
 	}

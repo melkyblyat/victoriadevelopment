@@ -67,26 +67,17 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 45
 
-set_politics = {
-
-	parties = {
-		conservative = { 
-			popularity = 5
-		}
-
-		nationalist = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 94
-		}
-	}
-	
-	ruling_party = neutrality
+set_politics = {	
+	ruling_party = pragmatist
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 5
+    aximalist = 1
+    pragmatist = 94
 }
 
 set_stability = 0.75
@@ -96,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
 	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		#
 	}
@@ -118,7 +109,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -129,7 +120,7 @@ create_country_leader = {
 	desc = "POLITICS_DIONISIO_ENCINA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = totalist_subtype
+	ideology = national_communism_subtype
 	traits = {
 		#
 	}

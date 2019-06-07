@@ -1,0 +1,14 @@
+GER_hungarian_support = {
+
+	icon = eng_concessions_to_the_trade_unions
+
+	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_country_flag = germany_civilwar_3_hungarian_support
+	}
+}

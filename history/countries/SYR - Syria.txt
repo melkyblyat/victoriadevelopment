@@ -13,71 +13,31 @@ set_technology = {
 
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 5
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 4
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 5
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 41
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 15
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 21
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 9
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+    national_communism = 0
+    revolutionism = 5
+    democratic_socialist = 4
+    social_democrat = 5
+    liberal = 41
+    conservative = 15
+    monarchist = 0
+    fascism = 21
+    aximalist = 9
+    pragmatist = 0
+}
+
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_SYR_Hasim.tga"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

@@ -8,25 +8,22 @@ set_technology = {
 
 set_convoys = 5+
 
-set_politics = {
-
-	parties = {
-		liberal = { 
-			popularity = 100
-		}
-	}
-	
+set_politics = {	
 	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+set_popularities = {
+    liberal = 100
+}
+
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_3.dds"
-	ideology = liberalism
+	ideology = liberal_subtype
 	traits = {
 		#
 	}

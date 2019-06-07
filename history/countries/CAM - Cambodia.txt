@@ -41,17 +41,14 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		neutrality = {
-			popularity = 100
-		}
-	}
-
-	ruling_party = neutrality
+	ruling_party = pragmatist
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+set_popularities = {
+    pragmatist = 100
 }
 
 create_country_leader = {
@@ -59,7 +56,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = dictatorship
+	ideology = pragmatist_subtype
 	traits = {
 		
 	}

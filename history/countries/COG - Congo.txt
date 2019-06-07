@@ -20,62 +20,22 @@ set_technology = {
 
 set_convoys = 5
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 98
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 2
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 0
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 0
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
-	ruling_party = totalist
+set_politics = {	
+	ruling_party = national_communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 98
+    revolutionism = 2
+    democratic_socialist = 0
+    social_democrat = 0
+    liberal = 0
+    conservative = 0
+    monarchist = 0
+    
+    aximalist = 0
+    pragmatist = 0
 }

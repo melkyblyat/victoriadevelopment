@@ -29,64 +29,24 @@ add_opinion_modifier = { target = TUR modifier = large_decrease }
 
 set_convoys = 10
 
-set_politics = {
-
-	parties = {
-		totalist = { 
-			popularity = 0
-			banned = no
-		}
-
-		syndicalist = {
-			popularity = 0
-			banned = no
-		}
-		
-		socialist = {
-			popularity = 0
-			banned = no
-		}
-		
-		social_democrat = {
-			popularity = 0
-			banned = no
-		}
-		
-		liberal = { 
-			popularity = 0
-			banned = no
-		}
-		
-		conservative = { 
-			popularity = 38
-			banned = no
-		}
-		
-		monarchist = { 
-			popularity = 60
-			banned = no
-		}
-		
-		fascism = {
-			popularity = 0
-			banned = no
-		}
-		
-		nationalist = { 
-			popularity = 2
-			banned = no
-		}
-		
-		neutrality = { 
-			popularity = 0
-			banned = no
-		}
-	}
-	
+set_politics = {	
 	ruling_party = monarchist
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 0
+    social_democrat = 0
+    liberal = 0
+    conservative = 38
+    monarchist = 60
+    
+    aximalist = 2
+    pragmatist = 0
 }
 
 
@@ -95,7 +55,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ROM/Portrait_Romania_Ileana.tga"
 	expire = "1965.1.1"
-	ideology = monarchy
+	ideology = monarchist_subtype
 	traits = {
 		#
 	}
@@ -106,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ROM/Portrait_Romania_Ileana.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservative_subtype
 	traits = {
 		#
 	}
@@ -117,7 +77,7 @@ create_country_leader = {
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = aximalist_subtype
 	traits = {
 		#
 	}

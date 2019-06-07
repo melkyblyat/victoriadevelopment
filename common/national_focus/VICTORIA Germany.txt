@@ -435,7 +435,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_death_for_monarchy
+		id = GER_death_for_monarchist_subtype
 		icon = GFX_goal_flames_of_revolution
 		prerequisite = { focus = GER_union_with_rotfront }
 		
@@ -461,11 +461,11 @@ focus_tree = {
 	focus = {
 		id = GER_two_governments
 		icon = nothing
-		prerequisite = { focus = GER_death_for_monarchy }
+		prerequisite = { focus = GER_death_for_monarchist_subtype }
 		
 		x = 0
 		y = 1
-		relative_position_id = GER_death_for_monarchy
+		relative_position_id = GER_death_for_monarchist_subtype
 		
 		cost = 10
 		
@@ -487,7 +487,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_crackdown_on_the_socialist_reichstag
+		id = GER_crackdown_on_the_democratic_socialist_reichstag
 		icon = nothing
 		prerequisite = { focus = GER_invite_goebbels }
 		prerequisite = { focus = GER_industrial_repairment }
@@ -522,11 +522,11 @@ focus_tree = {
 	focus = {
 		id = GER_install_nazi_government
 		icon = nothing
-		prerequisite = { focus = GER_crackdown_on_the_socialist_reichstag }
+		prerequisite = { focus = GER_crackdown_on_the_democratic_socialist_reichstag }
 		
 		x = 0
 		y = 1
-		relative_position_id = GER_crackdown_on_the_socialist_reichstag
+		relative_position_id = GER_crackdown_on_the_democratic_socialist_reichstag
 		
 		cost = 10
 		
@@ -730,7 +730,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_install_dictatorship
+		id = GER_install_pragmatist_subtype
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = GER_industrial_repairment }
 		
@@ -762,13 +762,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_war_on_socialism
+		id = GER_war_on_social_democrat_subtype
 		icon = nothing
-		prerequisite = { focus = GER_install_dictatorship }
+		prerequisite = { focus = GER_install_pragmatist_subtype }
 		
 		x = 0
 		y = 1
-		relative_position_id = GER_install_dictatorship
+		relative_position_id = GER_install_pragmatist_subtype
 		
 		
 		cost = 10
@@ -793,11 +793,11 @@ focus_tree = {
 	focus = {
 		id = GER_war_on_democracy
 		icon = GFX_focus_hol_war_on_pacifism
-		prerequisite = { focus = GER_install_dictatorship }
+		prerequisite = { focus = GER_install_pragmatist_subtype }
 		
 		x = 2
 		y = 1
-		relative_position_id = GER_install_dictatorship
+		relative_position_id = GER_install_pragmatist_subtype
 		
 		cost = 10
 		
@@ -821,12 +821,12 @@ focus_tree = {
 	focus = {
 		id = GER_militarisation
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = GER_war_on_socialism }
+		prerequisite = { focus = GER_war_on_social_democrat_subtype }
 		prerequisite = {  focus = GER_war_on_democracy }
 		
 		x = 1
 		y = 1
-		relative_position_id = GER_war_on_socialism
+		relative_position_id = GER_war_on_social_democrat_subtype
 		
 		cost = 10
 		

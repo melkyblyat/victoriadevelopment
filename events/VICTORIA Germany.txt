@@ -935,3 +935,178 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = german.5
+	title = german.5.t	# Hungarian support
+	desc = german.5.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		has_global_flag = german_civilwar_3
+		has_government = aximalist
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = german.5.a # Give support
+		
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = -25
+		increase_ruling_party_popularity_by_5 = yes
+		GER = { country_event = { days = 1 id = german.9 } }
+	}
+	option = {
+		name = german.5.b # No support
+		
+		ai_chance = {
+			base = 10
+		}
+		decrease_ruling_party_popularity_by_5 = yes
+	}
+}
+
+country_event = {
+	id = german.6
+	title = german.6.t	# Hungarian support - Germany
+	desc = german.6.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german.6.a # Give support
+		
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = germany_civilwar_3_hungarian_support
+		unlock_decision_tooltip = GER_hungarian_support
+	}
+}
+
+country_event = {
+	id = german.7
+	title = german.7.t	# Austrian support
+	desc = german.7.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AUS
+		has_global_flag = german_civilwar_3
+		has_government = aximalist
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = german.5.a # Give support
+		
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = -25
+		increase_ruling_party_popularity_by_5 = yes
+		GER = { country_event = { days = 1 id = german.9 } }
+	}
+	option = {
+		name = german.5.b # No support
+		
+		ai_chance = {
+			base = 10
+		}
+		decrease_ruling_party_popularity_by_5 = yes
+	}
+}
+
+country_event = {
+	id = german.8
+	title = german.8.t	# Austrian support - Germany
+	desc = german.8.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german.6.a # Give support
+		
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = germany_civilwar_3_austrian_support
+	}
+}
+
+country_event = {
+	id = german.9
+	title = german.9.t	# Portugese support
+	desc = german.9.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		has_global_flag = german_civilwar_3
+		has_government = aximalist
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = german.5.a # Give support
+		
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = -25
+		increase_ruling_party_popularity_by_5 = yes
+		GER = { country_event = { days = 1 id = german.9 } }
+	}
+	option = {
+		name = german.5.b # No support
+		
+		ai_chance = {
+			base = 10
+		}
+		decrease_ruling_party_popularity_by_5 = yes
+	}
+}
+
+country_event = {
+	id = german.10
+	title = german.10.t	# Portugese support - Germany
+	desc = german.10.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = german.6.a # Give support
+		
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = germany_civilwar_3_portugese_support
+	}
+}

@@ -16,7 +16,8 @@ GER_hungarian_support = {
 
 		cost = 20
 
-		fire_only_once = yes
+		fire_only_once = no
+		days_remove = 20
 
 		visible = {
 			has_country_flag = germany_civilwar_3_hungarian_support
@@ -27,6 +28,76 @@ GER_hungarian_support = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 200
+				producer = GER
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	GER_receive_austrian_manpower = {
+
+		name = GER_receive_austrian_manpower
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+		}
+
+		cost = 20
+
+		fire_only_once = no
+		days_remove = 20
+
+		visible = {
+			has_country_flag = germany_civilwar_3_austrian_support
+			has_government = aximalist
+		}
+
+		complete_effect = {
+			add_manpower = 1500
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	GER_receive_portugese_air = {
+
+		name = GER_receive_portugese_air
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+		}
+
+		cost = 30
+
+		fire_only_once = no
+		days_remove = 20
+
+		visible = {
+			has_country_flag = germany_civilwar_3_portugese_support
+			has_government = aximalist
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 18
 				producer = GER
 			}
 		}

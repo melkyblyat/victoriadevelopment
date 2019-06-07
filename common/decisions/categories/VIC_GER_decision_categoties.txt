@@ -9,6 +9,10 @@ GER_hungarian_support = {
 	}
 
 	visible = {
-		has_country_flag = germany_civilwar_3_hungarian_support
+		OR = {
+			has_country_flag = germany_civilwar_3_hungarian_support
+			has_country_flag = germany_civilwar_3_austrian_support
+			has_country_flag = germany_civilwar_3_portugese_support
+		}
 	}
 }

@@ -5339,3 +5339,12 @@
  PNG_GER_fascism_ADJ:0 "Германск."
  PNG_GER_aximalist_ADJ:0 "Германск."
  PNG_GER_pragmatist_ADJ:0 "Германск."
+ 
+ 
+ 
+ WGR_monarchist:0 "Германская Империя"
+ WGR_monarchist_DEF:0 "Германская Империя"
+ WGR_monarchist_ADJ:0 "Германск."
+ DDR_democratic_socialist:0 "Народная Республика Германия"
+ DDR_democratic_socialist_DEF:0 "Народная Республика Германия"
+ DDR_democratic_socialist_ADJ:0 "Германск."

@@ -209,7 +209,10 @@
  
  GER_hungarian_support:0 "Иностранная помощь"
  
- GER_receive_hungarian_equipment:0 "Поставки венгерского вооружения"
+ GER_receive_hungarian_equipment_desicion:0 "Поставки венгерского вооружения"
  GER_receive_hungarian_equipment_desc:0 "Венгерские национал-социалисты готовы оказать нам поддержку и начать пересылку снаряжения по воздуху. Конечно же, они надеятся на нашу победу и готовы сделать свой вклад таким образом."
-
+ GER_receive_austrian_manpower:0 "Австрийские добровольцы"
+ GER_receive_austrian_manpower_desc:0 ""
+ GER_receive_portugese_air:0 "Самолеты из Португалии"
+ GER_receive_portugese_air_desc:0 ""
 

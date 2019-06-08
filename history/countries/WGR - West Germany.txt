@@ -1,5 +1,9 @@
 ﻿capital = 64
 
+add_ideas = {
+	GER_small_depression
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -1,5 +1,9 @@
 ﻿capital = 832
 
+add_ideas = {
+	GER_small_depression
+}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -63,7 +67,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Ernst Thälmann"
-	picture = "Portrait_Germany_Paul_von_Lettow_Vorbeck.tga"
+	picture = "Ernst_Thälmann.dds"
 	expire = "1965.1.1"
 	ideology = democratic_socialist_subtype
 	traits = {

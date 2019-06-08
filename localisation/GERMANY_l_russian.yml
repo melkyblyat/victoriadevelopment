@@ -130,6 +130,35 @@
  german.4.b:0 "Принять континентальное деление"
  german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
  
+ german.5.t:0 ""
+ german.5.desc:0 ""
+ german.5.a:0 ""
+ german.5.b:0 ""
+ 
+ german.6.t:0 ""
+ german.6.desc:0 ""
+ german.6.a:0 ""
+ 
+ german.7.t:0 ""
+ german.7.desc:0 ""
+ 
+ german.8.t:0 ""
+ german.8.desc:0 ""
+ 
+ german.9.t:0 ""
+ german.9.desc:0 ""
+ 
+ german.10.t:0 ""
+ german.10.desc:0 ""
+ 
+ german.11.t:0 ""
+ german.11.desc:0 ""
+ german.11.a:0 ""
+ 
+ german.12.t:0 ""
+ german.12.desc:0 ""
+ german.12.a:0 ""
+ 
  germanpolitical.1.t:0 "Несчастный случай на параде"
  germanpolitical.1.desc:0 "19 лет назад мы одержали победу над Антантой. В честь этого события, был проведен очередной ежегодный военный парад в Берлине. Кайзер Фридрих Эйтель I Прусский, ввиду своей неважной физической формы, не смог удержаться на лошади и упал во время обхода войск. Генералы пытались помочь ему подняться, но удалось это не сразу."
  germanpolitical.1.a:0 "Лишь бы не утянул за собой страну"
@@ -180,6 +209,10 @@
  
  GER_hungarian_support:0 "Иностранная помощь"
  
- GER_receive_hungarian_equipment:0 "Поставки венгерского вооружения"
+ GER_receive_hungarian_equipment_decision:0 "Поставки венгерского вооружения"
  GER_receive_hungarian_equipment_desc:0 "Венгерские национал-социалисты готовы оказать нам поддержку и начать пересылку снаряжения по воздуху. Конечно же, они надеятся на нашу победу и готовы сделать свой вклад таким образом."
+ GER_receive_austrian_manpower:0 "Австрийские добровольцы"
+ GER_receive_austrian_manpower_desc:0 ""
+ GER_receive_portugese_air:0 "Самолеты из Португалии"
+ GER_receive_portugese_air:0 ""
 

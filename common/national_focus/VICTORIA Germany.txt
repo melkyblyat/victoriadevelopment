@@ -648,6 +648,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
+		available = {
+			has_country_flag = end_for_civilwar
+		}
+		
 		complete_tooltip = {
 
 		}

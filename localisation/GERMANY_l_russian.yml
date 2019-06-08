@@ -7,11 +7,11 @@
  GER_non_effective_colonial_administration:0 "Неэффективная колониальная администрация"
  GER_non_effective_colonial_administration_desc:0 "Текущая политика в отношение колоний делает управление на местах крайне неэффективным. Ситуацию на заморских территориях можно описать только как бюрократическая неразбериха и хаос."
  GER_red_protests:0 "Красные протесты"
- GER_red_protests_desc:0 ""
+ GER_red_protests_desc:0 "Коммунисты постоянно собирают рабочих на протесты и забастовки. Они продолжают бастовать даже не смотря на то, что их притесняют нацисты. Мы должны держать ситуацию под контролем."
  GER_red_protests_strike:0 "Красные протесты"
- GER_red_protests_strike_desc:0 ""
+ GER_red_protests_strike_desc:0 "Коммунисты постоянно собирают рабочих на протесты и забастовки. Они продолжают бастовать даже не смотря на то, что их притесняют нацисты. Мы должны держать ситуацию под контролем."
  GER_red_protests_strike_1:0 "Красные протесты"
- GER_red_protests_strike_1_desc:0 ""
+ GER_red_protests_strike_1_desc:0 "Коммунисты постоянно собирают рабочих на протесты и забастовки. Они продолжают бастовать даже не смотря на то, что их притесняют нацисты. Ситуация выходит из-под контроля."
  
  ### Parties ###
 
@@ -147,16 +147,39 @@
  germanpolitical.4.desc:0 ""
  germanpolitical.4.a:0 "Голосование завершено."
  
+ germanpolitical.5.t:0 "Демонстрации рабочих"
+ germanpolitical.5.desc:0 ""
+ germanpolitical.5.a:0 "Проучите их"
+ germanpolitical.5.b:0 "Пойти на сделку"
+ 
+ germanpolitical.6.t:0 "Массовые протесты"
+ germanpolitical.6.desc:0 ""
+ germanpolitical.6.a:0 "Кучка клоунов"
+ 
+ germanpolitical.7.t:0 "Хаос в Германии"
+ germanpolitical.7.desc:0 ""
+ germanpolitical.7.a:0 "Мы воспользуемся этим!"
+ 
  
  ### Effects ###
  
  eitel_goodbye:0 "Парад в Берлине прошел"
  open_politics:0 ""
  germany_strikes_negotiate:0 ""
+ ready_for_death_for_communism:0 ""
+ german_civilwar_3:0 ""
+ german_civilwar_3_event:0 ""
  
  ### Traits ###
  
  ### Opinion modifiers ###
  
  ## Factions ##
+ 
+ ### Decisions ###
+ 
+ GER_hungarian_support:0 "Иностранная помощь"
+ 
+ GER_receive_hungarian_equipment:0 "Поставки венгерского вооружения"
+ GER_receive_hungarian_equipment_desc:0 "Венгерские национал-социалисты готовы оказать нам поддержку и начать пересылку снаряжения по воздуху. Конечно же, они надеятся на нашу победу и готовы сделать свой вклад таким образом."
 

@@ -80,7 +80,7 @@
  GER_new_germany_desc:0 ""
  GER_two_governments:0 "Dual Power"
  GER_two_governments_desc:0 ""
- GER_crackdown_on_the_democratic_socialist_reichstag:0 "Crackdown on the democratic_socialist Reichstag"
+ GER_crackdown_on_the_democratic_socialist_reichstag:0 "Crackdown on the socialist Reichstag"
  GER_crackdown_on_the_democratic_socialist_reichstag_desc:0 ""
  GER_install_nazi_government:0 "Power of the Party"
  GER_install_nazi_government_desc:0 ""
@@ -102,6 +102,7 @@
  GER_war_on_democracy_desc:0 ""
  GER_militarisation:0 "Militarisation"
  GER_militarisation_desc:0 ""
+ 
  ### Events ###
  
  german.1.t:0 "Колониальная ассамблея"
@@ -173,5 +174,13 @@
  
  ### Opinion modifiers ###
  
- ## Factions ##
+ ### Factions ###
+ 
+ ### Decisions ###
+ 
+ GER_hungarian_support:0 "Иностранная помощь"
+ 
+ GER_receive_hungarian_equipment:0 "Поставки венгерского вооружения"
+ GER_receive_hungarian_equipment_desc:0 "Венгерские национал-социалисты готовы оказать нам поддержку и начать пересылку снаряжения по воздуху. Конечно же, они надеятся на нашу победу и готовы сделать свой вклад таким образом."
+
 

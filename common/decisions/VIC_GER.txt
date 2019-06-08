@@ -96,7 +96,7 @@ GER_hungarian_support = {
 
 		complete_effect = {
 			add_equipment_to_stockpile = {
-				type = fighter_equipment
+				type = CAS_equipment
 				amount = 18
 				producer = GER
 			}

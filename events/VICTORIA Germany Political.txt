@@ -591,14 +591,7 @@ country_event = {
 			
 			#news_event = { id = news.3 }
 			
-			
-			
-			
-			
-			
 		}
 	}
 }
-
-
 

@@ -12,7 +12,7 @@ ideologies = {
 			"FACTION_NAME_national_communism_5"
 			"FACTION_NAME_national_communism_6"
 		}
-		color = { 150 0 0 }
+		color = { 100 0 0 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -39,7 +39,7 @@ ideologies = {
 			"FACTION_NAME_revolutionism_5"
 			"FACTION_NAME_revolutionism_6"
 		}
-		color = { 255 0 0 }
+		color = { 150 5 5 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -68,7 +68,7 @@ ideologies = {
 			"FACTION_NAME_RADICAL_democratic_socialist_5"
 			"FACTION_NAME_RADICAL_democratic_socialist_6"
 		}
-		color = { 233 58 58 }
+		color = { 200 40 40 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -97,7 +97,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_5"
 			"FACTION_NAME_SOCIAL_DEMOCRAT_6"
 		}
-		color = { 194 30 86 }
+		color = { 200 50 90 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -125,7 +125,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_LIBERAL_5"
 			"FACTION_NAME_SOCIAL_LIBERAL_6"
 		}
-		color = { 255 170 0 }
+		color = { 255 210 0 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -152,7 +152,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_5"
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_6"
 		}
-		color = { 0 0 255 }
+		color = { 0 0 180 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -179,7 +179,7 @@ ideologies = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_5"
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_6"
 		}
-		color = { 130 130 130 }
+		color = { 50 50 50 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -206,7 +206,7 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULIST_5"
 			"FACTION_NAME_NATIONAL_POPULIST_6"
 		}
-		color = { 142 57 0 }
+		color = { 100 50 0 }
 		rules = {
 			can_force_government = no
 			can_puppet = no
@@ -233,7 +233,7 @@ ideologies = {
 			"FACTION_NAME_pragmatist_5"
 			"FACTION_NAME_pragmatist_6"
 		}
-		color = { 100 100 100 }
+		color = { 90 90 120 }
 		rules = {
 			can_force_government = no
 			can_puppet = no

@@ -54,7 +54,7 @@
  GER_crackdown_protests_desc:0 ""
  GER_union_with_rotfront:0 "Deal with Rote Front"
  GER_union_with_rotfront_desc:0 ""
- GER_death_for_monarchist_subtype:0 "Death for monarchist_subtype"
+ GER_death_for_monarchist_subtype:0 "Death for monarchy"
  GER_death_for_monarchist_subtype_desc:0 ""
  GER_revolution_against_the_revolution:0 "Revolution Against the Revolution"
  GER_revolution_against_the_revolution_desc:0 ""
@@ -129,6 +129,35 @@
  german.4.a.t:0 "Все административные округа будут сведены в один"
  german.4.b:0 "Принять континентальное деление"
  german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
+ 
+ german.5.t:0 ""
+ german.5.desc:0 ""
+ german.5.a:0 ""
+ german.5.b:0 ""
+ 
+ german.6.t:0 ""
+ german.6.desc:0 ""
+ german.6.a:0 ""
+ 
+ german.7.t:0 ""
+ german.7.desc:0 ""
+ 
+ german.8.t:0 ""
+ german.8.desc:0 ""
+ 
+ german.9.t:0 ""
+ german.9.desc:0 ""
+ 
+ german.10.t:0 ""
+ german.10.desc:0 ""
+ 
+ german.11.t:0 ""
+ german.11.desc:0 ""
+ german.11.a:0 ""
+ 
+ german.12.t:0 ""
+ german.12.desc:0 ""
+ german.12.a:0 ""
  
  germanpolitical.1.t:0 "Embarassment at the Parade"
  germanpolitical.1.desc:0 "19 years ago we defeated the Entente. It was a great victory. However, 19 years of peace had a negative impact on Germany. Today a parade of imperial troops was held in Berlin. Kaiser Eitel Friedrich I fell from a horse when he was bypassing the troops during the inspection. The generals tried to help him to stand up in a hurry but they succeeded only from a second attempt."

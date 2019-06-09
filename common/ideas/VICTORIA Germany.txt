@@ -145,6 +145,25 @@ ideas = {
 				war_support_factor = -0.15
 			}
 		}
+		
+		GER_dual_government = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_ast_volunteer_defence_corps
+
+			modifier = {
+                political_power_gain = -0.1
+			}
+		}
 
 	}
 }

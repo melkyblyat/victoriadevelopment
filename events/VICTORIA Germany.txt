@@ -1443,7 +1443,7 @@ country_event = {
 				popularity = 0.4
 			}
 			
-			set_cosmetic_tag = GER_NAZI
+			set_cosmetic_tag = GER_UNITED_2
 			remove_ideas = GER_red_protests_strike_2
 			remove_ideas = GER_fight_for_power
 			

@@ -473,6 +473,10 @@ focus_tree = {
 			factor = 1
 		}
 		
+		available = {
+			has_country_flag = end_for_civilwar
+		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -482,7 +486,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 50
+			add_idea = GER_dual_government
 		}
 	}
 	

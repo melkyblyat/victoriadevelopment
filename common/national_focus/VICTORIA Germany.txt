@@ -200,7 +200,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 200
+			custom_effect_tooltip = GER_organise_marches_tt
 		}
 	}
 	
@@ -460,7 +461,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_two_governments
-		icon = nothing
+		icon = GFX_goal_dual_power
 		prerequisite = { focus = GER_death_for_monarchist_subtype }
 		
 		x = 0
@@ -487,7 +488,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_idea = GER_dual_government
+			add_ideas = GER_dual_government
 		}
 	}
 	

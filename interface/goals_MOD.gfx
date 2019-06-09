@@ -49,5 +49,10 @@ spriteTypes = {
 	name = "GFX_goal_sturmabteilung"
 	texturefile = "gfx/interface/goals/goal_sturmabteilung.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_dual_power"
+	texturefile = "gfx/interface/goals/goal_dual_power.dds"			
+	}
 
 }

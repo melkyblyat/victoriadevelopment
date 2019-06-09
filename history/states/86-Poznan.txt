@@ -1,6 +1,6 @@
 state={
 	id=86
-	name="STATE_86"
+	name="STATE_VDKH_OR_5"
 	manpower = 2106500
 	
 	

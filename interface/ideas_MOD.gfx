@@ -35,4 +35,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GER_dual_government"
+		texturefile = "gfx/interface/ideas/GER_dual_power.dds"
+	}
+	
 }

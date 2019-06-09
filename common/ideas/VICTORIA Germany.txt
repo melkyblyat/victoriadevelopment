@@ -158,7 +158,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = idea_ast_volunteer_defence_corps
+			picture = GER_dual_power
 
 			modifier = {
                 political_power_gain = -0.1

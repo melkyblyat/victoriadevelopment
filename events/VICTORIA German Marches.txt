@@ -1,0 +1,1152 @@
+###########################
+# sa_marchesian Events
+###########################
+
+add_namespace = sa_marches
+
+country_event = {
+	id = sa_marches.1
+	title = sa_marches.1.t
+	desc = sa_marches.1.d
+	picture = GFX_report_event_GER_good_sa_march
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = sa_marches.1.a
+		add_political_power = 25
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_northern_holstein
+			}
+			add_stability = -0.041
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			815 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schleswig_holstein
+			}
+			add_stability = -0.009
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			58 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hamburg
+			}
+			add_stability = -0.026
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			830 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hannover
+			}
+			add_stability = -0.077
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			59 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_bremen
+			}
+			add_stability = -0.048
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			831 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_weser_ems
+			}
+			add_stability = -0.072
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			56 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_westfalen
+			}
+			add_stability = -0.27
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			57 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_rhineland
+			}
+			add_stability = -0.195
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			51 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hessen
+			}
+			add_stability = -0.078
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			55 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_west_nordrheins
+			}
+			add_stability = -0.8
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			832 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_eupen_malmady
+			}
+			add_stability = -0.075
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			816 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_luxemburg
+			}
+			add_stability = -0.047
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			8 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_moselland
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			42 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_berlin
+			}
+			add_stability = -0.333
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			64 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_alsace
+			}
+			add_stability = -0.042
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			28 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_wurttemberg
+			}
+			add_stability = -0.108
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			50 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberbayern
+			}
+			add_stability = -0.108
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			52 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederbayern
+			}
+			add_stability = -0.041
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			53 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_franken
+			}
+			add_stability = -0.009
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			54 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_thuringen
+			}
+			add_stability = -0.026
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			136 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_sachsen
+			}
+			add_stability = -0.077
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			133 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_mecklenburg
+			}
+			add_stability = -0.048
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			61 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_vorpommern
+			}
+			add_stability = -0.072
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			62 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hinterpommern
+			}
+			add_stability = -0.157
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			130 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostmark
+			}
+			add_stability = -0.195
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			68 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schlesien
+			}
+			add_stability = -0.078
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			122 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederschlesien
+			}
+			add_stability = -0.125
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			128 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberschlesien
+			}
+			add_stability = -0.075
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			67 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_kattowitz
+			}
+			add_stability = -0.047
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			762 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_posen
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			86 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_koningsberg
+			}
+			add_stability = -0.333
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			763 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_memel
+			}
+			add_stability = -0.042
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			123 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostprussen
+			}
+			add_stability = -0.108
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			127 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_gnesen
+			}
+			add_stability = -0.075
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			818 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ermland
+			}
+			add_stability = -0.047
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			5 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_danzig
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			85 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		clr_country_flag = GER_march_temp_niederbayern
+		clr_country_flag = GER_march_temp_franken
+		clr_country_flag = GER_march_temp_thuringen
+		clr_country_flag = GER_march_temp_sachsen
+		clr_country_flag = GER_march_temp_mecklenburg
+		clr_country_flag = GER_march_temp_vorpommern
+		clr_country_flag = GER_march_temp_hinterpommern
+		clr_country_flag = GER_march_temp_ostmark
+		clr_country_flag = GER_march_temp_schlesien
+		clr_country_flag = GER_march_temp_niederschlesien
+		clr_country_flag = GER_march_temp_oberschlesien
+		clr_country_flag = GER_march_temp_kattowitz
+		clr_country_flag = GER_march_temp_posen
+		clr_country_flag = GER_march_temp_koningsberg
+		clr_country_flag = GER_march_temp_memel
+		clr_country_flag = GER_march_temp_ostprussen
+		clr_country_flag = GER_march_temp_gnesen
+		clr_country_flag = GER_march_temp_ermland
+		clr_country_flag = GER_march_temp_danzig
+		clr_country_flag = GER_march_temp_northern_holstein
+		clr_country_flag = GER_march_temp_schleswig_holstein
+		clr_country_flag = GER_march_temp_hamburg
+		clr_country_flag = GER_march_temp_hannover
+		clr_country_flag = GER_march_temp_bremen
+		clr_country_flag = GER_march_temp_weser_ems
+		clr_country_flag = GER_march_temp_westfalen
+		clr_country_flag = GER_march_temp_rhineland
+		clr_country_flag = GER_march_temp_hessen
+		clr_country_flag = GER_march_temp_west_nordrheins
+		clr_country_flag = GER_march_temp_eupen_malmady
+		clr_country_flag = GER_march_temp_luxemburg
+		clr_country_flag = GER_march_temp_moselland
+		clr_country_flag = GER_march_temp_berlin
+		clr_country_flag = GER_march_temp_alsace
+		clr_country_flag = GER_march_temp_wurttemberg
+		clr_country_flag = GER_march_timer_flag
+		clr_country_flag = GER_restrained_march_flag
+		clr_country_flag = GER_march_temp_oberbayern
+	}
+}
+
+# sa normal March in [statenamehere]!
+country_event = {
+	id = sa_marches.2
+	title = sa_marches.2.t
+	desc = sa_marches.2.d
+	picture = GFX_report_event_GER_sa_march
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = sa_marches.2.a
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_northern_holstein
+			}
+			add_stability = -0.054
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			815 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schleswig_holstein
+			}
+			add_stability = -0.012
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			58 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hamburg
+			}
+			add_stability = -0.034
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			830 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hannover
+			}
+			add_stability = -0.102
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			59 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_bremen
+			}
+			add_stability = -0.064
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			831 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_weser_ems
+			}
+			add_stability = -0.096
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			56 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_westfalen
+			}
+			add_stability = -0.202
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			57 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_rhineland
+			}
+			add_stability = -0.26
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			51 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hessen
+			}
+			add_stability = -0.104
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			55 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_west_nordrheins
+			}
+			add_stability = -0.36
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			832 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_eupen_malmady
+			}
+			add_stability = -0.1
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			816 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_luxemburg
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			8 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_moselland
+			}
+			add_stability = -0.082
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			42 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_berlin
+			}
+			add_stability = -0.444
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			64 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_alsace
+			}
+			add_stability = -0.056
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			28 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_wurttemberg
+			}
+			add_stability = -0.14
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			50 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberbayern
+			}
+			add_stability = -0.14
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			52 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederbayern
+			}
+			add_stability = -0.054
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			53 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_franken
+			}
+			add_stability = -0.012
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			54 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_thuringen
+			}
+			add_stability = -0.034
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			136 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_sachsen
+			}
+			add_stability = -0.102
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			133 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_mecklenburg
+			}
+			add_stability = -0.064
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			61 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_vorpommern
+			}
+			add_stability = -0.096
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			62 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hinterpommern
+			}
+			add_stability = -0.202
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			130 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostmark
+			}
+			add_stability = -0.26
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			68 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schlesien
+			}
+			add_stability = -0.104
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			122 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederschlesien
+			}
+			add_stability = -0.166
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			128 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberschlesien
+			}
+			add_stability = -0.1
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			67 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_kattowitz
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			762 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_posen
+			}
+			add_stability = -0.082
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			86 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_koningsberg
+			}
+			add_stability = -0.444
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			763 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_memel
+			}
+			add_stability = -0.056
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			123 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostprussen
+			}
+			add_stability = -0.144
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			127 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_gnesen
+			}
+			add_stability = -0.1
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			818 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ermland
+			}
+			add_stability = -0.062
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			5 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_danzig
+			}
+			add_stability = -0.082
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			85 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		clr_country_flag = GER_march_temp_niederbayern
+		clr_country_flag = GER_march_temp_franken
+		clr_country_flag = GER_march_temp_thuringen
+		clr_country_flag = GER_march_temp_sachsen
+		clr_country_flag = GER_march_temp_mecklenburg
+		clr_country_flag = GER_march_temp_vorpommern
+		clr_country_flag = GER_march_temp_hinterpommern
+		clr_country_flag = GER_march_temp_ostmark
+		clr_country_flag = GER_march_temp_schlesien
+		clr_country_flag = GER_march_temp_niederschlesien
+		clr_country_flag = GER_march_temp_oberschlesien
+		clr_country_flag = GER_march_temp_kattowitz
+		clr_country_flag = GER_march_temp_posen
+		clr_country_flag = GER_march_temp_koningsberg
+		clr_country_flag = GER_march_temp_memel
+		clr_country_flag = GER_march_temp_ostprussen
+		clr_country_flag = GER_march_temp_gnesen
+		clr_country_flag = GER_march_temp_ermland
+		clr_country_flag = GER_march_temp_danzig
+		clr_country_flag = GER_march_temp_northern_holstein
+		clr_country_flag = GER_march_temp_schleswig_holstein
+		clr_country_flag = GER_march_temp_hamburg
+		clr_country_flag = GER_march_temp_hannover
+		clr_country_flag = GER_march_temp_bremen
+		clr_country_flag = GER_march_temp_weser_ems
+		clr_country_flag = GER_march_temp_westfalen
+		clr_country_flag = GER_march_temp_rhineland
+		clr_country_flag = GER_march_temp_hessen
+		clr_country_flag = GER_march_temp_west_nordrheins
+		clr_country_flag = GER_march_temp_eupen_malmady
+		clr_country_flag = GER_march_temp_luxemburg
+		clr_country_flag = GER_march_temp_moselland
+		clr_country_flag = GER_march_temp_berlin
+		clr_country_flag = GER_march_temp_alsace
+		clr_country_flag = GER_march_temp_wurttemberg
+		clr_country_flag = GER_march_timer_flag
+		clr_country_flag = GER_restrained_march_flag
+		clr_country_flag = GER_march_temp_oberbayern
+	}
+}
+
+# sa disastrous March in [statenamehere]!
+country_event = {
+	id = sa_marches.3
+	title = sa_marches.3.t
+	desc = sa_marches.3.d
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = sa_marches.3.a
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_northern_holstein
+			}
+			add_stability = -0.081
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			815 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schleswig_holstein
+			}
+			add_stability = -0.018
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			58 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hamburg
+			}
+			add_stability = -0.051
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			830 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hannover
+			}
+			add_stability = -0.23
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			59 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_bremen
+			}
+			add_stability = -0.096
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			831 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_weser_ems
+			}
+			add_stability = -0.14
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			56 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_westfalen
+			}
+			add_stability = -0.303
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			57 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_rhineland
+			}
+			add_stability = -0.39
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			51 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hessen
+			}
+			add_stability = -0.26
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			55 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_west_nordrheins
+			}
+			add_stability = -0.249
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			832 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_eupen_malmady
+			}
+			add_stability = -0.2
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			816 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_luxemburg
+			}
+			add_stability = -0.093
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			8 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_moselland
+			}
+			add_stability = -0.28
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			42 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_berlin
+			}
+			add_stability = -0.666
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			64 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_alsace
+			}
+			add_stability = -0.084
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			28 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_wurttemberg
+			}
+			add_stability = -0.23
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			50 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberbayern
+			}
+			add_stability = -0.23
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			52 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederbayern
+			}
+			add_stability = -0.081
+			add_popularity = { ideology = aximalist popularity = 0.027 }
+			53 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_franken
+			}
+			add_stability = -0.018
+			add_popularity = { ideology = aximalist popularity = 0.006 }
+			54 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_thuringen
+			}
+			add_stability = -0.051
+			add_popularity = { ideology = aximalist popularity = 0.017 }
+			136 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_sachsen
+			}
+			add_stability = -0.153
+			add_popularity = { ideology = aximalist popularity = 0.051 }
+			133 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_mecklenburg
+			}
+			add_stability = -0.096
+			add_popularity = { ideology = aximalist popularity = 0.032 }
+			61 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_vorpommern
+			}
+			add_stability = -0.144
+			add_popularity = { ideology = aximalist popularity = 0.048 }
+			62 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_hinterpommern
+			}
+			add_stability = -0.303
+			add_popularity = { ideology = aximalist popularity = 0.101 }
+			130 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostmark
+			}
+			add_stability = -0.39
+			add_popularity = { ideology = aximalist popularity = 0.13 }
+			68 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_schlesien
+			}
+			add_stability = -0.156
+			add_popularity = { ideology = aximalist popularity = 0.052 }
+			122 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_niederschlesien
+			}
+			add_stability = -0.249
+			add_popularity = { ideology = aximalist popularity = 0.083 }
+			128 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_oberschlesien
+			}
+			add_stability = -0.15
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			67 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_kattowitz
+			}
+			add_stability = -0.093
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			762 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_posen
+			}
+			add_stability = -0.123
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			86 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_koningsberg
+			}
+			add_stability = -0.666
+			add_popularity = { ideology = aximalist popularity = 0.222 }
+			763 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_memel
+			}
+			add_stability = -0.084
+			add_popularity = { ideology = aximalist popularity = 0.028 }
+			123 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ostprussen
+			}
+			add_stability = -0.216
+			add_popularity = { ideology = aximalist popularity = 0.072 }
+			127 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_gnesen
+			}
+			add_stability = -0.15
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			818 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_ermland
+			}
+			add_stability = -0.093
+			add_popularity = { ideology = aximalist popularity = 0.031 }
+			5 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = GER_march_temp_danzig
+			}
+			add_stability = -0.123
+			add_popularity = { ideology = aximalist popularity = 0.041 }
+			85 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_sa_march_tt
+		}
+		clr_country_flag = GER_march_temp_niederbayern
+		clr_country_flag = GER_march_temp_franken
+		clr_country_flag = GER_march_temp_thuringen
+		clr_country_flag = GER_march_temp_sachsen
+		clr_country_flag = GER_march_temp_mecklenburg
+		clr_country_flag = GER_march_temp_vorpommern
+		clr_country_flag = GER_march_temp_hinterpommern
+		clr_country_flag = GER_march_temp_ostmark
+		clr_country_flag = GER_march_temp_schlesien
+		clr_country_flag = GER_march_temp_niederschlesien
+		clr_country_flag = GER_march_temp_oberschlesien
+		clr_country_flag = GER_march_temp_kattowitz
+		clr_country_flag = GER_march_temp_posen
+		clr_country_flag = GER_march_temp_koningsberg
+		clr_country_flag = GER_march_temp_memel
+		clr_country_flag = GER_march_temp_ostprussen
+		clr_country_flag = GER_march_temp_gnesen
+		clr_country_flag = GER_march_temp_ermland
+		clr_country_flag = GER_march_temp_danzig
+		clr_country_flag = GER_march_temp_northern_holstein
+		clr_country_flag = GER_march_temp_schleswig_holstein
+		clr_country_flag = GER_march_temp_hamburg
+		clr_country_flag = GER_march_temp_hannover
+		clr_country_flag = GER_march_temp_bremen
+		clr_country_flag = GER_march_temp_weser_ems
+		clr_country_flag = GER_march_temp_westfalen
+		clr_country_flag = GER_march_temp_rhineland
+		clr_country_flag = GER_march_temp_hessen
+		clr_country_flag = GER_march_temp_west_nordrheins
+		clr_country_flag = GER_march_temp_eupen_malmady
+		clr_country_flag = GER_march_temp_luxemburg
+		clr_country_flag = GER_march_temp_moselland
+		clr_country_flag = GER_march_temp_berlin
+		clr_country_flag = GER_march_temp_alsace
+		clr_country_flag = GER_march_temp_wurttemberg
+		clr_country_flag = GER_march_timer_flag
+		clr_country_flag = GER_restrained_march_flag
+		clr_country_flag = GER_march_temp_oberbayern
+	}
+}
+
+country_event = {
+	id = sa_marches.4
+	title = sa_marches.4.t
+	desc = sa_marches.4.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = sa_marches.4.a
+		set_politics = { ruling_party = aximalist elections_allowed = no }
+		add_timed_idea = { idea = GER_restoring_public_order days = 365 }
+	}
+}

@@ -4,14 +4,14 @@ GER_hungarian_support = {
 
 		name = GER_receive_hungarian_equipment_decision
 
-		icon = eng_trade_unions_demand
+		icon = GER_trade_unions_demand
 
 		allowed = {
 			tag = GER
 		}
 
 		available = {
-			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+			#NOT = { has_country_flag = GER_trade_unions_demand_timer }
 		}
 
 		cost = 20
@@ -41,14 +41,14 @@ GER_hungarian_support = {
 
 		name = GER_receive_austrian_manpower
 
-		icon = eng_trade_unions_demand
+		icon = GER_trade_unions_demand
 
 		allowed = {
 			tag = GER
 		}
 
 		available = {
-			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+			#NOT = { has_country_flag = GER_trade_unions_demand_timer }
 		}
 
 		cost = 20
@@ -74,14 +74,14 @@ GER_hungarian_support = {
 
 		name = GER_receive_portugese_air
 
-		icon = eng_trade_unions_demand
+		icon = GER_trade_unions_demand
 
 		allowed = {
 			tag = GER
 		}
 
 		available = {
-			#NOT = { has_country_flag = ENG_trade_unions_demand_timer }
+			#NOT = { has_country_flag = GER_trade_unions_demand_timer }
 		}
 
 		cost = 30
@@ -106,4 +106,2740 @@ GER_hungarian_support = {
 			factor = 100
 		}
 	}
+}
+
+GER_organise_marches = {
+
+	GER_urge_restraint = {
+
+		icon = GER_propaganda_campaigns
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			NOT = { has_country_flag = GER_restrained_march_flag }
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_popularity = { ideology = aximalist popularity = -0.01 }
+			53 = { set_state_flag = GER_has_sa_support }
+			custom_effect_tooltip = GER_urge_restraint_tt
+			set_country_flag = GER_restrained_march_flag
+			custom_effect_tooltip = GER_speech_against_germany_tt
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	GER_sa_march_in_northern_holstein = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 815
+		}
+
+		highlight_states = { state = 815 }
+
+		on_map_mode = map_only
+
+		cost = 26
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			815 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.041
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.054
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.081
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_northern_holstein
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_the_schleswig_holstein = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 58
+		}
+
+		highlight_states = { state = 58 }
+
+		on_map_mode = map_only
+
+		cost = 6
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			58 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.009
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.012
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.018
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_schleswig_holstein
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.518
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_hamburg = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 830
+		}
+
+		highlight_states = { state = 830 }
+
+		on_map_mode = map_only
+
+		cost = 17
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			830 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.026
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.034
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.051
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_hamburg
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.551
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_hannover = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 59
+		}
+
+		highlight_states = { state = 59 }
+
+		on_map_mode = map_only
+
+		cost = 48
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			59 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.077
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.102
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.153
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_hannover
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.653
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_bremen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 831
+		}
+
+		highlight_states = { state = 831 }
+
+		on_map_mode = map_only
+
+		cost = 31
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			831 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.048
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.064
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_bremen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.596
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_weser_ems = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 56
+		}
+
+		highlight_states = { state = 56 }
+
+		on_map_mode = map_only
+
+		cost = 42
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			56 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.072
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_weser_ems
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.644
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_westfalen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 57
+		}
+
+		highlight_states = { state = 57 }
+
+		on_map_mode = map_only
+
+		cost = 91
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			57 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.157
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.202
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.303
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_westfalen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.803
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_rhineland = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 51
+		}
+
+		highlight_states = { state = 51 }
+
+		on_map_mode = map_only
+
+		cost = 113
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			51 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.195
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.26
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.39
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_rhineland
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.89
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_hessen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 55
+		}
+
+		highlight_states = { state = 55 }
+
+		on_map_mode = map_only
+
+		cost = 49
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			55 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.078
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.104
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.156
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_hessen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.656
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_west_nordrheins = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 832
+		}
+
+		highlight_states = { state = 832 }
+
+		on_map_mode = map_only
+
+		cost = 76
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			832 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.8
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.166
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.249
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_west_nordrheins
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.749
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_eupen_malmady = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 816
+		}
+
+		highlight_states = { state = 816 }
+
+		on_map_mode = map_only
+
+		cost = 47
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			816 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.075
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.1
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.15
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_eupen_malmady
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.65
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_luxemburg = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 8
+		}
+
+		highlight_states = { state = 8 }
+
+		on_map_mode = map_only
+
+		cost = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			8 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.047
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.093
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_luxemburg
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.593
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_moselland = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 42
+		}
+
+		highlight_states = { state = 42 }
+
+		on_map_mode = map_only
+
+		cost = 39
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			42 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.082
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.28
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_moselland
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.623
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_berlin = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 64
+		}
+
+		highlight_states = { state = 64 }
+
+		on_map_mode = map_only
+
+		cost = 173
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			64 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.333
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.444
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.666
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_berlin
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.944
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_alsace = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 28
+		}
+
+		highlight_states = { state = 28 }
+
+		on_map_mode = map_only
+
+		cost = 27
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			28 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.042
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.056
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.084
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_alsace
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.584
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_wurttemberg = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 50
+		}
+
+		highlight_states = { state = 50 }
+
+		on_map_mode = map_only
+
+		cost = 67
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			50 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.108
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.216
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_wurttemberg
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.716
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+	
+	GER_sa_march_in_oberbayern = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 50
+		}
+
+		highlight_states = { state = 52 }
+
+		on_map_mode = map_only
+
+		cost = 67
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			52 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = sa_marches.1 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.108
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				50 = {
+					country_event = { id = sa_marches.2 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = sa_marches.3 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.216
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_oberbayern
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.716
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+	
+	GER_sa_march_in_niederbayern = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 53
+		}
+
+		highlight_states = { state = 53 }
+
+		on_map_mode = map_only
+
+		cost = 26
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			53 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.041
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.054
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.081
+						add_popularity = { ideology = aximalist popularity = 0.027 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_niederbayern
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_the_franken = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 54
+		}
+
+		highlight_states = { state = 54 }
+
+		on_map_mode = map_only
+
+		cost = 6
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			54 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.009
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.012
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.018
+						add_popularity = { ideology = aximalist popularity = 0.006 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_franken
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.518
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_thuringen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 60
+		}
+
+		highlight_states = { state = 60 }
+
+		on_map_mode = map_only
+
+		cost = 17
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			60 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.026
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.034
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.051
+						add_popularity = { ideology = aximalist popularity = 0.017 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_thuringen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.551
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_sachsen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 65
+		}
+
+		highlight_states = { state = 65 }
+
+		on_map_mode = map_only
+
+		cost = 48
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			65 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.077
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.102
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.153
+						add_popularity = { ideology = aximalist popularity = 0.051 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_sachsen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.653
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_mecklenburg = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 61
+		}
+
+		highlight_states = { state = 61 }
+
+		on_map_mode = map_only
+
+		cost = 31
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			61 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.048
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.064
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = aximalist popularity = 0.032 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_mecklenburg
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.596
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_vorpommern = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 62
+		}
+
+		highlight_states = { state = 62 }
+
+		on_map_mode = map_only
+
+		cost = 46
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			62 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.072
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = aximalist popularity = 0.048 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_vorpommern
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.644
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_hinterpommern = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 63
+		}
+
+		highlight_states = { state = 63 }
+
+		on_map_mode = map_only
+
+		cost = 91
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			63 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.157
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.202
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.303
+						add_popularity = { ideology = aximalist popularity = 0.101 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_hinterpommern
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.803
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_ostmark = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 68
+		}
+
+		highlight_states = { state = 68 }
+
+		on_map_mode = map_only
+
+		cost = 113
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			68 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.195
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.26
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.39
+						add_popularity = { ideology = aximalist popularity = 0.13 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_ostmark
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.89
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_schlesien = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 66
+		}
+
+		highlight_states = { state = 66 }
+
+		on_map_mode = map_only
+
+		cost = 49
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			66 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.078
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.104
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.156
+						add_popularity = { ideology = aximalist popularity = 0.052 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_schlesien
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.656
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_niederschlesien = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 829
+		}
+
+		highlight_states = { state = 829 }
+
+		on_map_mode = map_only
+
+		cost = 76
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			829 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.762
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.166
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.249
+						add_popularity = { ideology = aximalist popularity = 0.083 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_niederschlesien
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.749
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_oberschlesien = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 67
+		}
+
+		highlight_states = { state = 67 }
+
+		on_map_mode = map_only
+
+		cost = 47
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			67 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.075
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.1
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.15
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_oberschlesien
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.65
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_kattowitz = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 762
+		}
+
+		highlight_states = { state = 762 }
+
+		on_map_mode = map_only
+
+		cost = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			762 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.047
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.093
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_kattowitz
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.593
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_posen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 86
+		}
+
+		highlight_states = { state = 86 }
+
+		on_map_mode = map_only
+
+		cost = 39
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			86 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.082
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.188
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_posen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.623
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_koningsberg = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 763
+		}
+
+		highlight_states = { state = 763 }
+
+		on_map_mode = map_only
+
+		cost = 173
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			763 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.333
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.444
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.666
+						add_popularity = { ideology = aximalist popularity = 0.222 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_koningsberg
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.944
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_memel = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 188
+		}
+
+		highlight_states = { state = 188 }
+
+		on_map_mode = map_only
+
+		cost = 27
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			188 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.042
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.056
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.084
+						add_popularity = { ideology = aximalist popularity = 0.028 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_memel
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.584
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_ostprussen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 817
+		}
+
+		highlight_states = { state = 817 }
+
+		on_map_mode = map_only
+
+		cost = 67
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			817 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.108
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.216
+						add_popularity = { ideology = aximalist popularity = 0.072 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_ostprussen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.716
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+	
+	GER_sa_march_in_gnesen = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 818
+		}
+
+		highlight_states = { state = 818 }
+
+		on_map_mode = map_only
+
+		cost = 47
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			818 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.075
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.1
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.15
+						add_popularity = { ideology = aximalist popularity = 0.05 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_gnesen
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.65
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_ermland = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 5
+		}
+
+		highlight_states = { state = 5 }
+
+		on_map_mode = map_only
+
+		cost = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			5 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.047
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.093
+						add_popularity = { ideology = aximalist popularity = 0.031 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_ermland
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.593
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_sa_march_in_danzig = {
+
+		icon = GER_sa_march
+
+		available = {
+			NOT = { has_country_flag = GER_march_timer_flag }
+			has_full_control_of_state = 85
+		}
+
+		highlight_states = { state = 85 }
+
+		on_map_mode = map_only
+
+		cost = 39
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			85 = { save_event_target_as = GER_sa_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = mtg_britain.57 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.062
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				50 = {
+					country_event = { id = mtg_britain.58 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.082
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = GER_restrained_march_flag
+					}
+					country_event = { id = mtg_britain.59 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.123
+						add_popularity = { ideology = aximalist popularity = 0.041 }
+					}
+				}
+			}
+			custom_effect_tooltip = GER_sa_march_tt
+			set_country_flag = GER_march_temp_danzig
+			set_country_flag = GER_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.623
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_crackdown_on_the_socialist_reichstag = {
+
+		icon = GER_sa_march
+
+		available = {
+			has_full_control_of_state = 64
+			aximalist > 0.5
+			has_completed_focus = GER_crackdown_on_the_democratic_socialist_reichstag
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = aximalist }
+			has_completed_focus = GER_two_governments
+		}
+
+		complete_effect = {
+			country_event = { id = sa_marches.4 days = 1 }
+			set_country_flag = { flag = GER_switched_to_aximalist_communism_dominions_timer_flag value = 1 days = 180 }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	GER_speech_against_germany = {
+
+		icon = GER_sa_speech
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			FROM = {
+				has_government = aximalist
+			}
+			has_stability < 0.8
+		}
+
+		targets = { GER D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_root_trigger = {
+			has_completed_focus = GER_organize_the_sas
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = GER
+			}
+		}
+
+		days_remove = 60
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			NOT = { has_government = aximalist }
+			FROM = {
+				has_government = aximalist
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		modifier = {
+			stability_weekly = 0.02
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.60 hours = 6 }
+			custom_effect_tooltip = GER_speech_against_germany_tt
+			add_ai_strategy = {
+				type = antagonize
+				id = FROM
+				value = 50
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = FROM
+				value = -50
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = FROM
+				value = -50
+			}
+			add_ai_strategy = {
+				type = protect
+				id = FROM
+				value = -50
+			}
+			FROM = {
+				add_ai_strategy = {
+					type = antagonize
+					id = ROOT
+					value = 50
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = -50
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ROOT
+					value = -50
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = -50
+				}
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 10
+				has_stability < 0.8
+			}
+			modifier = {
+				factor = 5
+				has_stability < 0.7
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.6
+			}
+			modifier = {
+				factor = 0
+				aximalist > 0.5
+			}
+		}
+	}
+
+	GER_the_mosley_plan = {
+
+		icon = generic_construction
+
+		available = {
+			has_country_flag = won_british_civil_war
+		}
+
+		visible = {
+			has_country_flag = won_british_civil_war
+		}
+
+		fire_only_once = yes
+	
+		cost = 25
+
+		days_remove = 365
+
+		modifier = {
+			political_power_gain = -0.33
+			industry_repair_factor = 0.3
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.1
+			production_speed_industrial_complex_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+			war_support_weekly = 0.005
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
 }

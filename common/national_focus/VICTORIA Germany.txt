@@ -521,7 +521,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = GER_crackdown_on_the_democratic_socialist_reichstag_tt
+			remove_ideas = GER_dual_government
 		}
 	}
 	

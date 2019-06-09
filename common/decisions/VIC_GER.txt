@@ -1359,14 +1359,14 @@ GER_organise_marches = {
 			53 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.041
 						add_popularity = { ideology = aximalist popularity = 0.027 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.054
 						add_popularity = { ideology = aximalist popularity = 0.027 }
@@ -1377,7 +1377,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.081
 						add_popularity = { ideology = aximalist popularity = 0.027 }
@@ -1429,14 +1429,14 @@ GER_organise_marches = {
 			54 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.009
 						add_popularity = { ideology = aximalist popularity = 0.006 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.012
 						add_popularity = { ideology = aximalist popularity = 0.006 }
@@ -1447,7 +1447,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.018
 						add_popularity = { ideology = aximalist popularity = 0.006 }
@@ -1499,14 +1499,14 @@ GER_organise_marches = {
 			60 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.026
 						add_popularity = { ideology = aximalist popularity = 0.017 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.034
 						add_popularity = { ideology = aximalist popularity = 0.017 }
@@ -1517,7 +1517,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.051
 						add_popularity = { ideology = aximalist popularity = 0.017 }
@@ -1569,14 +1569,14 @@ GER_organise_marches = {
 			65 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.077
 						add_popularity = { ideology = aximalist popularity = 0.051 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.102
 						add_popularity = { ideology = aximalist popularity = 0.051 }
@@ -1587,7 +1587,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.153
 						add_popularity = { ideology = aximalist popularity = 0.051 }
@@ -1639,14 +1639,14 @@ GER_organise_marches = {
 			61 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.048
 						add_popularity = { ideology = aximalist popularity = 0.032 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.064
 						add_popularity = { ideology = aximalist popularity = 0.032 }
@@ -1657,7 +1657,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.096
 						add_popularity = { ideology = aximalist popularity = 0.032 }
@@ -1709,14 +1709,14 @@ GER_organise_marches = {
 			62 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.072
 						add_popularity = { ideology = aximalist popularity = 0.048 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.096
 						add_popularity = { ideology = aximalist popularity = 0.048 }
@@ -1727,7 +1727,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.144
 						add_popularity = { ideology = aximalist popularity = 0.048 }
@@ -1779,14 +1779,14 @@ GER_organise_marches = {
 			63 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.157
 						add_popularity = { ideology = aximalist popularity = 0.101 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.202
 						add_popularity = { ideology = aximalist popularity = 0.101 }
@@ -1797,7 +1797,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.303
 						add_popularity = { ideology = aximalist popularity = 0.101 }
@@ -1849,14 +1849,14 @@ GER_organise_marches = {
 			68 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.195
 						add_popularity = { ideology = aximalist popularity = 0.13 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.26
 						add_popularity = { ideology = aximalist popularity = 0.13 }
@@ -1867,7 +1867,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.39
 						add_popularity = { ideology = aximalist popularity = 0.13 }
@@ -1919,14 +1919,14 @@ GER_organise_marches = {
 			66 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.078
 						add_popularity = { ideology = aximalist popularity = 0.052 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.104
 						add_popularity = { ideology = aximalist popularity = 0.052 }
@@ -1937,7 +1937,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.156
 						add_popularity = { ideology = aximalist popularity = 0.052 }
@@ -1989,14 +1989,14 @@ GER_organise_marches = {
 			829 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.762
 						add_popularity = { ideology = aximalist popularity = 0.083 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.166
 						add_popularity = { ideology = aximalist popularity = 0.083 }
@@ -2007,7 +2007,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.249
 						add_popularity = { ideology = aximalist popularity = 0.083 }
@@ -2059,14 +2059,14 @@ GER_organise_marches = {
 			67 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.075
 						add_popularity = { ideology = aximalist popularity = 0.05 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.1
 						add_popularity = { ideology = aximalist popularity = 0.05 }
@@ -2077,7 +2077,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.15
 						add_popularity = { ideology = aximalist popularity = 0.05 }
@@ -2129,14 +2129,14 @@ GER_organise_marches = {
 			762 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.047
 						add_popularity = { ideology = aximalist popularity = 0.031 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.062
 						add_popularity = { ideology = aximalist popularity = 0.031 }
@@ -2147,7 +2147,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.093
 						add_popularity = { ideology = aximalist popularity = 0.031 }
@@ -2199,14 +2199,14 @@ GER_organise_marches = {
 			86 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.062
 						add_popularity = { ideology = aximalist popularity = 0.041 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.082
 						add_popularity = { ideology = aximalist popularity = 0.041 }
@@ -2217,7 +2217,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.188
 						add_popularity = { ideology = aximalist popularity = 0.041 }
@@ -2269,14 +2269,14 @@ GER_organise_marches = {
 			763 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.333
 						add_popularity = { ideology = aximalist popularity = 0.222 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.444
 						add_popularity = { ideology = aximalist popularity = 0.222 }
@@ -2287,7 +2287,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.666
 						add_popularity = { ideology = aximalist popularity = 0.222 }
@@ -2339,14 +2339,14 @@ GER_organise_marches = {
 			188 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.042
 						add_popularity = { ideology = aximalist popularity = 0.028 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.056
 						add_popularity = { ideology = aximalist popularity = 0.028 }
@@ -2357,7 +2357,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.084
 						add_popularity = { ideology = aximalist popularity = 0.028 }
@@ -2409,14 +2409,14 @@ GER_organise_marches = {
 			817 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.108
 						add_popularity = { ideology = aximalist popularity = 0.072 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.144
 						add_popularity = { ideology = aximalist popularity = 0.072 }
@@ -2427,7 +2427,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.216
 						add_popularity = { ideology = aximalist popularity = 0.072 }
@@ -2479,14 +2479,14 @@ GER_organise_marches = {
 			818 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.075
 						add_popularity = { ideology = aximalist popularity = 0.05 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.1
 						add_popularity = { ideology = aximalist popularity = 0.05 }
@@ -2497,7 +2497,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.15
 						add_popularity = { ideology = aximalist popularity = 0.05 }
@@ -2549,14 +2549,14 @@ GER_organise_marches = {
 			5 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.047
 						add_popularity = { ideology = aximalist popularity = 0.031 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.062
 						add_popularity = { ideology = aximalist popularity = 0.031 }
@@ -2567,7 +2567,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.093
 						add_popularity = { ideology = aximalist popularity = 0.031 }
@@ -2619,14 +2619,14 @@ GER_organise_marches = {
 			85 = { save_event_target_as = GER_sa_march_state }
 			random_list = {
 				25 = {
-					country_event = { id = mtg_britain.57 days = 1 }
+					country_event = { id = sa_marches.1 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.062
 						add_popularity = { ideology = aximalist popularity = 0.041 }
 					}
 				}
 				50 = {
-					country_event = { id = mtg_britain.58 days = 1 }
+					country_event = { id = sa_marches.2 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.082
 						add_popularity = { ideology = aximalist popularity = 0.041 }
@@ -2637,7 +2637,7 @@ GER_organise_marches = {
 						factor = 0.2
 						has_country_flag = GER_restrained_march_flag
 					}
-					country_event = { id = mtg_britain.59 days = 1 }
+					country_event = { id = sa_marches.3 days = 1 }
 					effect_tooltip = {
 						add_stability = -0.123
 						add_popularity = { ideology = aximalist popularity = 0.041 }

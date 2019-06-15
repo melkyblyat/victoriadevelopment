@@ -164,6 +164,69 @@ ideas = {
                 political_power_gain = -0.1
 			}
 		}
+		
+		GER_reichstag_guards_idea = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = triumphant_will
+
+			modifier = {
+                aximalist_drift = 0.02
+			}
+		}
+		
+		GER_police_integration_idea = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_mex_politicised_army
+
+			modifier = {
+                aximalist_drift = 0.02
+			}
+		}
+
+	}
+	
+	political_advisor = {
+		joseph_goebbels = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				has_completed_focus = GER_invite_goebbels
+			}
+			
+			traits = { fascist_demagogue propaganda_expert }
+
+			do_effect = {
+				NOT = {
+					has_government = aximalist
+				}
+			}
+			
+			ai_will_do = {
+				factor = 24
+			}
+		}
 	}
 }

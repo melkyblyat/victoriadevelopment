@@ -54,5 +54,15 @@ spriteTypes = {
 	name = "GFX_goal_dual_power"
 	texturefile = "gfx/interface/goals/goal_dual_power.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_goebbels"
+	texturefile = "gfx/interface/goals/goal_goebbels.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_reichstag"
+	texturefile = "gfx/interface/goals/goal_reichstag.dds"			
+	}
 
 }

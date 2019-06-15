@@ -14,6 +14,12 @@
  GER_red_protests_strike_1_desc:0 ""
  GER_red_protests_strike_2:0 "Red protests"
  GER_red_protests_strike_2_desc:0 ""
+ GER_dual_government:0 "Dual Government"
+ GER_dual_government_desc:0 ""
+ GER_reichstag_guards_idea:0 "Reichstag Guards"
+ GER_reichstag_guards_idea_desc:0 ""
+ GER_police_integration_idea:0 "Police Intergration"
+ GER_police_integration_idea_desc:0 ""
  
  ### Parties ###
 
@@ -110,86 +116,88 @@
  german.1.t:0 "Колониальная ассамблея"
  german.1.desc:0 "Долгожданный момент - начало обсуждения новой колониальной политики Германской империи. Впереди нам придется решить некоторые вопросы относительно управления нашими владениями вне метрополии, дабы наконец встать на правильный путь и повысить эффективности работы на местах."
  german.1.a:0 "Начнем процесс"
- 
  german.2.t:0 "Карибский вопрос"
  german.2.desc:0 "Одна из областей, которая ранее была под управлением французов - Карибы. Мы получили ряд островов в Карибском бассейне, а так же Гвиану в Южной Америке. Это небольшой, но стратегически крайне важный регион, в котором мы можем размещать крупные морские базы. Есть предложение объединить острова вместе с Гвианой, создав один аппарат управления, но было бы лучше сохранить эти территории под нашим прямым управлением. Каково решение?"
  german.2.a:0 "Создать колониальную администрацию"
  german.2.a.t:0 "Будет создана единая колониальная администрация"
  german.2.b:0 "Сохранить прямое управление"
  german.2.b.t:0 "Регионы останутся под прямым управлением Берлина"
- 
  german.3.t:0 "Африканский вопрос"
  german.3.desc:0 "Африка крайне большая и после перехода к этому континенту начались споры: местные губернаторы выступают за деление здешних колоний по областям, заверяя, что это упростит управление колониями. Однако, министерство по делам колоний считает, что это только предлог для раздела денег из казны. Что мы будем делать?"
  german.3.a:0 "Объеденить африканские колонии"
  german.3.a.t:0 "Будет создана единая африканская колониальная администрация"
  german.3.b:0 "Разделить африканские колонии"
  german.3.b.t:0 "Африканские колонии будут разделены на самостоятельные сектора с собственной администрацией"
- 
  german.4.t:0 "Ост-индский вопрос"
  german.4.desc:0 "В связи с особенностями расположения, колониальные управляющие предложили отделить континентальную часть Индокитая от островов в Океании и Гвинеи. По их мнению, это сделает местное самоуправление намного эффективнее. Как поступим?"
  german.4.a:0 "Объединить регионы"
  german.4.a.t:0 "Все административные округа будут сведены в один"
  german.4.b:0 "Принять континентальное деление"
  german.4.b.t:0 "У Индокитая и Океании будут раздельные администрации"
- 
  german.5.t:0 ""
  german.5.desc:0 ""
  german.5.a:0 ""
  german.5.b:0 ""
- 
  german.6.t:0 ""
  german.6.desc:0 ""
  german.6.a:0 ""
- 
  german.7.t:0 ""
  german.7.desc:0 ""
- 
  german.8.t:0 ""
  german.8.desc:0 ""
- 
  german.9.t:0 ""
  german.9.desc:0 ""
- 
  german.10.t:0 ""
  german.10.desc:0 ""
- 
  german.11.t:0 ""
  german.11.desc:0 ""
  german.11.a:0 ""
- 
  german.12.t:0 ""
  german.12.desc:0 ""
  german.12.a:0 ""
+ german.13.t:0 ""
+ german.13.desc:0 ""
+ german.13.a:0 ""
+ german.14.t:0 ""
+ german.14.desc:0 ""
+ german.14.a:0 ""
  
  germanpolitical.1.t:0 "Embarassment at the Parade"
  germanpolitical.1.desc:0 "19 years ago we defeated the Entente. It was a great victory. However, 19 years of peace had a negative impact on Germany. Today a parade of imperial troops was held in Berlin. Kaiser Eitel Friedrich I fell from a horse when he was bypassing the troops during the inspection. The generals tried to help him to stand up in a hurry but they succeeded only from a second attempt."
  germanpolitical.1.a:0 "Let's hope he does not plunge the country into chaos"
- 
  germanpolitical.2.t:0 "19's Anniversary of Westlicherkrieg"
  germanpolitical.2.desc:0 "19 years ago Westlicherkrieg ended with signing the Treaty of Brussels. It was the major conflict of the XX century. Today a parade of imperial troops was held in Berlin. However, it did not pass without any incident. The emperor was not in the best shape and was not ready for the parade. During the inspection while Kaiser Eitel Friedrich I was bypassing the troops he fell down from his horse. "Fat king's" falling could not go unnoticed. People started to make fun of the German leader. \n\n"When the Fat King falls the horse wouldn't be able to run away since he is blocking all directions"."
  germanpolitical.2.a:0 "What a poor horse!"
  germanpolitical.2.b:0 "What a disaster!"
- 
  germanpolitical.3.t:0 "Federal Elections"
  germanpolitical.3.desc:0 ""
  germanpolitical.3.a:0 "Start voting"
- 
  germanpolitical.4.t:0 "Election Results"
  germanpolitical.4.desc:0 ""
  germanpolitical.4.a:0 "Voting ended"
- 
  germanpolitical.5.t:0 "Workers Demonstrations"
  germanpolitical.5.desc:0 ""
  germanpolitical.5.a:0 "Crush them"
  germanpolitical.5.b:0 "Negotiate a deal"
- 
  germanpolitical.6.t:0 "Mass Protests"
  germanpolitical.6.desc:0 ""
  germanpolitical.6.a:0 "What a bunch of clowns"
- 
  germanpolitical.7.t:0 "Chaos in Germany"
  germanpolitical.7.desc:0 ""
  germanpolitical.7.a:0 "Let's take advantage of this!"
+ 
+ sa_marches.1.t:1 "Peaceful March in [GER_sa_march_state.GetName]"
+ sa_marches.1.d:2 ""
+ sa_marches.1.a:1 "Marching on inexorably to victory!"
+ sa_marches.2.t:1 "March in [GER_sa_march_state.GetName]"
+ sa_marches.2.d:2 ""
+ sa_marches.2.a:1 "None can stand in the way of progress."
+ sa_marches.3.t:1 "Violent March in [GER_sa_march_state.GetName]"
+ sa_marches.3.d:2 ""
+ sa_marches.3.a:1 "What are a few broken eggs in the face of the future of the nation?"
+ sa_marches.4.t:1 "NSDAP siezes power"
+ sa_marches.4.d:2 ""
+ sa_marches.4.a:1 "It is the beggining of new Era!"
  
  
  ### Effects ###
@@ -200,6 +208,7 @@
  ready_for_death_for_communism:0 ""
  german_civilwar_3:0 ""
  german_civilwar_3_event:0 ""
+ german_civilwar_2:0 ""
  
  ### Traits ###
  
@@ -208,6 +217,49 @@
  ### Factions ###
  
  ### Decisions ###
+ 
+ GER_urge_restraint:0 "Urge Restraint"
+ GER_urge_restraint_desc:0 "It is imperative that our next march goes off without a hitch, lest the violent response to it spills over to the rest of the country and ignites nation-wide unrest, and potentially even civil war. Though it may turn away some of our most hard-line supporters, we must instruct our marchers to refrain from violence at all costs."
+ GER_urge_restraint_tt:0 "Greatly reduces the chances of a §YViolent March§! on the next §YSA March§! held.\n"
+ GER_sa_march_tt:0 "Aximalist take control of the state, ensuring it will be on our side should we get in a civil war.\n"
+ GER_march_temp_niederbayern:0 "SA March In Niederbayern"
+ GER_march_temp_franken:0 "SA March In Franken"
+ GER_march_temp_thuringen:0 "SA March In Thuringen"
+ GER_march_temp_sachsen:0 "SA March In Sachsen"
+ GER_march_temp_mecklenburg:0 "SA March In Mecklenburg"
+ GER_march_temp_vorpommern:0 "SA March In Vorpommern"
+ GER_march_temp_hinterpommern:0 "SA March In Hinterpommern"
+ GER_march_temp_ostmark:0 "SA March In Ostmark"
+ GER_march_temp_schlesien:0 "SA March In Schlesien"
+ GER_march_temp_niederschlesien:0 "SA March In Niederschlesien"
+ GER_march_temp_oberschlesien:0 "SA March In Oberschlesien"
+ GER_march_temp_kattowitz:0 "SA March In Kattowitz"
+ GER_march_temp_posen:0 "SA March In Posen"
+ GER_march_temp_koningsberg:0 "SA March In Koningsberg"
+ GER_march_temp_memel:0 "SA March In Memel"
+ GER_march_temp_ostprussen:0 "SA March In Ostprussen"
+ GER_march_temp_gnesen:0 "SA March In Gnesen"
+ GER_march_temp_ermland:0 "SA March In Ermland"
+ GER_march_temp_danzig:0 "SA March In Danzig"
+ GER_march_temp_northern_holstein:0 "SA March In Nordholstein"
+ GER_march_temp_schleswig_holstein:0 "SA March In Schleswig Holstein"
+ GER_march_temp_hamburg:0 "SA March In Hamburg"
+ GER_march_temp_hannover:0 "SA March In Hannover"
+ GER_march_temp_bremen:0 "SA March In Bremen"
+ GER_march_temp_weser_ems:0 "SA March In Weser-Ems"
+ GER_march_temp_westfalen:0 "SA March In Westfalen"
+ GER_march_temp_rhineland:0 "SA March In Rhineland"
+ GER_march_temp_hessen:0 "SA March In Hessen"
+ GER_march_temp_west_nordrheins:0 "SA March In Nordrhein"
+ GER_march_temp_eupen_malmady:0 "SA March In Eupen-Malmady"
+ GER_march_temp_luxemburg:0 "SA March In Luxemburg"
+ GER_march_temp_moselland:0 "SA March In Mosselland"
+ GER_march_temp_berlin:0 "SA March In Berlin"
+ GER_march_temp_alsace:0 "SA March In Alsace"
+ GER_march_temp_wurttemberg:0 "SA March In Wurttemberg"
+ GER_march_temp_oberbayern:0 "SA March In Oberbayern"
+ GER_march_timer_flag:0 "A march is currently in progress."
+ GER_restrained_march_flag:0 "Already urged restraint."
  
  GER_hungarian_support:0 "Иностранная помощь"
  

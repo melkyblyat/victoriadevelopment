@@ -6,7 +6,7 @@ add_namespace = germanpolitical
 
 country_event = {
 	id = germanpolitical.1
-	title = germanpolitical.1.t	# Eitel goodbye
+	title = germanpolitical.1.t	# Eitel goodbye - не меняй
 	desc = germanpolitical.1.desc	#
 	picture = GFX_report_event_eitel
 	
@@ -37,7 +37,7 @@ country_event = {
 }
 
 news_event = {
-	id = germanpolitical.2
+	id = germanpolitical.2 # не меняй
 	title = germanpolitical.2.t
 	desc = germanpolitical.2.desc
 	picture = GFX_news_event_084
@@ -64,7 +64,7 @@ news_event = {
 
 country_event = {
 	id = germanpolitical.3
-	title = germanpolitical.3.t	# Elections
+	title = germanpolitical.3.t	# Elections начало выборов
 	desc = germanpolitical.3.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -85,7 +85,7 @@ country_event = {
 
 country_event = {
 	id = germanpolitical.4
-	title = germanpolitical.4.t	# Elections
+	title = germanpolitical.4.t	# Elections результаты выборов
 	desc = germanpolitical.4.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -106,7 +106,7 @@ country_event = {
 
 country_event = {
 	id = germanpolitical.5
-	title = germanpolitical.5.t	# Riots
+	title = germanpolitical.5.t	# Riots красные протесты, забостовки и все в этом духе
 	desc = germanpolitical.5.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -159,7 +159,7 @@ country_event = {
 
 country_event = {
 	id = germanpolitical.6
-	title = germanpolitical.6.t	# Rhineland protests
+	title = germanpolitical.6.t	# Rhineland protests - неебические протесты
 	desc = germanpolitical.6.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -232,7 +232,7 @@ country_event = {
 
 country_event = {
 	id = germanpolitical.7
-	title = germanpolitical.7.t	# Civilwar
+	title = germanpolitical.7.t	# Civilwar - гражданка
 	desc = germanpolitical.7.desc	#
 	picture = GFX_report_event_election_vote
 	

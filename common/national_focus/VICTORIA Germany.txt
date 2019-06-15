@@ -229,13 +229,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = aximalist
+				popularity = 0.02
+			}
+			add_timed_idea = { idea = GER_reichstag_guards_idea days = 180 }
 		}
 	}
 	
 	focus = {
 		id = GER_police_integration
-		icon = nothing
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = GER_organise_marches }
 		
 		x = 0
@@ -257,13 +261,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = aximalist
+				popularity = 0.02
+			}
+			add_timed_idea = { idea = GER_police_integration_idea days = 180 }
 		}
 	}
 	
 	focus = {
 		id = GER_invite_goebbels
-		icon = nothing
+		icon = GFX_goal_goebbels
 		prerequisite = { focus = GER_police_integration }
 		prerequisite = { focus = GER_reichstag_guards }
 		
@@ -286,7 +294,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = joseph_goebbels
 		}
 	}
 	
@@ -455,7 +463,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { days = 1 id = german.13 }
+			custom_effect_tooltip = german_civilwar_2
 		}
 	}
 	
@@ -494,7 +503,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_crackdown_on_the_democratic_socialist_reichstag
-		icon = nothing
+		icon = GFX_goal_reichstag
 		prerequisite = { focus = GER_invite_goebbels }
 		prerequisite = { focus = GER_industrial_repairment }
 		
@@ -528,7 +537,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_install_nazi_government
-		icon = nothing
+		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_crackdown_on_the_democratic_socialist_reichstag }
 		
 		x = 0
@@ -550,7 +559,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 200
+			add_stability = 0.2
 		}
 	}
 	
@@ -578,7 +588,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = german.14 daus = 1 }
 		}
 	}
 	

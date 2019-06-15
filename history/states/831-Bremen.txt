@@ -2,7 +2,7 @@
 state={
 	id=831
 	name="VDKH_STATE_44"
-	manpower = 5673123
+	manpower = 588006
 	
 	state_category = large_city
 

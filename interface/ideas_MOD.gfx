@@ -40,4 +40,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/GER_dual_power.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_GER_reichstag_guards_idea"
+		texturefile = "gfx/interface/ideas/triumphant_will.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_GER_police_integration_idea"
+		texturefile = "gfx/interface/ideas/idea_mex_politicised_army.dds"
+	}
+	
+	
 }

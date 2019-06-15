@@ -938,7 +938,7 @@ country_event = {
 
 country_event = {
 	id = german.5
-	title = german.5.t	# Hungarian support
+	title = german.5.t	# Hungarian support - ивент в венгрии. в германии гражданка надо ли нам помогать восставшим?
 	desc = german.5.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -976,7 +976,7 @@ country_event = {
 
 country_event = {
 	id = german.6
-	title = german.6.t	# Hungarian support - Germany
+	title = german.6.t	# Hungarian support - Germany - венгрия помогла
 	desc = german.6.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -997,7 +997,7 @@ country_event = {
 
 country_event = {
 	id = german.7
-	title = german.7.t	# Austrian support
+	title = german.7.t	# Austrian support - тоже самое с австрией
 	desc = german.7.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1035,7 +1035,7 @@ country_event = {
 
 country_event = {
 	id = german.8
-	title = german.8.t	# Austrian support - Germany
+	title = german.8.t	# Austrian support - Germany - австрия помогла
 	desc = german.8.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1055,7 +1055,7 @@ country_event = {
 
 country_event = {
 	id = german.9
-	title = german.9.t	# Portugese support
+	title = german.9.t	# Portugese support - тоже самое с португалией
 	desc = german.9.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1093,7 +1093,7 @@ country_event = {
 
 country_event = {
 	id = german.10
-	title = german.10.t	# Portugese support - Germany
+	title = german.10.t	# Portugese support - Germany - португалия помогла
 	desc = german.10.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1113,7 +1113,7 @@ country_event = {
 
 country_event = {
 	id = german.11
-	title = german.11.t	# Capitulation for German Empire
+	title = german.11.t	# Capitulation for German Empire - победа в гражданке - капитуляция германской империи для самой германской иперии
 	desc = german.11.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1143,7 +1143,7 @@ country_event = {
 
 country_event = {
 	id = german.12
-	title = german.12.t	# Capitulation for German Empire
+	title = german.12.t	# Capitulation for German Empire - ивент для игрока который победил
 	desc = german.12.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1170,7 +1170,7 @@ country_event = {
 
 country_event = {
 	id = german.13
-	title = germanpolitical.8.t	# Civilwar
+	title = germanpolitical.8.t	# Civilwar - начало гражданки
 	desc = germanpolitical.8.desc	#
 	picture = GFX_report_event_election_vote
 	
@@ -1464,3 +1464,24 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = german.14
+	title = german.14.t	# Destroy the opposition
+	desc = german.14.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = german.14.a # Capitulation
+		
+		ai_chance = {
+			base = 90
+		}
+		
+		set_global_flag = germany_repressions_2
+		
+		add_political_power = 15
+	}
+}

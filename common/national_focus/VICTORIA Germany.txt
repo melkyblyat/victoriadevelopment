@@ -463,7 +463,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { days = 1 id = german.13 }
+			country_event = { days = 1 id = germancivilwar.2 }
 			custom_effect_tooltip = german_civilwar_2
 		}
 	}
@@ -588,7 +588,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = german.14 daus = 1 }
+			country_event = { id = german.14 days = 1 }
 		}
 	}
 	
@@ -645,7 +645,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { days = 1 id = germanpolitical.7 }
+			country_event = { days = 1 id = germancivilwar.1 }
 			custom_effect_tooltip = german_civilwar_3
 		}
 	}

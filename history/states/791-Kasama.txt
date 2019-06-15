@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = BOT
+		owner = GER
 		add_core_of = ZAM
 		victory_points = {
 			5199 1
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1846 5221 10594 10930
+		1846 5221 10594 10930 13173
 	}
 	manpower=1380089
 	buildings_max_level_factor=1.000

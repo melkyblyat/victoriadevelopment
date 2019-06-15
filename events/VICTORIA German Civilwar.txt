@@ -371,8 +371,8 @@ country_event = {
 
 country_event = {
 	id = germancivilwar.2
-	title = germanpolitical.8.t	# Civilwar - начало гражданки
-	desc = germanpolitical.8.desc	#
+	title = germancivilwar.2.t	# Civilwar - начало гражданки
+	desc = germancivilwar.2.desc	#
 	picture = GFX_report_event_election_vote
 	
 	fire_only_once = yes
@@ -380,7 +380,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = germancivilwar.1.a # Start
+		name = germancivilwar.2.a # Start
 		
 		ai_chance = {
 			base = 100

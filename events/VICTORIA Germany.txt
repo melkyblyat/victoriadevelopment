@@ -330,6 +330,23 @@ country_event = {
 			}
 		}
 		
+		
+		
+		791 = { #Kasama
+			if = {
+				limit = { is_owned_by = GER }
+				GAF = { transfer_state = 791 }
+				add_core_of = GAF
+			}
+		}
+		542 = { #Bechuanaland
+			if = {
+				limit = { is_owned_by = GER }
+				GAF = { transfer_state = 542 }
+				add_core_of = GAF
+			}
+		}
+		
 		set_autonomy = {
 			target = GAF
 			autonomous_state = autonomy_dominion
@@ -562,6 +579,14 @@ country_event = {
 			}
 		}
 		
+		542 = { #Bechuanaland
+			if = {
+				limit = { is_owned_by = GER }
+				NMB = { transfer_state = 542 }
+				add_core_of = NMB
+			}
+		}
+		
 		set_autonomy = {
 			target = NMB
 			autonomous_state = autonomy_dominion
@@ -606,6 +631,13 @@ country_event = {
 			if = {
 				limit = { is_owned_by = GER }
 				TZN = { transfer_state = 789 }
+				add_core_of = TZN
+			}
+		}
+		791 = { #Kasama
+			if = {
+				limit = { is_owned_by = GER }
+				TZN = { transfer_state = 791 }
 				add_core_of = TZN
 			}
 		}

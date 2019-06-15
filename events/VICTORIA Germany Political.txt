@@ -108,7 +108,7 @@ country_event = {
 	id = germanpolitical.5
 	title = germanpolitical.5.t	# Riots красные протесты, забостовки и все в этом духе
 	desc = germanpolitical.5.desc	#
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_german_reichstag_gathering
 	
 	fire_only_once = yes
 	
@@ -161,7 +161,7 @@ country_event = {
 	id = germanpolitical.6
 	title = germanpolitical.6.t	# Rhineland protests - неебические протесты
 	desc = germanpolitical.6.desc	#
-	picture = GFX_report_event_election_vote
+	picture = GFX_report_event_generic_riot
 	
 	fire_only_once = yes
 	

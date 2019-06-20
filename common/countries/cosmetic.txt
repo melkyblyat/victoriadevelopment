@@ -22,6 +22,10 @@ NMB_GER = {
 	color = rgb { 80 90 100 }
 	color_ui = rgb { 80 90 100 }
 }
+NMB_independent = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 80 90 100 }
+}
 PNG_GER = {
 	color = rgb { 80 90 100 }
 	color_ui = rgb { 80 90 100 }

@@ -1,0 +1,82 @@
+###########################
+# germanian Events
+###########################
+
+add_namespace = sudafrika
+
+country_event = {
+	id = sudafrika.1
+	title = sudafrika.1.t	# Independence
+	desc = sudafrika.1.desc	#
+	picture = GFX_report_event_ast_navy
+	
+	trigger = {
+		tag = NMB
+		OR = {
+			has_global_flag = german_civilwar_3
+			has_global_flag = german_civilwar_2
+		}
+	}
+	
+	option = {
+		name = sudafrika.1.a # Declaration
+		
+		ai_chance = {
+			base = 100
+		}
+
+		GER = { country_event = { id = sudafrika.2 } }
+		
+		
+	}
+}
+
+country_event = {
+	id = sudafrika.2
+	title = sudafrika.2.t	# Independence of Sudafrika
+	desc = sudafrika.2.desc	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sudafrika.2.a # Declaration
+		
+		ai_chance = {
+			base = 100
+		}
+
+		end_puppet = NMB
+		
+		hidden_effect = {
+			NMB = { 
+			set_cosmetic_tag = NMB_independent 
+			country_event = { id = sudafrika.3 }
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = sudafrika.3
+	title = sudafrika.3.t	# A great victory
+	desc = sudafrika.3.desc	#
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sudafrika.3.a # Declaration
+		
+		ai_chance = {
+			base = 100
+		}
+
+		add_political_power = 100
+		load_oob = NMB_independent
+		
+	}
+}
+
+

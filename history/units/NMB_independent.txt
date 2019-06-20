@@ -1,0 +1,107 @@
+﻿					### ШАБЛОНЫ ДИВИЗИЙ ###
+
+division_template = {
+	name = "Infanterie division"			
+
+	division_names_group = NMB_Inf_01			
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {			
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Allgemeine division"			
+
+	division_names_group = NMB_Inf_02		
+
+	regiments = {			
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Kavallerie division"			
+
+	division_names_group = NMB_Cav_01			
+
+	regiments = {			
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+
+	}
+}
+
+					### ДИВИЗИИ ###
+		
+	### ПЕХОТНЫЕ ДИВИЗИИ ###
+units = {
+division = {	
+	name = "1. Infanterie division" 
+	location = 4879
+	division_template = "Infanterie division"	
+	start_experience_factor = 0.3
+	}
+
+division = {	
+	name = "2. Infanterie division" 
+	location = 4879
+	division_template = "Infanterie division"	
+	start_experience_factor = 0.3
+	}
+
+	### КАВАЛЕРИЯ ###
+	
+division = {	
+	name = "1. Kavallerie division" 
+	location = 5189
+	division_template = "Kavallerie division"	
+	start_experience_factor = 0.3
+	}	
+	
+	### ДИВИЗИИ РЕЗЕРВА ###
+	
+division = {	
+	name = "1. Allgemeine division" 
+	location = 12921
+	division_template = "Allgemeine division"	
+	start_experience_factor = 0.2
+	}	
+	
+division = {	
+	name = "2. Allgemeine division" 
+	location = 12963
+	division_template = "Allgemeine division"	
+	start_experience_factor = 0.2
+	}
+	
+division = {	
+	name = "3. Allgemeine division" 
+	location = 2229
+	division_template = "Allgemeine division"	
+	start_experience_factor = 0.2
+	}
+	
+}

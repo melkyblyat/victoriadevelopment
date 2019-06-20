@@ -698,7 +698,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = { idea = GER_rebuild_the_nation days = 365 }
+			add_ideas = GER_national_revitalization
 		}
 	}
 	
@@ -718,11 +719,42 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		complete_tooltip = {
-
+			
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = {
+						has_idea = GER_national_revitalization
+						has_idea = GER_national_revitalization3
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = GER_national_revitalization
+						add_idea = GER_national_revitalization2
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization
+				}
+				swap_ideas = {
+					remove_idea =GER_national_revitalization
+					add_idea = GER_national_revitalization2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization3
+				}
+				swap_ideas = {
+					remove_idea = GER_national_revitalization3
+					add_idea = GER_national_revitalization4
+				}
+			}
 		}
 	}
 	
@@ -746,7 +778,38 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					NOT = {
+						has_idea = GER_national_revitalization
+						has_idea = GER_national_revitalization2
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = GER_national_revitalization
+						add_idea = GER_national_revitalization3
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization
+				}
+				swap_ideas = {
+					remove_idea = GER_national_revitalization
+					add_idea = GER_national_revitalization3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_national_revitalization2
+				}
+				swap_ideas = {
+					remove_idea = GER_national_revitalization2
+					add_idea = GER_national_revitalization4
+				}
+			}
 		}
 	}
 	

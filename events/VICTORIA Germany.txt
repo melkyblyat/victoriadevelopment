@@ -1202,16 +1202,16 @@ country_event = {
 
 
 country_event = {
-	id = german.14
-	title = german.14.t	# Destroy the opposition
-	desc = german.14.desc	#
+	id = german.13
+	title = german.13.t	# Destroy the opposition
+	desc = german.13.desc	#
 	picture = GFX_report_event_election_vote
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = german.14.a # Capitulation
+		name = german.13.a # Capitulation
 		
 		ai_chance = {
 			base = 90
@@ -1220,5 +1220,150 @@ country_event = {
 		set_global_flag = germany_repressions_2
 		
 		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = german.14
+	title = german.14.t	# NSDAP seize power
+	desc = german.14.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = german.14.a # Elections did so
+		
+		ai_chance = {
+			base = 90
+		}
+		
+		set_global_flag = peacful_nazi_germany
+		
+		set_politics = {
+		ruling_party = aximalist
+		elections_allowed = no
+		}
+		add_popularity = {
+		ideology = aximalist
+		popularity = 0.7
+		}
+			
+		set_cosmetic_tag = GER_NAZI
+		remove_ideas = GER_fight_for_power
+	}
+}
+
+country_event = {
+	id = german.15
+	title = german.15.t	# Eitel found in palace after NSDAP seized power
+	desc = german.15.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_global_flag = peacful_nazi_germany
+		has_government = aximalist
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = german.15.a # Give support
+		
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = 10
+		set_country_flag = eitel_found_in_palace
+	}
+}
+
+country_event = {
+	id = german.16
+	title = german.16.t	# Kaisers fault
+	desc = german.16.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = german.16.a # Let him go
+		
+		ai_chance = {
+			base = 50
+		}
+		add_stability = 0.05
+		add_political_power = -5
+		
+		set_country_flag = ger_let_him_go
+	}
+	option = {
+		name = german.16.b # court
+		
+		ai_chance = {
+			base = 50
+		}
+		
+		add_stability = -0.05
+		add_political_power = 5
+		
+		set_country_flag = ger_court_eitel
+	}
+}
+
+country_event = {
+	id = german.17
+	title = german.17.t	# Trial
+	desc = german.17.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = german.17.a # ???
+		
+		
+	}
+	option = {
+		name = german.17.b # ???
+		
+		ai_chance = {
+			base = 50
+		}
+		
+		
+	}
+}
+
+country_event = {
+	id = german.18
+	title = german.18.t	# New Germany
+	desc = german.18.desc	#
+	picture = GFX_report_event_election_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = german.18.a # 
+		
+		increase_ruling_party_popularity_by_5 = yes
+		
+		every_state = {
+			limit = {
+				is_controlled_by = GER
+				has_border_war = yes
+			}
+			set_border_war = no
+		}
+		
 	}
 }

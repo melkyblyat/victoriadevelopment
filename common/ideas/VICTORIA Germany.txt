@@ -208,16 +208,16 @@ ideas = {
 				always = no
 			}
 
-			allowed_civil_war = {
-				 has_government = neutrality
-			}
-
 			removal_cost = -1
 
 			picture = ger_rebuild_the_nation
 
 			modifier = {
 				consumer_goods_factor = -0.20
+				aximalist_drift = 0.02
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_gain = 0.1
 			}
 		}
 

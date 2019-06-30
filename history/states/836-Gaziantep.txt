@@ -1,0 +1,25 @@
+
+state={
+	id=836
+	name="VDKH_STATE_49" #Gaziantep
+	manpower = 556783
+	
+	state_category = city
+
+	history=
+	{
+		owner = ENG
+		victory_points = {
+			9823 1
+		}
+		victory_points = {
+			9893 3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = TUR
+	}
+	provinces= { 806 3889 9823 9893 11871 12416 }
+}

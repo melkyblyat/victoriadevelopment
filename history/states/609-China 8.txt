@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = JAP
+		owner = HEB
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
@@ -22,6 +22,6 @@ state={
 	}
 
 	provinces={
-		900 1052 3830 3900 6969 11822 12043 
+		900 1052 3830 3900 6969 11822 12043 3955 881
 	}
 }

@@ -8,13 +8,14 @@ state={
 
 	history=
 	{
-		owner = ITA
+		owner = VAT
 		victory_points = {
 			9794 3
 		}
 		buildings = {
 			infrastructure = 8
 		}
+		add_core_of = VAT
 	}
 	provinces= { 9794 }
 }

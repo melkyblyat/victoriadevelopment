@@ -24,6 +24,10 @@ RUS = {
 	color = rgb { 96 131 80 }
 	color_ui = rgb { 96 131 80 }
 }
+HSO = {
+	color = rgb { 156 0 156 }
+	color_ui = rgb { 156 0 156 }
+}
 SWE = {
 	color = rgb { 7 99 209 }
 	color_ui = rgb { 6 77 162 }
@@ -319,8 +323,8 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
+	color = rgb { 147 182 149 }
+	color_ui = rgb { 147 182 149 }
 }
 
 XSM = {
@@ -756,6 +760,38 @@ BOS = {
 MAC = {
 	color = rgb { 80 110 110 }
 	color_ui = rgb { 90 100 100 }
+}
+TSI = {
+	color = rgb { 177 191 166 }
+	color_ui = rgb { 177 191 166 }
+}
+NIN = {
+	color = rgb { 105 90 131 }
+	color_ui = rgb { 105 90 131 }
+}
+KAN = {
+	color = rgb { 236 236 236 }
+	color_ui = rgb { 236 236 236 }
+}
+SUI = {
+	color = rgb { 210 150 113 }
+	color_ui = rgb { 210 150 113 }
+}
+CHA = {
+	color = rgb { 214 106 106 }
+	color_ui = rgb { 214 106 106 }
+}
+SIC = {
+	color = rgb { 67 119 18 }
+	color_ui = rgb { 67 119 18 }
+}
+HEB = {
+	color = rgb { 118 40 38 }
+	color_ui = rgb { 118 40 38 }
+}
+GUI = {
+	color = rgb { 113 149 175 }
+	color_ui = rgb { 113 149 175 }
 }
 ### Redo Later ##
 PRB = {

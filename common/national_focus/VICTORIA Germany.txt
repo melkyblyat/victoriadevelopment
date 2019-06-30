@@ -172,7 +172,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			# OOB
 		}
 	}
 	
@@ -319,6 +319,7 @@ focus_tree = {
 		
 		available = {
 			has_completed_focus = GER_guarantee_for_germany
+			aximalist > 0.75
 		}
 		
 		complete_tooltip = {
@@ -326,7 +327,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = german.14 }
 		}
 	}
 	
@@ -349,12 +350,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
+		available = {
+			has_country_flag = eitel_found_in_palace
+		}
+		
 		complete_tooltip = {
 
 		}
 
 		completion_reward = {
-			
+			country_event = { id = german.16 }
 		}
 	}
 	
@@ -377,12 +382,16 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
+		available = {
+			has_country_flag = ger_court_eitel
+		}
+		
 		complete_tooltip = {
 
 		}
 
 		completion_reward = {
-			
+			country_event = { id = german.17 }
 		}
 	}
 	
@@ -410,7 +419,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = { id = german.18 }
+			if = {
+				limit = { has_idea = GER_red_protests }
+				remove_ideas = GER_red_protests
+			}
+			if = {
+				limit = { has_idea = GER_red_protests_strike }
+				remove_ideas = GER_red_protests_strike
+			}
+			if = {
+				limit = { has_idea = GER_red_protests_strike_1 }
+				remove_ideas = GER_red_protests_strike_1
+			}
+			if = {
+				limit = { has_idea = GER_red_protests_strike_2 }
+				remove_ideas = GER_red_protests_strike_2
+			}
 		}
 	}
 	
@@ -463,7 +488,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { days = 1 id = germancivilwar.2 }
+			country_event = { days = 1 id = germanpolitical.7 }
 			custom_effect_tooltip = german_civilwar_2
 		}
 	}
@@ -588,7 +613,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = german.14 days = 1 }
+			country_event = { id = german.13 days = 1 }
 		}
 	}
 	
@@ -674,7 +699,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = { idea = GER_rebuild_the_nation days = 365 }
 		}
 	}
 	
@@ -698,7 +723,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = GER_rebuild_the_nation days = 365 }
 			add_ideas = GER_national_revitalization
 		}
 	}

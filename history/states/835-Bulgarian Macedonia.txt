@@ -1,0 +1,19 @@
+
+state={
+	id=835
+	name="VDKH_STATE_48" #Bulgarian Macedonia
+	manpower = 129345
+	
+	state_category = city
+
+	history=
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = BUL
+	}
+	provinces= { 6857 }
+}

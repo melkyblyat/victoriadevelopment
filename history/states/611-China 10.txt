@@ -7,7 +7,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = MEN
+		owner = CHA
 		add_core_of = MEN
 		add_core_of = CHI
 		add_core_of = PRC
@@ -21,6 +21,6 @@ state={
 	}
 
 	provinces={
-		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
+		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 12448 1608 12348
 	}
 }

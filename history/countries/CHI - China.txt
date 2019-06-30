@@ -15,18 +15,7 @@ set_technology = {
 	early_light_cruiser = 1
 }
 
-
-declare_war_on = {
-	target = SHX
-	type = civil_war 
-}
-
 set_convoys = 120
-
-add_ideas = {
- CHI_civilwar
-}
-
 
 set_politics = {	
 	ruling_party = social_democrat

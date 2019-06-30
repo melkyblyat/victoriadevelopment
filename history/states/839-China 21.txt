@@ -1,0 +1,23 @@
+
+state={
+	id=839
+	name="VDKH_STATE_52" #Mongolia
+	manpower = 67880
+	
+	state_category = pastoral
+
+	history={
+		owner = RUS
+		add_core_of = MEN
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MON
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		12690 10612 7743 4745 13150 10638
+	}
+}

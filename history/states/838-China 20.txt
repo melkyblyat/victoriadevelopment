@@ -1,0 +1,23 @@
+
+state={
+	id=838
+	name="VDKH_STATE_51" #East Chahar
+	manpower = 1120000
+	
+	state_category = pastoral
+
+	history={
+		owner = CHA
+		add_core_of = MEN
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+	}
+
+	provinces={
+		10363 10499 6988 6937 10331 9768 7575 972 9873 11801
+	}
+}

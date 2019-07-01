@@ -1,0 +1,31 @@
+﻿capital = 432
+
+OOB = "ASM"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {	
+	ruling_party = monarchist
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 3
+    social_democrat = 0
+    liberal = 4
+    conservative = 14
+    monarchist = 79
+    aximalist = 0
+    pragmatist = 0
+}
+
+
+

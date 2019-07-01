@@ -303,8 +303,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
+	color = rgb { 191  162  36 }
+	color_ui = rgb { 191  162  36 }
 }
 
 CRO = {
@@ -832,6 +832,46 @@ HNN = {
 GTC = {
 	color = rgb { 88 89 93 }
 	color_ui = rgb { 88 89 93 }
+}
+BRM = {
+	color = rgb { 171 180 51 }
+	color_ui = rgb { 171 180 51 }
+}
+SRL = {
+	color = rgb { 201 57 90 }
+	color_ui = rgb { 201 57 90 }
+}
+PAK = {
+	color = rgb { 30 125 43 }
+	color_ui = rgb { 30 125 43 }
+}
+KSH = {
+	color = rgb { 153 17 17 }
+	color_ui = rgb { 153 17 17 }
+}
+ASM = {
+	color = rgb { 226 0 1 }
+	color_ui = rgb { 226 0 1 }
+}
+BNG = {
+	color = rgb { 36 123 117 }
+	color_ui = rgb { 36 123 117 }
+}
+HJD = {
+	color = rgb { 254 1 108 }
+	color_ui = rgb { 254 1 108 }
+}
+MHT = {
+	color = rgb { 182 27 23 }
+	color_ui = rgb { 182 27 23 }
+}
+MSR = {
+	color = rgb { 191 99 36 }
+	color_ui = rgb { 191 99 36 }
+}
+MDR = {
+	color = rgb { 78 41 92 }
+	color_ui = rgb { 78 41 92 }
 }
 ### Redo Later ##
 PRB = {

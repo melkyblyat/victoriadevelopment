@@ -1,0 +1,26 @@
+
+state={
+	id=844
+	name="VDKH_STATE_57"
+	manpower = 578234
+	
+	state_category = rural
+
+	history={
+		owner = MSR
+		add_core_of = MSR
+		add_core_of = RAJ
+		victory_points = {
+			1238 1 
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+
+	}
+
+	provinces={
+		12275 7447 1238 1321
+	}
+}

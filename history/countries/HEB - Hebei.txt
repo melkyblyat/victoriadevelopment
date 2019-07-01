@@ -8,6 +8,63 @@ set_technology = {
 	tech_recon = 1
 }
 
+create_faction = axm_league
+add_to_faction = HEB
+add_to_faction = SHA
+add_to_faction = ANH
+add_to_faction = JIA
+add_to_faction = HBY
+add_to_faction = HNE
+add_to_faction = NIN
+add_to_faction = CHA
+add_to_faction = JSU
+
+declare_war_on = {
+	target = CHI
+	type = civil_war
+}
+
+SHA = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+ANH = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+JIA = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+HBY = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+HNE = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+NIN = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+CHA = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+JSU = {
+	add_to_war = {
+		targeted_alliance = HEB enemy = CHI
+	}
+}
+
 set_politics = {	
 	ruling_party = monarchist
 	last_election = "1933.3.5"

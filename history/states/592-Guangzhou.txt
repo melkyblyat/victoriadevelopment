@@ -12,7 +12,6 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -26,7 +25,7 @@ state={
 
 		}
 		victory_points = {
-			1047 5
+			1047 20
 		}
 
 		1938.10.25 = {

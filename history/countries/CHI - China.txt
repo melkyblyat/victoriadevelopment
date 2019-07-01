@@ -1,4 +1,4 @@
-﻿capital = 613 
+﻿capital = 592 
 
 oob = "CHI"
 set_stability = 0.3
@@ -16,6 +16,58 @@ set_technology = {
 }
 
 set_convoys = 120
+
+create_faction = dem_league
+add_to_faction = CHI
+add_to_faction = GXC
+add_to_faction = HNN
+add_to_faction = GUI
+add_to_faction = FUI
+add_to_faction = ZHJ
+add_to_faction = KAN
+add_to_faction = SUI
+add_to_faction = SHX
+
+GXC = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+HNN = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+GUI = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+FUI = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+ZHJ = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+KAN = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+SUI = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
+SHX = {
+	add_to_war = {
+		targeted_alliance = CHI enemy = HEB
+	}
+}
 
 set_politics = {	
 	ruling_party = social_democrat

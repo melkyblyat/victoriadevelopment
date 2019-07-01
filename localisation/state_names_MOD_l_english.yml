@@ -5,6 +5,7 @@
  STATE_VDKH_OR_4:0 "Schlesien"
  STATE_VDKH_OR_5:0 "Posen"
  STATE_VDKH_OR_6:0 "Kattowitz"
+ STATE_VDKH_OR_7:0 "Nanjing"
  VDKH_STATE_1:0 "Rebian Desert"
  VDKH_STATE_2:0 "South Madagascar"
  VDKH_STATE_3:0 "Walvis Bay"
@@ -58,3 +59,4 @@
  VDKH_STATE_51:0 "East Chahar"
  VDKH_STATE_52:0 "Outer Mongolia"
  VDKH_STATE_53:0 "Shanghai"
+ VDKH_STATE_54:0 "Edwardhafen"

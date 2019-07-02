@@ -17,7 +17,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,14 +26,14 @@ set_politics = {
 set_popularities = {
     national_communism = 0
     revolutionism = 0
-    democratic_socialist = 0
-    social_democrat = 0
-    liberal = 0
-    conservative = 0
+    democratic_socialist = 1
+    social_democrat = 1
+    liberal = 1
+    conservative = 79
     monarchist = 0
-    fascism = 79
-    aximalist = 0
-    pragmatist = 21
+    fascism = 3
+    aximalist = 4
+    pragmatist = 11
 }
 
 create_country_leader = {

@@ -20,15 +20,24 @@ set_cosmetic_tag = BLS
 
 set_convoys = 20
 
+
 set_politics = {	
-	ruling_party = liberal
-	last_election = "1935.11.14"
+	ruling_party = social_democrat
+	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    liberal = 100
+    national_communism = 0
+    revolutionism = 0
+    democratic_socialist = 9
+    social_democrat = 61
+    liberal = 10
+    conservative = 5
+    monarchist = 0
+    aximalist = 15
+    pragmatist = 0
 }
 
 create_country_leader = {

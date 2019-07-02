@@ -18,12 +18,12 @@ set_politics = {
 set_popularities = {
     national_communism = 0
     revolutionism = 0
-    democratic_socialist = 3
+    democratic_socialist = 0
     social_democrat = 0
-    liberal = 4
-    conservative = 14
-    monarchist = 79
-    aximalist = 0
+    liberal = 5
+    conservative = 25
+    monarchist = 55
+    aximalist = 15
     pragmatist = 0
 }
 

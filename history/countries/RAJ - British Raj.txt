@@ -31,14 +31,13 @@ set_politics = {
 set_popularities = {
     national_communism = 6
     revolutionism = 5
-    democratic_socialist = 2
+    democratic_socialist = 18
     social_democrat = 12
     liberal = 13
-    conservative = 51
+    conservative = 41
     monarchist = 0
-    
-    aximalist = 0
-    pragmatist = 11
+    aximalist = 5
+    pragmatist = 0
 }
 
 create_country_leader = {

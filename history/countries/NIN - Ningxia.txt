@@ -22,8 +22,8 @@ set_popularities = {
     social_democrat = 0
     liberal = 4
     conservative = 14
-    monarchist = 79
-    aximalist = 0
+    monarchist = 0
+    aximalist = 79
     pragmatist = 0
 }
 

@@ -70,7 +70,7 @@ SHX = {
 }
 
 set_politics = {	
-	ruling_party = social_democrat
+	ruling_party = conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -80,9 +80,9 @@ set_popularities = {
     national_communism = 2
     revolutionism = 2
     democratic_socialist = 2
-    social_democrat = 40
-    liberal = 30
-    conservative = 20
+    social_democrat = 10
+    liberal = 10
+    conservative = 50
     monarchist = 0
     fascism = 2
     aximalist = 2

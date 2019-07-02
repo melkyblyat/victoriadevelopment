@@ -20,10 +20,10 @@ set_politics = {
 }
 
 set_popularities = {
-    national_communism = 0
-    revolutionism = 100
-    democratic_socialist = 0
-    social_democrat = 0
+    national_communism = 10
+    revolutionism = 88
+    democratic_socialist = 1
+    social_democrat = 1
     liberal = 0
     conservative = 0
     monarchist = 0

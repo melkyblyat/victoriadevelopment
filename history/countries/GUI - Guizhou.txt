@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {	
-	ruling_party = monarchist
+	ruling_party = conservative
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,10 +21,10 @@ set_popularities = {
     democratic_socialist = 3
     social_democrat = 0
     liberal = 4
-    conservative = 14
-    monarchist = 79
-    aximalist = 0
-    pragmatist = 0
+    conservative = 63
+    monarchist = 10
+    aximalist = 9
+    pragmatist = 4
 }
 
 

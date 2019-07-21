@@ -1,6 +1,30 @@
 ﻿capital = 439
 
-oob = "RAJ_1936"
+oob = "RAJ"
+
+add_opinion_modifier = { target = MHT modifier = large_decrease }
+MHT = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = PAK modifier = large_decrease }
+PAK = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = HJD modifier = large_decrease }
+HJD = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = MDR modifier = large_decrease }
+MDR = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = MSR modifier = large_decrease }
+MSR = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = BNG modifier = large_decrease }
+BNG = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = ASM modifier = large_decrease }
+ASM = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
+
+add_opinion_modifier = { target = KSH modifier = large_decrease }
+KSH = { add_opinion_modifier = { target = RAJ modifier = large_decrease } }
 
 
 set_stability = 0.6

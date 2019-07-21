@@ -9,6 +9,8 @@ set_technology = {
 	infantry_weapons1 = 1
 }
 
+set_cosmetic_tag = IRE_SCO
+
 set_convoys = 10
 
 1939.1.1 = {
@@ -76,7 +78,6 @@ set_popularities = {
     liberal = 0
     conservative = 89
     monarchist = 0
-    
     aximalist = 11
     pragmatist = 0
 }

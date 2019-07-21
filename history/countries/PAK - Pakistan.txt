@@ -16,6 +16,8 @@ set_technology = {
 	
 }
 
+AFG = { give_guarantee = PAK } 
+
 set_cosmetic_tag = BLS
 
 set_convoys = 20

@@ -62,6 +62,10 @@ FIN_RUS = {
 	color = rgb { 96 131 80 }
 	color_ui = rgb { 96 131 80 }
 }
+IRE_SCO = {
+	color = rgb { 96 131 80 }
+	color_ui = rgb { 96 131 80 }
+}
 UOB_red_color = {
     color = rgb { 155 20 10 }
     color_ui = rgb { 137 20 10 }

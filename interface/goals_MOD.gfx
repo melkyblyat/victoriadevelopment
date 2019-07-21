@@ -64,5 +64,10 @@ spriteTypes = {
 	name = "GFX_goal_reichstag"
 	texturefile = "gfx/interface/goals/goal_reichstag.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_goal_way_of_india"
+	texturefile = "gfx/interface/goals/goal_way_of_india.dds"			
+	}
 
 }

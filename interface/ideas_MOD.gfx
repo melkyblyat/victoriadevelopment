@@ -50,5 +50,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_mex_politicised_army.dds"
 	}
 	
+	#England
+	spriteType = {
+		name = "GFX_idea_ENG_english_communism"
+		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_backward_wales"
+		texturefile = "gfx/interface/ideas/.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_bad_state_factories"
+		texturefile = "gfx/interface/ideas/.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_english_freedom_front"
+		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+	}
+	
 	
 }

@@ -1,0 +1,1004 @@
+focus_tree = {
+	id = english_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 900 y = 800 }
+	
+	focus = {
+		id = ENG_new_deal
+		icon = GFX_focus_generic_home_defense 
+		x = 4
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_economic_rescue_committee
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_new_deal }
+		x = -1
+		y = 1
+		relative_position_id = ENG_new_deal
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_idustrialize_wales
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_economic_rescue_committee }
+		x = -1
+		y = 1
+		relative_position_id = ENG_economic_rescue_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_financing_of_english_industry
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_economic_rescue_committee }
+		x = 1
+		y = 1
+		relative_position_id = ENG_economic_rescue_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_economical_unity
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_idustrialize_wales }
+		prerequisite = { focus = ENG_financing_of_english_industry }
+		x = 0
+		y = 2
+		relative_position_id = ENG_economic_rescue_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_monopolization_of_the_economy
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_idustrialize_wales }
+		prerequisite = { focus = ENG_financing_of_english_industry }
+		x = 0
+		y = 3
+		relative_position_id = ENG_economic_rescue_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_Baldwins_resignation
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_monopolization_of_the_economy }
+		mutually_exclusive = { focus = ENG_Baldwins_Gaitskell }
+		x = -2
+		y = 1
+		relative_position_id = ENG_monopolization_of_the_economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_minestry_of_economical_planning
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_Baldwins_resignation }
+		x = 0
+		y = 1
+		relative_position_id = ENG_Baldwins_resignation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_review_of_totals
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_minestry_of_economical_planning }
+		x = -1
+		y = 1
+		relative_position_id = ENG_minestry_of_economical_planning
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_birds_cage
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_minestry_of_economical_planning }
+		x = 1
+		y = 1
+		relative_position_id = ENG_minestry_of_economical_planning
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_planned_economy
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_review_of_totals }
+		prerequisite = { focus = ENG_birds_cage }
+		x = 0
+		y = 2
+		relative_position_id = ENG_minestry_of_economical_planning
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_bank_reforms
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_idustrialize_wales }
+		prerequisite = { focus = ENG_financing_of_english_industry }
+		x = 1
+		y = 1
+		relative_position_id = ENG_financing_of_english_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_eff
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_new_deal }
+		x = 2
+		y = 1
+		relative_position_id = ENG_new_deal
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_sdp
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_eff }
+		mutually_exclusive = { focus = ENG_establish_mistapo }
+		x = 0
+		y = 1
+		relative_position_id = ENG_eff
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_leader_of_the_opposition
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_sdp }
+		x = 1
+		y = 1
+		relative_position_id = ENG_sdp
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_charter_of_sdp
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_leader_of_the_opposition }
+		x = 0
+		y = 1
+		relative_position_id = ENG_leader_of_the_opposition
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_plans_of_sdp
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_charter_of_sdp }
+		x = 0
+		y = 1
+		relative_position_id = ENG_charter_of_sdp
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_elections
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_plans_of_sdp }
+		x = 0
+		y = 1
+		relative_position_id = ENG_plans_of_sdp
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_establish_mistapo
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_eff }
+		mutually_exclusive = { focus = ENG_sdp }
+		x = 3
+		y = 1
+		relative_position_id = ENG_eff
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_royal_guards
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_establish_mistapo }
+		x = 0
+		y = 1
+		relative_position_id = ENG_establish_mistapo
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_commissioner
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_royal_guards }
+		x = 0
+		y = 1
+		relative_position_id = ENG_royal_guards
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_offencive_policy
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_commissioner }
+		x = 0
+		y = 1
+		relative_position_id = ENG_commissioner
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_mi_6
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_establish_mistapo }
+		x = 2
+		y = 1
+		relative_position_id = ENG_establish_mistapo
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_Baldwins_Gaitskell
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_monopolization_of_the_economy }
+		mutually_exclusive = { focus = ENG_Baldwins_resignation }
+		x = 2
+		y = 1
+		relative_position_id = ENG_monopolization_of_the_economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_dissolution_of_the_committee
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_Baldwins_Gaitskell }
+		x = 0
+		y = 1
+		relative_position_id = ENG_Baldwins_Gaitskell
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_triumph_of_adjustment
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_dissolution_of_the_committee }
+		x = -1
+		y = 1
+		relative_position_id = ENG_dissolution_of_the_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_Gaitskell_doctrine
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_dissolution_of_the_committee }
+		x = 1
+		y = 1
+		relative_position_id = ENG_dissolution_of_the_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_foolproof
+		icon = GFX_focus_generic_home_defense 
+		prerequisite = { focus = ENG_triumph_of_adjustment }
+		prerequisite = { focus = ENG_Gaitskell_doctrine }
+		x = 0
+		y = 2
+		relative_position_id = ENG_dissolution_of_the_committee
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+}

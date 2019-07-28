@@ -2,9 +2,6 @@
 
 oob = "ENG"
 
-add_opinion_modifier = { target = FRA modifier = large_decrease }
-add_opinion_modifier = { target = FRA modifier = embargo }
-
 set_research_slots = 4
 
 set_stability = 0.6
@@ -49,60 +46,16 @@ set_technology = {
 }
 
 add_ideas = {
-	ENG_crisis
-	ENG_nazy_drift
-	ENG_disjointed_government
-	very_bad_economy
+	ENG_english_communism
+	ENG_backward_wales
+	ENG_bad_state_factories
+	ENG_english_freedom_front
 }
 
 set_convoys = 800
 
-# DIPLOMACY
-if = {
-	set_autonomy = {
-		target = MAL
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = CAN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = KEN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = NGA
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
-		target = EGY
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.5
-	}
-	set_autonomy = {
-		target = NZL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-	else = {
-		puppet = MAL
-	}
-}
-
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
-
 set_politics = {	
-	ruling_party = conservative
+	ruling_party = aximalist
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
@@ -114,24 +67,11 @@ set_popularities = {
     democratic_socialist = 3
     social_democrat = 0
     liberal = 0
-    conservative = 90
-    monarchist = 0
-    aximalist = 7
+    conservative = 17
+    monarchist = 24
+    aximalist = 56
     pragmatist = 0
 }
-
-set_rule = { can_send_volunteers = yes }
-
-create_faction = Consensus
-add_to_faction = ENG
-add_to_faction = ITA
-add_to_faction = CAN
-add_to_faction = NZL
-add_to_faction = NGA
-add_to_faction = KEN
-add_to_faction = EGY
-add_to_faction = MAL
-
 
 create_country_leader = {
 	name = "George V"
@@ -145,9 +85,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	name = "George V"
+	desc = ""
+	picture = "Portrait_Britain_George_V.tga"
 	expire = "1965.1.1"
 	ideology = aximalist_subtype
 	traits = {

@@ -1,0 +1,85 @@
+ideas = {
+
+	country = {
+		
+		ENG_english_communism = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = home_of_the_revolution
+
+			modifier = {
+                stability_factor = -0.2
+				political_power_gain = -0.05
+			}
+		}
+		
+		ENG_backward_wales = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = 
+
+			modifier = {
+                industrial_capacity_factory = -0.2
+                production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		ENG_bad_state_factories = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = 
+
+			modifier = {
+                production_factory_efficiency_gain_factor = -0.05
+				local_building_slots_factor = - 0.5
+			}
+		}
+		
+		ENG_english_freedom_front = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_mex_revolutionary_army
+
+			modifier = {
+
+			}
+		}
+	}
+}

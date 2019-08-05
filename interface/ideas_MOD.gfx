@@ -53,35 +53,35 @@ spriteTypes = {
 	#England
 	spriteType = {
 		name = "GFX_idea_ENG_english_communism"
-		texturefile = "gfx/interface/ideas/home_of_the_revolution.dds"
+		texturefile = "gfx/interface/ideas/ENG_english_communism.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_backward_wales"
-		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+		texturefile = "gfx/interface/ideas/ENG_backward_wales.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bad_state_factories"
-		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+		texturefile = "gfx/interface/ideas/ENG_bad_state_factories.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_backward_wales_1"
-		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+		texturefile = "gfx/interface/ideas/ENG_backward_wales_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bad_state_factories_1"
-		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+		texturefile = "gfx/interface/ideas/ENG_bad_state_factories.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_english_freedom_front"
-		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+		texturefile = "gfx/interface/ideas/ENG_english_freedom_front.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_consumer_goods"
-		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+		texturefile = "gfx/interface/ideas/ENG_consumer_goods.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bank_of_england"
-		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+		texturefile = "gfx/interface/ideas/ENG_bank_of_england.dds"
 	}
 	
 	

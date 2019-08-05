@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_new_deal
-		icon = GFX_focus_generic_self_management 
+		icon = ENG_new_deal
 		x = 4
 		y = 0
 
@@ -49,7 +49,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_economic_rescue_committee
-		icon = GFX_goal_generic_consumer_goods 
+		icon = ENG_economic_rescue_committee
 		prerequisite = { focus = ENG_new_deal }
 		x = -1
 		y = 1
@@ -85,7 +85,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_idustrialize_wales
-		icon = GFX_goal_generic_construct_civilian 
+		icon = ENG_idustrialize_wales
 		prerequisite = { focus = ENG_economic_rescue_committee }
 		x = -1
 		y = 1
@@ -138,7 +138,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_financing_of_english_industry
-		icon = GFX_focus_mex_privatisation 
+		icon = ENG_financing_of_english_industry
 		prerequisite = { focus = ENG_economic_rescue_committee }
 		x = 1
 		y = 1
@@ -191,7 +191,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_monopolization_of_the_economy
-		icon = GFX_goal_generic_demand_territory 
+		icon = ENG_monopolization_of_the_economy
 		prerequisite = { focus = ENG_idustrialize_wales }
 		prerequisite = { focus = ENG_financing_of_english_industry }
 		x = 0
@@ -229,7 +229,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_Baldwins_resignation
-		icon = GFX_goal_generic_political_pressure 
+		icon = ENG_Baldwins_resignation
 		prerequisite = { focus = ENG_monopolization_of_the_economy }
 		mutually_exclusive = { focus = ENG_Baldwins_Gaitskell }
 		x = -2
@@ -268,7 +268,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_minestry_of_economical_planning
-		icon = GFX_goal_generic_production2 
+		icon = ENG_minestry_of_economical_planning 
 		prerequisite = { focus = ENG_Baldwins_resignation }
 		x = 0
 		y = 1
@@ -307,7 +307,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_review_of_totals
-		icon = GFX_goal_generic_construct_mil_factory 
+		icon = ENG_review_of_totals
 		prerequisite = { focus = ENG_minestry_of_economical_planning }
 		x = -1
 		y = 1
@@ -406,7 +406,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_birds_cage
-		icon = GFX_focus_rom_handle_king 
+		icon = ENG_birds_cage
 		prerequisite = { focus = ENG_minestry_of_economical_planning }
 		x = 1
 		y = 1
@@ -452,7 +452,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_planned_economy
-		icon = GFX_focus_generic_self_management 
+		icon = ENG_planned_economy
 		prerequisite = { focus = ENG_review_of_totals }
 		prerequisite = { focus = ENG_birds_cage }
 		x = 0
@@ -491,7 +491,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_bank_reforms
-		icon = GFX_goal_generic_positive_trade_relations 
+		icon = ENG_bank_reforms
 		prerequisite = { focus = ENG_idustrialize_wales }
 		prerequisite = { focus = ENG_financing_of_english_industry }
 		x = 1
@@ -527,7 +527,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_eff
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_eff
 		prerequisite = { focus = ENG_new_deal }
 		x = 2
 		y = 1
@@ -562,7 +562,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_sdp
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_sdp
 		prerequisite = { focus = ENG_eff }
 		mutually_exclusive = { focus = ENG_establish_mistapo }
 		x = 0
@@ -598,7 +598,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_leader_of_the_opposition
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_leader_of_the_opposition
 		prerequisite = { focus = ENG_sdp }
 		x = 1
 		y = 1
@@ -633,7 +633,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_charter_of_sdp
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_charter_of_sdp
 		prerequisite = { focus = ENG_leader_of_the_opposition }
 		x = 0
 		y = 1
@@ -668,7 +668,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_plans_of_sdp
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_plans_of_sdp
 		prerequisite = { focus = ENG_charter_of_sdp }
 		x = 0
 		y = 1
@@ -703,7 +703,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_elections
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_elections 
 		prerequisite = { focus = ENG_plans_of_sdp }
 		x = 0
 		y = 1
@@ -738,7 +738,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_establish_mistapo
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_establish_mistapo
 		prerequisite = { focus = ENG_eff }
 		mutually_exclusive = { focus = ENG_sdp }
 		x = 3
@@ -774,7 +774,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_royal_guards
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_royal_guards
 		prerequisite = { focus = ENG_establish_mistapo }
 		x = 0
 		y = 1
@@ -809,7 +809,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_commissioner
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_commissioner
 		prerequisite = { focus = ENG_royal_guards }
 		x = 0
 		y = 1
@@ -844,7 +844,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_offencive_policy
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_offencive_policy
 		prerequisite = { focus = ENG_commissioner }
 		x = 0
 		y = 1
@@ -879,7 +879,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_mi_6
-		icon = GFX_focus_generic_home_defense 
+		icon = ENG_mi_6
 		prerequisite = { focus = ENG_establish_mistapo }
 		x = 2
 		y = 1
@@ -914,7 +914,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_Baldwins_Gaitskell
-		icon = GFX_goal_generic_major_alliance 
+		icon = ENG_Baldwins_Gaitskell
 		prerequisite = { focus = ENG_monopolization_of_the_economy }
 		mutually_exclusive = { focus = ENG_Baldwins_resignation }
 		x = 2
@@ -952,7 +952,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_dissolution_of_the_committee
-		icon = GFX_goal_generic_forceful_treaty 
+		icon = ENG_dissolution_of_the_committee
 		prerequisite = { focus = ENG_Baldwins_Gaitskell }
 		x = 0
 		y = 1
@@ -991,7 +991,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_triumph_of_adjustment
-		icon = GFX_focus_generic_support_the_left_right 
+		icon = ENG_triumph_of_adjustment
 		prerequisite = { focus = ENG_dissolution_of_the_committee }
 		x = -1
 		y = 1
@@ -1029,7 +1029,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_Gaitskell_doctrine
-		icon = GFX_goal_generic_construct_civilian 
+		icon = ENG_Gaitskell_doctrine
 		prerequisite = { focus = ENG_dissolution_of_the_committee }
 		x = 1
 		y = 1
@@ -1134,7 +1134,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_foolproof
-		icon = GFX_goal_generic_defence 
+		icon = ENG_foolproof
 		prerequisite = { focus = ENG_triumph_of_adjustment }
 		prerequisite = { focus = ENG_Gaitskell_doctrine }
 		x = 0

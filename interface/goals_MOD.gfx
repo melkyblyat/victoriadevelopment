@@ -70,4 +70,46 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_way_of_india.dds"			
 	}
 
+        SpriteType = {
+	name = "GFX_goal_ENG_new_way"
+	texturefile = "gfx/interface/goals/ENG_New_way.dds"
+        }
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Birdcage"
+	texturefile = "gfx/interface/goals/ENG_Birdcage.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Financing_British_industry"
+	texturefile = "gfx/interface/goals/ENG_Financing_British_industry.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Industrialization_Of_Wales"
+	texturefile = "gfx/interface/goals/ENG_Industrialization_Of_Wales.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Monopolization_of_the_economy"
+	texturefile = "gfx/interface/goals/ENG_Monopolization_of_the_economy.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Reorganization_Of_The_Mi-6"
+	texturefile = "gfx/interface/goals/ENG_Reorganization_Of_The_Mi-6.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ENG_Royal_guard"
+	texturefile = "gfx/interface/goals/ENG_Royal_guard.dds"			
+	}
+	
 }
+
+
+
+
+
+
+

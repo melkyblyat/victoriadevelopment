@@ -57,15 +57,31 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_backward_wales"
-		texturefile = "gfx/interface/ideas/.dds"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bad_state_factories"
-		texturefile = "gfx/interface/ideas/.dds"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_backward_wales_1"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_bad_state_factories_1"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_english_freedom_front"
 		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_consumer_goods"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_bank_of_england"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
 	}
 	
 	

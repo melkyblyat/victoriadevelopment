@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_new_deal
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_focus_generic_self_management 
 		x = 4
 		y = 0
 
@@ -27,7 +27,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			has_government = aximalist
 		}
 
 		bypass = {
@@ -43,13 +43,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 150
 		}
 	}
 	
 	focus = {
 		id = ENG_economic_rescue_committee
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_consumer_goods 
 		prerequisite = { focus = ENG_new_deal }
 		x = -1
 		y = 1
@@ -78,13 +78,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 100
+			add_ideas = ENG_consumer_goods
 		}
 	}
 	
 	focus = {
 		id = ENG_idustrialize_wales
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_construct_civilian 
 		prerequisite = { focus = ENG_economic_rescue_committee }
 		x = -1
 		y = 1
@@ -97,11 +98,13 @@ focus_tree = {
 		}
 
 		available = {
-			
+			122 = { is_controlled_by = ROOT }
+			122 = { infrastructure > 7 }
+			has_country_flag = eng_industrial_rebirth_wales
 		}
 		
 		bypass = {
-
+			NOT = { 122 = { is_controlled_by = ROOT } }
 		}
 
 		cancel_if_invalid = yes
@@ -113,13 +116,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = ENG_backward_wales }
+				remove_ideas = ENG_backward_wales
+			}
+			if = {
+				limit = { has_idea = ENG_backward_wales_1 }
+				remove_ideas = ENG_backward_wales_1
+			}
+			122 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_idustrialize_wales_focus
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_financing_of_english_industry
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_focus_mex_privatisation 
 		prerequisite = { focus = ENG_economic_rescue_committee }
 		x = 1
 		y = 1
@@ -132,11 +151,13 @@ focus_tree = {
 		}
 
 		available = {
-			
+			126 = { is_controlled_by = ROOT }
+			num_of_civilian_factories > 30
+			has_country_flag = eng_industrial_rebirth_england
 		}
 		
 		bypass = {
-
+			NOT = { 126 = { is_controlled_by = ROOT } }
 		}
 
 		cancel_if_invalid = yes
@@ -148,49 +169,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = ENG_economical_unity
-		icon = GFX_focus_generic_home_defense 
-		prerequisite = { focus = ENG_idustrialize_wales }
-		prerequisite = { focus = ENG_financing_of_english_industry }
-		x = 0
-		y = 2
-		relative_position_id = ENG_economic_rescue_committee
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			
+			if = {
+				limit = { has_idea = ENG_bad_state_factories }
+				remove_ideas = ENG_bad_state_factories
+			}
+			if = {
+				limit = { has_idea = ENG_bad_state_factories_1 }
+				remove_ideas = ENG_bad_state_factories_1
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = ENG_financing_of_english_industry_focus
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_monopolization_of_the_economy
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_demand_territory 
 		prerequisite = { focus = ENG_idustrialize_wales }
 		prerequisite = { focus = ENG_financing_of_english_industry }
 		x = 0
@@ -220,13 +221,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-		}
+			add_ideas = no_competition
+			set_country_flag = can_not_change_monopoly
+			custom_effect_tooltip = can_not_change_law_tt
+ 		}
 	}
 	
 	focus = {
 		id = ENG_Baldwins_resignation
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_political_pressure 
 		prerequisite = { focus = ENG_monopolization_of_the_economy }
 		mutually_exclusive = { focus = ENG_Baldwins_Gaitskell }
 		x = -2
@@ -256,13 +259,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 50
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			remove_ideas = Stanley_Baldwin_em
+			add_ideas = Philip_Snowden_em
 		}
 	}
 	
 	focus = {
 		id = ENG_minestry_of_economical_planning
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_production2 
 		prerequisite = { focus = ENG_Baldwins_resignation }
 		x = 0
 		y = 1
@@ -291,13 +297,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = ENG_consumer_goods
+				add_idea = ENG_epc
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_review_of_totals
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_construct_mil_factory 
 		prerequisite = { focus = ENG_minestry_of_economical_planning }
 		x = -1
 		y = 1
@@ -326,13 +336,77 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			swap_ideas = {
+				remove_idea = ENG_epc
+				add_idea = ENG_epc_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_birds_cage
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_focus_rom_handle_king 
 		prerequisite = { focus = ENG_minestry_of_economical_planning }
 		x = 1
 		y = 1
@@ -361,13 +435,24 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = { NOT = { has_idea = Philip_Snowden_em } }
+				custom_effect_tooltip = get_snowden_tt
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_idea = Philip_Snowden_em }
+				swap_ideas = {
+					remove_idea = Philip_Snowden_em
+					add_idea = Philip_Snowden_1_em
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_planned_economy
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_focus_generic_self_management 
 		prerequisite = { focus = ENG_review_of_totals }
 		prerequisite = { focus = ENG_birds_cage }
 		x = 0
@@ -397,13 +482,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_popularity = { ideology = aximalist popularity = 0.05 }
+			custom_effect_tooltip = can_not_change_law_tt
+			add_ideas = closed_economy
+			set_country_flag = can_not_change_closed_economy
 		}
 	}
 	
 	focus = {
 		id = ENG_bank_reforms
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_positive_trade_relations 
 		prerequisite = { focus = ENG_idustrialize_wales }
 		prerequisite = { focus = ENG_financing_of_english_industry }
 		x = 1
@@ -433,7 +521,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = ENG_bank_of_england
 		}
 	}
 	
@@ -826,7 +914,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_Baldwins_Gaitskell
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_major_alliance 
 		prerequisite = { focus = ENG_monopolization_of_the_economy }
 		mutually_exclusive = { focus = ENG_Baldwins_resignation }
 		x = 2
@@ -856,13 +944,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 150
+			add_popularity = { ideology = liberal popularity = 0.05 }
+			add_ideas = ENG_english_adjustment
 		}
 	}
 	
 	focus = {
 		id = ENG_dissolution_of_the_committee
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_forceful_treaty 
 		prerequisite = { focus = ENG_Baldwins_Gaitskell }
 		x = 0
 		y = 1
@@ -891,13 +981,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = ENG_consumer_goods }
+				remove_ideas = ENG_consumer_goods
+			}
+			add_stability = 0.1
 		}
 	}
 	
 	focus = {
 		id = ENG_triumph_of_adjustment
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_focus_generic_support_the_left_right 
 		prerequisite = { focus = ENG_dissolution_of_the_committee }
 		x = -1
 		y = 1
@@ -926,13 +1020,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				add_idea = ENG_english_adjustment_1
+				remove_idea = ENG_english_adjustment
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_Gaitskell_doctrine
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_construct_civilian 
 		prerequisite = { focus = ENG_dissolution_of_the_committee }
 		x = 1
 		y = 1
@@ -961,13 +1058,83 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = { NOT = { has_idea = Hugh_Gaitskell_em } }
+				custom_effect_tooltip = get_gaitskell_tt
+			}
+			if = {
+				limit = { has_idea = Hugh_Gaitskell_em }
+				swap_ideas = {
+					remove_idea = Hugh_Gaitskell_em
+					add_idea = Hugh_Gaitskell_1_em
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = ENG_foolproof
-		icon = GFX_focus_generic_home_defense 
+		icon = GFX_goal_generic_defence 
 		prerequisite = { focus = ENG_triumph_of_adjustment }
 		prerequisite = { focus = ENG_Gaitskell_doctrine }
 		x = 0
@@ -997,7 +1164,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.1
+			swap_ideas = {
+				add_idea = ENG_english_adjustment_2
+				remove_idea = ENG_english_adjustment_1
+			}
 		}
 	}
 

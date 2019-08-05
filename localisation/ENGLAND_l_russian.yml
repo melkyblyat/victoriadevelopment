@@ -7,6 +7,10 @@
  ENG_backward_wales_desc:0 ""
  ENG_bad_state_factories:0 ""
  ENG_bad_state_factories_desc:0 ""
+ ENG_backward_wales_1:0 ""
+ ENG_backward_wales_1_desc:0 ""
+ ENG_bad_state_factories_1:0 ""
+ ENG_bad_state_factories_1_desc:0 ""
  ENG_english_freedom_front:0 ""
  ENG_english_freedom_front_desc:0 ""
  
@@ -17,6 +21,15 @@
  ### Flags ###
  
  ### Focus ###
+ 
+ ENG_new_deal:0 "New Deal"
+ ENG_new_deal_desc:0 ""
+ ENG_economic_rescue_committee:0 "Economic Rescue Committee"
+ ENG_economic_rescue_committee_desc:0 ""
+ ENG_idustrialize_wales:0 "Industrialise Wales"
+ ENG_idustrialize_wales_desc:0 ""
+ ENG_financing_of_english_industry:0 "Financing of English Industry"
+ ENG_financing_of_english_industry_desc:0 ""
  
  ### Events ###
  
@@ -29,5 +42,14 @@
  ## Factions ##
  
  ### Decisions ###
+ 
+ ENG_industrial_reload:0 "Economic Rescue Committee"
+ ENG_industrial_reload_desc:0 "Economic Rescue Committee"
+ 
+ eng_economic_comission:0 "Industrial Comission"
+ eng_wales_1:0 "Improve situation in Wales"
+ eng_wales_2:0 "Industrial Wales"
+ eng_england_1:0 "State Support Program"
+ eng_england_2:0 "Rebirth of Industry"
  
 

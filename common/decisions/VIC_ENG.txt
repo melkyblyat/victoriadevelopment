@@ -1,0 +1,174 @@
+ENG_industrial_reload = {
+	
+	eng_economic_comission = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			
+		}
+
+		available = {
+			tag = ENG
+			has_completed_focus = ENG_economic_rescue_committee
+		}
+
+		visible = {
+          always = yes
+		}
+		
+		cost = 100
+
+		complete_effect = {
+			set_country_flag = ENG_industrial_reload_comission
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	eng_wales_1 = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		available = {
+			tag = ENG
+			has_completed_focus = ENG_economic_rescue_committee
+			has_country_flag = ENG_industrial_reload_comission
+			122 = { is_controlled_by = ROOT }
+		}
+
+		visible = {
+          always = yes
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = ENG_backward_wales
+				add_idea = ENG_backward_wales_1
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	eng_wales_2 = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		available = {
+			tag = ENG
+			has_completed_focus = ENG_economic_rescue_committee
+			has_country_flag = ENG_industrial_reload_comission
+			has_idea = ENG_backward_wales_1
+			122 = { is_controlled_by = ROOT }
+		}
+
+		visible = {
+          always = yes
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = eng_industrial_rebirth_wales
+			122 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	eng_england_1 = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		available = {
+			tag = ENG
+			has_completed_focus = ENG_economic_rescue_committee
+			has_country_flag = ENG_industrial_reload_comission
+			126 = { is_controlled_by = ROOT }
+		}
+
+		visible = {
+          always = yes
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = ENG_bad_state_factories
+				add_idea = ENG_bad_state_factories_1
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	eng_england_2 = {
+
+		icon = generic_construction
+
+		allowed = {
+			
+		}
+
+		available = {
+			tag = ENG
+			has_completed_focus = ENG_economic_rescue_committee
+			has_country_flag = ENG_industrial_reload_comission
+			has_idea = ENG_bad_state_factories_1
+			126 = { is_controlled_by = ROOT }
+		}
+
+		visible = {
+          always = yes
+		}
+		
+		cost = 50
+
+		complete_effect = {
+			set_country_flag = eng_industrial_rebirth_wales
+			126 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

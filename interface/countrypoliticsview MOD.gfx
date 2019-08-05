@@ -1,0 +1,61 @@
+spriteTypes = {
+
+	
+
+	spriteType = {
+		name = "GFX_ideology_totalist_group"
+		texturefile = "gfx/interface/ideologies/totalist_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_syndicalist_group"
+		texturefile = "gfx/interface/ideologies/syndicalist_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_socialist_group"
+		texturefile = "gfx/interface/ideologies/socialist_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/social_democrat_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_liberal_group"
+		texturefile = "gfx/interface/ideologies/liberal_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_conservative_group"
+		texturefile = "gfx/interface/ideologies/conservative_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_monarchist_group"
+		texturefile = "gfx/interface/ideologies/monarchist_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_aximalist_group"
+		texturefile = "gfx/interface/ideologies/aximalist_group.dds"
+	}	
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_high_level"
+		texturefile = "gfx/interface/idea_competition_high.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_middle_level"
+		texturefile = "gfx/interface/idea_competition_middle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_low_level"
+		texturefile = "gfx/interface/idea_competition_low.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_no_competition"
+		texturefile = "gfx/interface/idea_competition_no.dds"
+	}
+}

@@ -1,6 +1,87 @@
 ideas = {
 
 	country = {
+	
+		ENG_english_freedom_front = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_mex_revolutionary_army
+
+			modifier = {
+
+			}
+		}
+		
+		ENG_consumer_goods = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		ENG_epc = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.03
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		
+		ENG_epc_1 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.03
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
 		
 		ENG_english_communism = {
 			
@@ -34,12 +115,33 @@ ideas = {
 				always = yes
 			}
 			
-			picture = 
+			picture = FRA_matignon_agreements
 
 			modifier = {
                 industrial_capacity_factory = -0.2
                 production_speed_buildings_factor = -0.2
 				consumer_goods_factor = 0.1
+			}
+		}
+		
+		ENG_backward_wales_1 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+                industrial_capacity_factory = -0.1
+                production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 		
@@ -55,15 +157,14 @@ ideas = {
 				always = yes
 			}
 			
-			picture = 
+			picture = FRA_matignon_agreements
 
 			modifier = {
-                production_factory_efficiency_gain_factor = -0.05
-				local_building_slots_factor = - 0.5
+                production_factory_efficiency_gain_factor = -0.1
 			}
 		}
 		
-		ENG_english_freedom_front = {
+		ENG_bad_state_factories_1 = {
 			
 			removal_cost = -1
 			
@@ -75,10 +176,192 @@ ideas = {
 				always = yes
 			}
 			
-			picture = idea_mex_revolutionary_army
+			picture = FRA_matignon_agreements
 
 			modifier = {
+                production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		
+		ENG_bank_of_england = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+               consumer_goods_factor = -0.1
+			}
+		}
+		
+		ENG_english_adjustment = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+               production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		ENG_english_adjustment_1 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+               production_speed_buildings_factor = 0.1
+			   industrial_capacity_factory = 0.1
+               production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		ENG_english_adjustment_2 = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_matignon_agreements
+
+			modifier = {
+               production_speed_buildings_factor = 0.2
+			   industrial_capacity_factory = 0.2
+               production_speed_buildings_factor = 0.2
+			}
+		}
+		
+	}
+	
+	
+	economy_minister = {
+		Stanley_Baldwin_em = {
+
+			
+			allowed = {
+				original_tag = ENG
+			}
+			visible = {
+				NOT = { has_country_flag = Stanley_Baldwin_dead }
+			}
+			available = {
+				NOT = { has_completed_focus = ENG_Baldwins_resignation }
+			}
+			
+			traits = { eco_electroficator }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		Hugh_Gaitskell_em = {
+
+			
+			allowed = {
+				original_tag = ENG
+			}
+			visible = {
+				NOT = { has_country_flag = Hugh_Gaitskell_dead }
+				NOT = { has_completed_focus = ENG_Gaitskell_doctrine }
+			}
+			available = {
+				has_completed_focus = ENG_Baldwins_Gaitskell
+			}
+			
+			traits = { eco_mixed_economy }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		Hugh_Gaitskell_1_em = {
+
+			
+			allowed = {
+				original_tag = ENG
+			}
+			visible = {
+				NOT = { has_country_flag = Hugh_Gaitskell_dead }
+			}
+			available = {
+				has_completed_focus = ENG_Baldwins_Gaitskell
+			}
+			
+			traits = { eco_mixed_economy_gaitskell }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		Philip_Snowden_em = {
+
+			
+			allowed = {
+				original_tag = ENG
+			}
+			visible = {
+				NOT = { has_country_flag = Philip_Snowden_dead }
+				NOT = { has_completed_focus = ENG_birds_cage }
+			}
+			available = {
+				
+			}
+			
+			traits = { eco_reformer }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		Philip_Snowden_1_em = {
+
+			
+			allowed = {
+				original_tag = ENG
+			}
+			visible = {
+				NOT = { has_country_flag = Philip_Snowden_dead }
+			}
+			available = {
+				
+			}
+			
+			traits = { eco_reformer_snowden }
+
+			ai_will_do = {
+				factor = 0.5
 			}
 		}
 	}

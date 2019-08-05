@@ -1,0 +1,32 @@
+﻿l_english:
+ 
+ competition_level:0 "Competition Level"
+ high_level:0 "High Level of Competition"
+ high_level_desc:0 ""
+ middle_level:0 "Normal Level of Competition"
+ middle_level_desc:0 ""
+ low_level:0 "Low Level of Competition"
+ low_level_desc:0 ""
+ no_competition:0 "Monopoly of Government"
+ no_competition_desc:0 ""
+ 
+ minestry_staff:0 " Cabinet of Ministers"
+ head_of_government:0 "Head of Government"
+ head_of_government_desc:0 ""
+ security_minister:0 "Security Minister"
+ security_minister_desc:0 ""
+ foreign_minister:0 "Foreign Minister"
+ foreign_minister_desc:0 ""
+ economy_minister:0 "Economy Minister"
+ economy_minister_desc:0 ""
+ military_chief:0 "Military Chief"
+ military_chief_desc:0 ""
+ naval_chief:0 "Naval Chief"
+ naval_chief_desc:0 ""
+ 
+ eco_electroficator:0 "Electroficator"
+ eco_mixed_economy:0 "Supporter of Mixed Economy"
+ eco_reformer:0 "Reformer"
+ 
+ eco_mixed_economy_gaitskell:0 "Gaitskell's Economical Policy"
+ eco_reformer_snowden:0 "Snowden's Economical Policy"

@@ -1,0 +1,110 @@
+﻿l_english:
+ ### Ideas ###
+ 
+ ENG_english_communism:0 "English Communism"
+ ENG_english_communism_desc:0 ""
+ ENG_backward_wales:0 "Underdeveloped Wales"
+ ENG_backward_wales_desc:0 ""
+ ENG_bad_state_factories:0 "England's Ruined Industry"
+ ENG_bad_state_factories_desc:0 ""
+ ENG_backward_wales_1:0 "Underdeveloped Wales"
+ ENG_backward_wales_1_desc:0 ""
+ ENG_bad_state_factories_1:0 "England's Ruined Industry"
+ ENG_bad_state_factories_1_desc:0 ""
+ ENG_english_freedom_front:0 "EFF"
+ ENG_english_freedom_front_desc:0 ""
+ ENG_consumer_goods:0 "Economic Rescue Committee"
+ ENG_consumer_goods_desc:0 ""
+ ENG_bank_of_england:0 "Bank of England"
+ ENG_bank_of_england_desc:0 ""
+ ENG_english_adjustment:0 "Restructuring of England"
+ ENG_english_adjustment_desc:0 ""
+ ENG_english_adjustment_1:0 "Restructuring of England"
+ ENG_english_adjustment_1_desc:0 ""
+ ENG_english_adjustment_2:0 "Restructuring of England"
+ ENG_english_adjustment_2_desc:0 ""
+ ENG_epc:0 "Economic Rescue Committee"
+ ENG_epc_desc:0 ""
+ ENG_epc_1:0 "Economic Rescue Committee"
+ ENG_epc_1_desc:0 ""
+ 
+ ### Parties ###
+
+ ### World Tension ###
+ 
+ ### Flags ###
+ 
+ ENG_industrial_reload_comission:0 "Industrial Comission was established"
+ eng_industrial_rebirth_england:0 "Has completed ERC decision tree"
+ eng_industrial_rebirth_wales:0 "Has completed ERC decision tree"
+ 
+ ### Focus ###
+ 
+ ENG_new_deal:0 "New Deal"
+ ENG_new_deal_desc:0 ""
+ ENG_economic_rescue_committee:0 "Economic Rescue Committee"
+ ENG_economic_rescue_committee_desc:0 ""
+ ENG_idustrialize_wales:0 "Industrialise Wales"
+ ENG_idustrialize_wales_desc:0 ""
+ ENG_financing_of_english_industry:0 "Financing of English Industry"
+ ENG_financing_of_english_industry_desc:0 ""
+ ENG_bank_reforms:0 "Bank of England"
+ ENG_bank_reforms_desc:0 ""
+ ENG_monopolization_of_the_economy:0 "Monopolization of the Economy"
+ ENG_monopolization_of_the_economys_desc:0 ""
+ ENG_Baldwins_Gaitskell:0 "Baldwin-Gaitskell Coalition"
+ ENG_Baldwins_Gaitskell_desc:0 ""
+ ENG_dissolution_of_the_committee:0 "Dissolution of the ERC"
+ ENG_dissolution_of_the_committee_desc:0 ""
+ ENG_triumph_of_adjustment:0 "Triumph of Restructuring"
+ ENG_triumph_of_adjustment_desc:0 ""
+ ENG_Baldwins_resignation:0 "Baldwin's Resignation"
+ ENG_Baldwins_resignation_desc:0 ""
+ ENG_minestry_of_economical_planning:0 "Minestry of Economical Planning"
+ ENG_minestry_of_economical_planning_desc:0 ""
+ ENG_review_of_totals:0 "Review of Totals"
+ ENG_review_of_totals_desc:0 ""
+ ENG_Gaitskell_doctrine:0 "Gaitskell's Doctrine"
+ ENG_Gaitskell_doctrine_desc:0 ""
+ ENG_foolproof:0 "Economic Education"
+ ENG_foolproof_desc:0 ""
+ ENG_planned_economy:0 "Closed Economy"
+ ENG_planned_economy_desc:0 ""
+ ENG_birds_cage:0 "Bird's Cage"
+ ENG_birds_cage_desc:0 ""
+ 
+ ### Events ###
+ 
+ ### Effects ###
+ 
+ can_not_change_law_tt:0 "§RYou won't be able to change this law anymore§!\n"
+ get_gaitskell_tt:0 "§RYou won't get all bonuses if you don't have§! §YHugh Gaitskell§! §Ras Economy Minister§!\n"
+ get_snowden_tt:0 "§RYou won't get all bonuses if you don't have§! §YPhilip Snowden§! §Ras Economy Minister§!\n"
+ 
+ ### Traits ###
+ 
+ ### Opinion modifiers ###
+ 
+ ## Factions ##
+ 
+ ### Decisions ###
+ 
+ ENG_industrial_reload:0 "Economic Rescue Committee"
+ ENG_industrial_reload_desc:0 "Economic Rescue Committee"
+ 
+ eng_economic_comission:0 "Industrial Comission"
+ eng_wales_1:0 "Improve situation in Wales"
+ eng_wales_2:0 "Industrial Wales"
+ eng_england_1:0 "State Support Program"
+ eng_england_2:0 "Rebirth of Industry"
+ 
+ ### Ministers ###
+ 
+ # Economy
+ Stanley_Baldwin_em:0 "Stanley Baldwin"
+ Hugh_Gaitskell_em:0 "Hugh Gaitskell"
+ Hugh_Gaitskell_1_em:0 "Hugh Gaitskell"
+ Philip_Snowden_em:0 "Philip Snowden"
+ Philip_Snowden_1_em:0 "Philip Snowden"
+ 
+

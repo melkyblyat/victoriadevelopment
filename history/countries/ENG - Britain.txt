@@ -50,6 +50,8 @@ add_ideas = {
 	ENG_backward_wales
 	ENG_bad_state_factories
 	ENG_english_freedom_front
+	
+	Stanley_Baldwin_em #Economy minister
 }
 
 set_convoys = 800
@@ -62,14 +64,14 @@ set_politics = {
 }
 
 set_popularities = {
-    national_communism = 0
-    revolutionism = 0
-    democratic_socialist = 3
+    national_communism = 10
+    revolutionism = 20
+    democratic_socialist = 20
     social_democrat = 0
     liberal = 0
-    conservative = 17
-    monarchist = 24
-    aximalist = 56
+    conservative = 20
+    monarchist = 13
+    aximalist = 17
     pragmatist = 0
 }
 

@@ -95,7 +95,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = home_of_the_revolution
+			picture = ENG_english_communism
 
 			modifier = {
                 stability_factor = -0.2
@@ -115,7 +115,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_backward_wales
 
 			modifier = {
                 industrial_capacity_factory = -0.2
@@ -136,7 +136,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_backward_wales
 
 			modifier = {
                 industrial_capacity_factory = -0.1
@@ -157,7 +157,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_bad_state_factories
 
 			modifier = {
                 production_factory_efficiency_gain_factor = -0.1
@@ -176,7 +176,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_bad_state_factories
 
 			modifier = {
                 production_factory_efficiency_gain_factor = -0.05
@@ -195,7 +195,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_bank_of_england
 
 			modifier = {
                consumer_goods_factor = -0.1
@@ -214,7 +214,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_english_adjustment
 
 			modifier = {
                production_speed_buildings_factor = 0.1
@@ -233,7 +233,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = FRA_matignon_agreements
+			picture = ENG_english_adjustment
 
 			modifier = {
                production_speed_buildings_factor = 0.1

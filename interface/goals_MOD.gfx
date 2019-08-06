@@ -96,8 +96,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	name = "GFX_goal_ENG_Reorganization_Of_The_Mi-6"
-	texturefile = "gfx/interface/goals/ENG_Reorganization_Of_The_Mi-6.dds"			
+	name = "GFX_goal_ENG_Reorganization_Of_The_Mi_6"
+	texturefile = "gfx/interface/goals/ENG_Reorganization_Of_The_Mi_6.dds"			
 	}
 	
 	SpriteType = {

@@ -53,27 +53,27 @@ spriteTypes = {
 	#England
 	spriteType = {
 		name = "GFX_idea_ENG_english_communism"
-		texturefile = "gfx/interface/ideas/ENG_english_communism.dds"
+		texturefile = "gfx/interface/ideas/ENG_Front_Of_ English_Freedom.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_backward_wales"
-		texturefile = "gfx/interface/ideas/ENG_backward_wales.dds"
+		texturefile = "gfx/interface/ideas/ENG_Backward_ Wales.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bad_state_factories"
-		texturefile = "gfx/interface/ideas/ENG_bad_state_factories.dds"
+		texturefile = "gfx/interface/ideas/ENG_Destroyed_ British_ Industry.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_backward_wales_1"
-		texturefile = "gfx/interface/ideas/ENG_backward_wales_1.dds"
+		texturefile = "gfx/interface/ideas/ENG_Backward_ Wales_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bad_state_factories_1"
-		texturefile = "gfx/interface/ideas/ENG_bad_state_factories.dds"
+		texturefile = "gfx/interface/ideas/ENG_Destroyed_ British_ Industry.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_english_freedom_front"
-		texturefile = "gfx/interface/ideas/ENG_english_freedom_front.dds"
+		texturefile = "gfx/interface/ideas/ENG_Front_Of_ English_Freedom.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_consumer_goods"
@@ -81,7 +81,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_bank_of_england"
-		texturefile = "gfx/interface/ideas/ENG_bank_of_england.dds"
+		texturefile = "gfx/interface/ideas/ENG_bank_of_England.dds"
 	}
 	
 	

@@ -13,23 +13,22 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-   national_communism = 2
-   revolutionism = 1
-   dem_socialism = 1
-   social_democrats = 3
-   liberalism = 58
-   conservatism = 14
-   monarchism = 3
-   maximalism = 6
-   pragmatism = 12
-   
+	national_communism = 2
+    revolutionism = 1
+    democratic_socialist = 1
+    social_democrat = 3
+    liberal = 58
+    conservative = 14
+    monarchist = 3
+    aximalist = 6
+    pragmatist = 12
 }
 
 create_country_leader = {

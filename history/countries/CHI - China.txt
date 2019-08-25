@@ -81,10 +81,9 @@ set_popularities = {
     revolutionism = 2
     democratic_socialist = 2
     social_democrat = 10
-    liberal = 10
-    conservative = 50
+    liberal = 12
+    conservative = 70
     monarchist = 0
-    fascism = 2
     aximalist = 2
     pragmatist = 0
 }

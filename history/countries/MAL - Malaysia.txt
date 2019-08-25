@@ -1,6 +1,10 @@
 ﻿capital = 336 #Kuala Lumpur
 
-oob = "MAL_1936"
+oob = "MAL"
+
+### Oceanian Union
+give_guarantee = AST
+give_guarantee = NZL
 
 set_research_slots = 3
 
@@ -44,14 +48,8 @@ set_technology = {
 }
 set_convoys = 25
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 set_politics = {
-	ruling_party = conservative
+	ruling_party = liberal
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
@@ -62,10 +60,9 @@ set_popularities = {
     revolutionism = 0
     democratic_socialist = 4
     social_democrat = 9
-    liberal = 9
-    conservative = 78
+    liberal = 78
+    conservative = 9
     monarchist = 0
-    
     aximalist = 0
     pragmatist = 0
 }
@@ -91,6 +88,3 @@ create_country_leader = {
 		
 	}
 }
-
-
-set_cosmetic_tag = MAL_UK # British Malaya

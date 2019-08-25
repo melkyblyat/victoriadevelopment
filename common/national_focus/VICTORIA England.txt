@@ -16,11 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_new_deal
-<<<<<<< HEAD
-		icon = GFX_goal_ENG_new_way
-=======
-		icon = GFX_goal_ENG_new_deal
->>>>>>> origin/master
+		icon = GFX_goal_new_way
 		x = 4
 		y = 0
 

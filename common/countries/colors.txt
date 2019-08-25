@@ -126,8 +126,8 @@ ARG = {
 	color_ui = rgb { 189 204 255 }
 }
 AST = {
-	color = rgb { 57 143 97 }
-	color_ui = rgb { 74 186 126 }
+	color = rgb { 0 128 128 }
+	color_ui = rgb { 0 128 128 }
 }
 BHU = {
 	color = rgb { 172 122 88 }
@@ -206,8 +206,8 @@ NIC = {
 	color_ui = rgb { 146 179 191 }
 }
 NZL = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 32 178 170 }
+	color_ui = rgb { 32 178 170 }
 }
 PAN = {
 	color = rgb { 152 130 191 }
@@ -413,8 +413,8 @@ CAM = {
 }
 
 MAL = {
-	color = rgb { 213  169  121 }
-	color_ui = rgb { 213  169  121 }
+	color = rgb { 143 188 143 }
+	color_ui = rgb { 143 188 143 }
 }
 
 MNT = {

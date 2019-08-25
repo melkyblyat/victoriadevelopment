@@ -70,10 +70,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_way_of_india.dds"			
 	}
 
-        SpriteType = {
+    SpriteType = {
 	name = "GFX_goal_new_way"
 	texturefile = "gfx/interface/goals/ENG_New_way.dds"
-        }
+    }
 	
 	SpriteType = {
 	name = "GFX_goal_Birdcage"
